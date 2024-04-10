@@ -1,6 +1,12 @@
-import logofjd from "../assets/images/logofjd.png"; 
+import { useState } from "react";
+import logofjd from "../assets/images/logofjd.png";
 
- export function Header() {
+export function Header() {
+    const [menu, setMenu] = useState(false);
+
+    const toggleMenu = () => {
+        setMenu(!menu);
+    };
     return (
         <div className="container">
             <header className="nav">
@@ -10,46 +16,51 @@ import logofjd from "../assets/images/logofjd.png";
                             <img src={logofjd} alt="Logo FJD" />
                         </a>
                     </div>
-                    <label className="mainicon">
-                        <div className="menu">
-                            <i className="bx bx-menu"></i>
-                        </div>
-                    </label>
-                    <ul>
-                        <li>
-                            <a href="#home" className="nav-link">
-                                Inicio
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#servicios" className="nav-link">
-                                Servicios
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#portafolio" className="nav-link">
-                                Portafolio
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#quienes" className="nav-link">
-                                ¿Quiénes Somos?
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#blog" className="nav-link">
-                                Blog
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#contactanos" className="nav-link">
-                                Contáctanos
-                            </a>
-                        </li>
-                    </ul>
-                    <a href="#" className="button">
-                        Ayuda?
-                    </a>
+                    <div className={`icon nav-icon-5 ${menu ? "open" : ""}`} onClick={toggleMenu}>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div className={`Cabecera-nav ${menu ? "isActive" : ""}`}>
+                        <nav className="navbar">
+                            <ul className="Cabecera-ul">
+                                <li className="Cabecera-li">
+                                    <a href="#home" className="nav-link">
+                                        Inicio
+                                    </a>
+                                </li>
+                                <li className="Cabecera-li">
+                                    <a href="#servicios" className="nav-link">
+                                        Servicios
+                                    </a>
+                                </li>
+                                <li className="Cabecera-li">
+                                    <a href="#portafolio" className="nav-link">
+                                        Portafolio
+                                    </a>
+                                </li>
+                                <li className="Cabecera-li">
+                                    <a href="#quienes" className="nav-link">
+                                        ¿Quiénes Somos?
+                                    </a>
+                                </li>
+                                <li className="Cabecera-li">
+                                    <a href="#blog" className="nav-link">
+                                        Blog
+                                    </a>
+                                </li>
+                                <li className="Cabecera-li">
+                                    <a href="#contactanos" className="nav-link">
+                                        Contáctanos
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <a href="#" className="button">
+                            <i className="bx bx-help-circle"></i>
+                            <span>Ayuda</span>
+                        </a>
+                    </div>
                 </div>
             </header>
         </div>
@@ -57,5 +68,3 @@ import logofjd from "../assets/images/logofjd.png";
 }
 
 export default Header;
-
-

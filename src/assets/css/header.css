@@ -23,21 +23,35 @@ body {
 /* Nav */
 header {
     width: 100%;
+    min-height: 5%;
     background: #e6e6e6;
     box-shadow: 0 4px 17px rgba(53, 52, 52, 0.1);
     position: fixed;
+    align-items: center;
+    justify-content: center;
     top: 0;
     z-index: 1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
 }
 
 .page-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
+    padding: 9px;
     position: sticky;
     z-index: 1;
 }
+
+.Cabecera-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
 
 .logo {
     margin-left: 10px;
@@ -90,32 +104,21 @@ li .nav-link:hover::after {
     width: 80%;
     height: 2px;
     background-color: #1976d2;
-    transition: 0.3s;
-}
-
-.mainicon {
-    display: block;
-    cursor: pointer;
-    z-index: 9999;
-    position: relative;
-    color: var(--primary-color);
-}
-
-.mainicon i {
-    font-size: 1.5rem;
 }
 
 .button {
     border-radius: 100px;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.3);
     background: linear-gradient(to right, #1976d2, #518eca, #8fb2d4);
     color: #ffffff;
-    margin-right: 15px;
+    margin-right: 50px;
+    margin-left: 100px;
     font-weight: 700;
     font-size: 15px;
+    padding: 10px 25px;
+    line-height: 1.5em;
     text-align: center;
-    padding: 15px 50px;
-    line-height: 2.2em;
+    align-items: center;
     border: none;
     cursor: pointer;
     text-decoration: none;
@@ -124,11 +127,27 @@ li .nav-link:hover::after {
 .button:hover {
     background: linear-gradient(to right, #e6e6e6, #e6e6e6, #e6e6e6);
     color: #1976d2;
+    transition: 0.5s;
+}
+
+.button .bx {
+    margin-left: -3px;
+}
+
+.button span {
+    margin-left: 3px;
 }
 
 /* Nav End */
 
-/* VIDEO */
+/* principal.jsx VIDEO */
+/* .video {
+    width: 100%;
+    height: 70%;
+    opacity: 0.9;
+    overflow-x: hidden;
+} */
+
 .video {
     width: 100%;
     height: 70%;
@@ -136,4 +155,230 @@ li .nav-link:hover::after {
     overflow-x: hidden;
 }
 
-/* VIDEO End */
+/* principal.jsx VIDEO End */
+
+/* nav-icon-5 */
+.nav-icon-5 {
+    width: 35px;
+    height: 30px;
+    margin: 10px;
+    margin-top: 5px;
+    position: relative;
+    cursor: pointer;
+    display: none;
+}
+/* nav-icon-5 End*/
+
+/* PARA DISPOSITIVOS DE 1146 ANCHO */
+@media (max-width: 1146px) {
+    /* Nav */
+    header {
+        position: fixed;
+        width: 100%;
+        height: 10%;
+        top: 0;
+    }
+    /* MENU HAMBURGUESA */
+    .nav-icon-5 {
+        display: flex;
+    }
+
+    .nav-icon-5 span {
+        background-color: #1976d2;
+        position: absolute;
+        border-radius: 2px;
+        transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+        width: 100%;
+        height: 4px;
+        transition-duration: 500ms;
+    }
+    .nav-icon-5 span:nth-child(1) {
+        top: 0px;
+        left: 0px;
+    }
+    .nav-icon-5 span:nth-child(2) {
+        top: 13px;
+        left: 0px;
+        opacity: 1;
+    }
+    .nav-icon-5 span:nth-child(3) {
+        bottom: 0px;
+        left: 0px;
+    }
+    .nav-icon-5.open span:nth-child(1) {
+        transform: rotate(45deg);
+        top: 13px;
+    }
+    .nav-icon-5.open span:nth-child(2) {
+        opacity: 0;
+    }
+    .nav-icon-5.open span:nth-child(3) {
+        transform: rotate(-45deg);
+        top: 13px;
+    }
+    /* FIN MENU */
+
+    .Cabecera-nav {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        height: 0;
+        overflow: hidden;
+        transition: all 0.5s ease;
+        position: absolute;
+        display: block;
+        top: 75%;
+        right: 0;
+        background-color: #e6e6e6;
+    }
+
+    /* .navbar {
+        display: flex;
+        align-items: center;
+        margin-left: 26%;
+    } */
+
+    .Cabecera-nav.isActive {
+        height: 100vh;
+        transition: 1s;
+    }
+
+    .Cabecera-ul {
+        flex-direction: column;
+        padding: 2rem;
+        margin-top: 10%;
+    }
+
+    .Cabecera-li {
+        margin: 0.3em 0;
+    }
+
+    .Cabecera-li a {
+        font-size: 1.8em;
+    }
+
+    /* .logo a img {
+        margin-top: 20%;
+    } */
+
+    .button {
+        font-size: 2em;
+        margin-left: 50px;
+    }
+
+    /* Nav End */
+
+    /* VIDEO */
+    .video {
+        margin-top: 9%;
+    }
+    /* VIDEO End */
+}
+/* FIN */
+
+/*PARA DISPOSITIVOS MOVILES*/
+@media (max-width: 768px) {
+    /* Nav */
+    header {
+        position: fixed;
+        width: 100%;
+        height: 10%;
+        top: 0;
+    }
+    /* MENU HAMBURGUESA */
+    .nav-icon-5 {
+        display: flex;
+    }
+
+    .nav-icon-5 span {
+        background-color: #1976d2;
+        position: absolute;
+        border-radius: 2px;
+        transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+        width: 100%;
+        height: 4px;
+        transition-duration: 500ms;
+    }
+    .nav-icon-5 span:nth-child(1) {
+        top: 0px;
+        left: 0px;
+    }
+    .nav-icon-5 span:nth-child(2) {
+        top: 13px;
+        left: 0px;
+        opacity: 1;
+    }
+    .nav-icon-5 span:nth-child(3) {
+        bottom: 0px;
+        left: 0px;
+    }
+    .nav-icon-5.open span:nth-child(1) {
+        transform: rotate(45deg);
+        top: 13px;
+    }
+    .nav-icon-5.open span:nth-child(2) {
+        opacity: 0;
+    }
+    .nav-icon-5.open span:nth-child(3) {
+        transform: rotate(-45deg);
+        top: 13px;
+    }
+    /* FIN MENU */
+
+    .Cabecera-nav {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        height: 0;
+        overflow: hidden;
+        transition: all 0.5s ease;
+        position: absolute;
+        display: block;
+        top: 75%;
+        right: 0;
+        background-color: #e6e6e6;
+    }
+
+    /* .navbar {
+        display: flex;
+        align-items: center;
+        margin-left: 26%;
+    } */
+
+    .Cabecera-nav.isActive {
+        height: 100vh;
+        transition: 1s;
+    }
+
+    .Cabecera-ul {
+        flex-direction: column;
+        padding: 2rem;
+        margin-top: 10%;
+    }
+
+    .Cabecera-li {
+        margin: 0.3em 0;
+    }
+
+    .Cabecera-li a {
+        font-size: 1.8em;
+    }
+
+    /* .logo a img {
+        margin-top: 20%;
+    } */
+
+    .button {
+        font-size: 2em;
+    }
+
+    /* Nav End */
+
+    /* VIDEO */
+    .video {
+        margin-top: 13%;
+    }
+    /* VIDEO End */
+}
+
+/*PARA DISPOSITIVOS MOVILES End*/
