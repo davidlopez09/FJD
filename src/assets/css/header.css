@@ -30,7 +30,7 @@ header {
     align-items: center;
     justify-content: center;
     top: 0;
-    z-index: 1;
+    z-index: 1000;
 }
 
 .navbar {
@@ -51,7 +51,6 @@ header {
     display: flex;
     justify-content: space-between;
 }
-
 
 .logo {
     margin-left: 10px;
@@ -140,23 +139,6 @@ li .nav-link:hover::after {
 
 /* Nav End */
 
-/* principal.jsx VIDEO */
-/* .video {
-    width: 100%;
-    height: 70%;
-    opacity: 0.9;
-    overflow-x: hidden;
-} */
-
-.video {
-    width: 100%;
-    height: 70%;
-    opacity: 0.9;
-    overflow-x: hidden;
-}
-
-/* principal.jsx VIDEO End */
-
 /* nav-icon-5 */
 .nav-icon-5 {
     width: 35px;
@@ -175,10 +157,116 @@ li .nav-link:hover::after {
     header {
         position: fixed;
         width: 100%;
-        height: 10%;
         top: 0;
     }
     /* MENU HAMBURGUESA */
+    .nav-icon-5 {
+        display: flex;
+    }
+
+    .nav-icon-5 span {
+        background-color: #1976d2;
+        position: absolute;
+        border-radius: 2px;
+        transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+        width: 100%;
+        height: 4px;
+        transition-duration: 500ms;
+    }
+    .nav-icon-5 span:nth-child(1) {
+        top: 0px;
+        left: 0px;
+    }
+    .nav-icon-5 span:nth-child(2) {
+        top: 13px;
+        left: 0px;
+        opacity: 1;
+    }
+    .nav-icon-5 span:nth-child(3) {
+        bottom: 0px;
+        left: 0px;
+    }
+    .nav-icon-5.open span:nth-child(1) {
+        transform: rotate(45deg);
+        top: 13px;
+    }
+    .nav-icon-5.open span:nth-child(2) {
+        opacity: 0;
+    }
+    .nav-icon-5.open span:nth-child(3) {
+        transform: rotate(-45deg);
+        top: 13px;
+    }
+    /* FIN MENU */
+
+    .Cabecera-nav {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        height: 0;
+        overflow: hidden;
+        transition: all 0.5s ease;
+        position: absolute;
+        display: block;
+        top: 75%;
+        right: 0;
+        background-color: #e6e6e6;
+    }
+
+    /* .navbar {
+        display: flex;
+        align-items: center;
+        margin-left: 26%;
+    } */
+
+    .Cabecera-nav.isActive {
+        height: 100vh;
+        transition: 1s;
+    }
+
+    .Cabecera-ul {
+        flex-direction: column;
+        padding: 2rem;
+        margin-top: 10%;
+    }
+
+    .Cabecera-li {
+        margin: 0.3em 0;
+    }
+
+    .Cabecera-li a {
+        font-size: 1.8em;
+    }
+
+    /* .logo a img {
+        margin-top: 20%;
+    } */
+
+    .button {
+        font-size: 2em;
+        margin-left: 50px;
+    }
+
+    /* Nav End */
+
+    /* VIDEO */
+    .video {
+        margin-top: 9%;
+    }
+    /* VIDEO End */
+}
+/* FIN */
+
+/* PARA DISPOSITIVOS DE iphone 11 */
+@media (max-width: 828px) {
+    /* Nav */
+    header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+    }
+    /* MENU HAMBURGUESA */
+
     .nav-icon-5 {
         display: flex;
     }
@@ -282,7 +370,6 @@ li .nav-link:hover::after {
     header {
         position: fixed;
         width: 100%;
-        height: 10%;
         top: 0;
     }
     /* MENU HAMBURGUESA */

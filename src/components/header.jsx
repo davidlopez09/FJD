@@ -8,7 +8,7 @@ export function Header() {
         setMenu(!menu);
     };
     return (
-        <div className="container">
+        <div className="container" >
             <header className="nav">
                 <div className="page-header">
                     <div className="logo">

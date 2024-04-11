@@ -1,12 +1,13 @@
 import inicio from "../assets/videos/home.mp4"; 
+import "../assets/css/video.css";
 
 
 export function Principal() {
     return (
-        <div className="bgContainer">
+        <div id="home" className="bgContainer">
             <div className="overPlay">
-                <video className="video" src={inicio} autoPlay loop muted />
-                <div className="container">
+                <video src={inicio} autoPlay loop muted />
+                <div className="descripcion">
                     <h2 className="emp">EMPRESA DE DESARROLLO DE SOFTWARE</h2>
                     <h1 className="descrip">
                         Escuchamos y empatizamos con nuestros clientes, para la creación de estrategias de desarrollo de
@@ -18,5 +19,4 @@ export function Principal() {
         </div>
     );
 }
-
 export default Principal;
