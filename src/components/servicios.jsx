@@ -10,9 +10,9 @@ export function Servicios() {
     const imagenesConTexto = [
         { imagen: imagen, texto: "Desarrollo de software" },
         { imagen: imagen1, texto: "Desarrollo de aplicaciones web" },
-        { imagen: imagen2, texto: "Desarrollo de aplicaciones moviles" },
-        { imagen: imagen3, texto: "Expertos en desarrollo api" },
-        { imagen: imagen4, texto: "Desarrollo de codigo seguro" },
+        { imagen: imagen2, texto: "Desarrollo de aplicaciones móviles" },
+        { imagen: imagen3, texto: "Expertos en desarrollo API" },
+        { imagen: imagen4, texto: "Desarrollo de código seguro" },
     ];
 
     return (
@@ -22,8 +22,7 @@ export function Servicios() {
             <div className="images-container">
                 {imagenesConTexto.map((item, index) => (
                     <div key={index} className="img-container">
-                        <img src={item.imagen} alt={`Imagen ${index + 1}`} />
-                        <div className="text-button">
+                        <div className="text-overlay">
                             <h4>{item.texto}</h4>
                             <div className="bton">
                                 <a href="/">
@@ -31,6 +30,7 @@ export function Servicios() {
                                 </a>
                             </div>
                         </div>
+                        <img src={item.imagen} alt={`Imagen ${index + 1}`} />
                     </div>
                 ))}
             </div>

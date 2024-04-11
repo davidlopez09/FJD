@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { Header } from "./components/header.jsx";
 import { Principal } from "./components/principal.jsx";
 import { Servicios} from "./components/servicios.jsx";
-import './assets/css/header.css'
+ 
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>

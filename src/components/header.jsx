@@ -1,5 +1,6 @@
 import { useState } from "react";
 import logofjd from "../assets/images/logofjd.png";
+import "../assets/css/header.css";
 
 export function Header() {
     const [menu, setMenu] = useState(false);
