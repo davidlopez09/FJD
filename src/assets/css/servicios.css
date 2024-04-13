@@ -5,11 +5,16 @@
 
 .title-card{
     margin: 20px;
-    margin-top: 50px;
-    font-size: 25px;
+    margin-top: 20px;
     padding: 20px;
     display: flex;
     justify-content: center;
+}
+
+.title{
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
 }
 
 .cards-container{
@@ -63,7 +68,7 @@
 
 .card .back {
     transform: perspective(600px) rotateY(180deg);
-    background: rgb(3, 35, 54);
+    background: #1976d2;
     padding: 15px;
     color: #f3f3f3;
     display: flex;
