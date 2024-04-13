@@ -6,33 +6,93 @@ import imagen4 from "../assets/images/imagen4.jpg";
 import "../assets/css/servicios.css";
 
 export function Servicios() {
-    // Definimos una matriz de objetos que contiene la imagen y el texto asociado
-    const imagenesConTexto = [
-        { imagen: imagen, texto: "Desarrollo de software" },
-        { imagen: imagen1, texto: "Desarrollo de aplicaciones web" },
-        { imagen: imagen2, texto: "Desarrollo de aplicaciones móviles" },
-        { imagen: imagen3, texto: "Expertos en desarrollo API" },
-        { imagen: imagen4, texto: "Desarrollo de código seguro" },
-    ];
-
     return (
-        <div id="servicios" className="servicios">
-            <h2>EXPERTOS EN DESARROLLO A LA MEDIDA</h2>
-            {/* Renderizamos cada imagen con su texto y botón asociado */}
-            <div className="images-container">
-                {imagenesConTexto.map((item, index) => (
-                    <div key={index} className="img-container">
-                        <div className="text-overlay">
-                            <h4>{item.texto}</h4>
-                            <div className="bton">
-                                <a href="/">
-                                    <button>Ver más</button>
-                                </a>
-                            </div>
-                        </div>
-                        <img src={item.imagen} alt={`Imagen ${index + 1}`} />
+        <div id="servicios" className="card-container">
+            <div className="title-card">
+                <h2 className="title">EXPERTOS EN DESARROLLO A LA MEDIDA</h2>
+            </div>
+            <div className="cards-container">
+                <div className="card">
+                    <div className="face front">
+                        <img src={imagen} />
+                        <h3>Desarrollo de software</h3>
                     </div>
-                ))}
+                    <div className="face back">
+                        <h3>Desarrollo de software</h3>
+                        <p>
+                            nos especializamos en el diseño y desarrollo de software a medida, adaptado a las
+                            necesidades específicas de mis clientes.
+                        </p>
+                        <div className="link">
+                            <a href="#">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="card">
+                    <div className="face front">
+                        <img src={imagen1} />
+                        <h3>Desarrollo de aplicaciones web</h3>
+                    </div>
+                    <div className="face back">
+                        <h3>Desarrollo de aplicaciones web</h3>
+                        <p>
+                            Como desarrolladores web experimentados, nos apasiona crear aplicaciones web modernas y
+                            receptivas.
+                        </p>
+                        <div className="link">
+                            <a href="#">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="card">
+                    <div className="face front">
+                        <img src={imagen2} />
+                        <h3>Desarrollo de aplicaciones moviles</h3>
+                    </div>
+                    <div className="face back">
+                        <h3>Desarrollo de aplicaciones moviles</h3>
+                        <p>
+                            Somos expertos en el desarrollo de aplicaciones móviles que están diseñadas para impulsar tu
+                            negocio y mejorar la experiencia de tus usuarios.
+                        </p>
+                        <div className="link">
+                            <a href="#">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="card">
+                    <div className="face front">
+                        <img src={imagen3} />
+                        <h3>Expertos en desarrollo api</h3>
+                    </div>
+                    <div className="face back">
+                        <h3>Expertos en desarrollo api</h3>
+                        <p>
+                            Como expertos en desarrollo API, diseño y construyo interfaces de programación de
+                            aplicaciones sólidas y eficientes
+                        </p>
+                        <div className="link">
+                            <a href="#">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="card">
+                    <div className="face front">
+                        <img src={imagen4} />
+                        <h3>Desarrollo de codigo seguro</h3>
+                    </div>
+                    <div className="face back">
+                        <h3>Desarrollo de codigo seguro</h3>
+                        <p>Nuestra especialidad es el desarrollo de código web seguro y confiable.</p>
+                        <div className="link">
+                            <a href="#">Ver más</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     );
