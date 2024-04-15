@@ -11,23 +11,23 @@
 }
 
 video {
-    position: absolute; 
-    width: 100%; 
-    height:100%;
-    top: 0;
-    object-fit: cover; 
-    opacity: 0.9;
-  }
-
-  .descripcion {
     position: absolute;
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    text-align: center; 
-    color: #ffffff; 
-    z-index: 1; 
-  }
+    width: 100%;
+    height: 100%;
+    top: 0;
+    object-fit: cover;
+    filter: brightness(0.4);
+}
+
+.descripcion {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    z-index: 1;
+}
 
 .emp {
     font-size: 36px;
@@ -38,4 +38,30 @@ video {
 .descrip {
     font-size: 24px;
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+@media (max-width: 768px) {
+    .bgContainer {
+        width: 100%;
+    }
+
+    .overPlay {
+        width: 100%;
+    }
+
+    video {
+        width: 100%;
+    }
+
+    .descripcion {
+        width: 80%;
+    }
+
+    .emp {
+        margin: 20px;
+    }
+
+    .descrip {
+       margin: 5px;
+    }
 }
