@@ -2,14 +2,14 @@
 
 .porque {
     text-align: center;
-    padding: 100px;
+    margin: 20px;
+    padding: 10px;
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 .txt .nuestro {
     width: 75%;
     text-align: center;
     margin: 0 auto;
-    margin-top: -70px;
     font-size: 22px;
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
