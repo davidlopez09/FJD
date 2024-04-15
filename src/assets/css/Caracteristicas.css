@@ -2,12 +2,13 @@
 
 .porque {
     text-align: center;
-    margin: 20px;
+    width: 100%;
+    margin: 20px auto;
     padding: 10px;
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 .txt .nuestro {
-    width: 75%;
+    width: 90%;
     text-align: center;
     margin: 0 auto;
     font-size: 22px;
