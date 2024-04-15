@@ -24,14 +24,20 @@ body {
 header {
     width: 100%;
     min-height: 5%;
-    background: #e6e6e6;
-    box-shadow: 0 4px 17px rgba(53, 52, 52, 0.1);
     position: fixed;
     align-items: center;
     justify-content: center;
+    background: #e6e6e6;
+    box-shadow: 0 4px 17px rgba(53, 52, 52, 0.1);
     top: 0;
     z-index: 1000;
 }
+
+/* header.active{
+    background: #e6e6e6;
+    box-shadow: 0 4px 17px rgba(53, 52, 52, 0.1);
+    transition: 1s;
+} */
 
 .navbar {
     display: flex;
@@ -50,6 +56,7 @@ header {
 .Cabecera-nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
@@ -72,14 +79,14 @@ header {
     color: #52489c;
 }
 
-ul {
+.Cabecera-ul {
     display: flex;
     gap: 0.6rem;
     list-style-type: none;
     overflow: hidden;
 }
 
-li a {
+.Cabecera-li a {
     display: inline-block;
     padding: 0.3rem 1rem;
     color: #1976d2;
@@ -89,13 +96,13 @@ li a {
     transition: 0.3s;
 }
 
-li .nav-link:hover {
+.Cabecera-li .nav-link:hover {
     position: relative;
     color: #000;
     transition: 0.3s;
 }
 
-li .nav-link:hover::after {
+.Cabecera-li .nav-link:hover::after {
     content: "";
     position: absolute;
     left: 10%;

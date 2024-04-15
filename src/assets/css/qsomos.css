@@ -1,0 +1,106 @@
+.quienesSomos{
+    width: 100%;
+    margin-top: 5%;
+
+}
+
+.quienes{
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+}
+
+.cont-mv{
+    margin: 20px;
+    padding: 10px;
+}
+
+.parrafo-mv{
+    width: 75%;
+    display: flex;
+    text-align: center;
+    font-size: 23px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+/* ESTILOS DE MISION Y VISION */
+.lista-mv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 2rem;
+    list-style: none;
+}
+
+.card-1{
+    margin: 20px;
+    padding: 10px;
+    margin-right: 5%;
+}
+
+.card-2{
+    margin: 20px;
+    padding: 10px;
+    margin-left: 5%;
+}
+
+
+
+.card2 {
+    display: flex;
+    flex-direction: column;
+    max-width: 15rem;
+    --iconS: 6rem;
+    --iconOffsetX: calc(var(--iconS) / 4);
+    --iconOffsetY: calc(var(--iconS) / 2.5);
+    margin-top: var(--iconOffsetY);
+    margin-inline: var(--iconOffsetX);
+    border-radius: 1rem;
+    font-family: "Roboto", sans-serif;
+    color: #333;
+    background-color: #fff;
+    --shadowSurface: 0.5rem 0.5rem 0.5rem rgb(0 0 0 / 0.25);
+    --bgGradient: radial-gradient(circle at bottom right, transparent, rgb(0 0 0 / 0.1));
+    background-image: radial-gradient(
+            circle at calc(var(--iconOffsetX) * -1 + var(--iconS) / 2) calc(var(--iconOffsetY) * -1 + var(--iconS) / 2),
+            rgb(0 0 0 / 0.4) calc(var(--iconS) / 2),
+            transparent calc(var(--iconS) / 1.6)
+        ),
+        radial-gradient(
+            circle at calc(var(--iconOffsetX) * -1 + var(--iconS) / 2) calc(var(--iconOffsetY) * -1 + var(--iconS) / 2),
+            var(--accent-color) calc(var(--iconS) / 1.4),
+            transparent calc(var(--iconS) / 1.4 + 1px)
+        ),
+        var(--bgGradient);
+    --shadowInsetLight: inset 0.125rem 0.125rem 0.125rem rgb(255 255 255 / 0.5);
+    --shadowInsetDark: inset -0.067rem -0.067rem 0.067rem rgb(0 0 0 / 0.5);
+    box-shadow: var(--shadowInsetLight), var(--shadowInsetDark), var(--shadowSurface);
+}
+.card2 .icon {
+    width: var(--iconS);
+    aspect-ratio: 1;
+    margin-top: calc(var(--iconOffsetY) * -1);
+    margin-left: calc(var(--iconOffsetX) * -1);
+    margin-bottom: calc(var(--iconS) / 4);
+    display: grid;
+    place-items: center;
+    color: var(--accent-color);
+    font-size: calc(var(--iconS) / 3);
+    background-color: inherit;
+    border-radius: 50%;
+    box-shadow: var(--shadowInsetLight), var(--shadowInsetDark);
+    background-image: var(--bgGradient);
+}
+.card2 .title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    text-align: center;
+    text-transform: uppercase;
+}
+.card2 .content {
+    padding: 1rem;
+    padding-bottom: 2rem;
+    font-size: 0.9em;
+}

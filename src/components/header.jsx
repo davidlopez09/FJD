@@ -8,8 +8,10 @@ export function Header() {
     const toggleMenu = () => {
         setMenu(!menu);
     };
+
+    
     return (
-        <div className="container" >
+        <div className="container">
             <header className="nav">
                 <div className="page-header">
                     <div className="logo">
@@ -41,7 +43,7 @@ export function Header() {
                                     </a>
                                 </li>
                                 <li className="Cabecera-li">
-                                    <a href="#quienes" className="nav-link">
+                                    <a href="#quienesSomos" className="nav-link">
                                         ¿Quiénes Somos?
                                     </a>
                                 </li>
@@ -64,6 +66,9 @@ export function Header() {
                     </div>
                 </div>
             </header>
+            <br />
+            <br />
+            <br />
         </div>
     );
 }

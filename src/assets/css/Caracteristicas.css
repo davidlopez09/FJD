@@ -1,0 +1,65 @@
+/*estilos Caracteristicas*/
+
+.porque {
+    text-align: center;
+    padding: 100px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+.txt .nuestro {
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: -70px;
+    font-size: 22px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.img-sub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_ft {
+    margin: 10px;
+    padding: 5px;
+}
+
+.img_ft img {
+    width: 500px;
+}
+
+
+
+.subti {
+    padding: 20px;
+    text-align: center;
+}
+
+.subti .carcter {
+    padding: 10px;
+    text-align: center;
+}
+
+.carac .li2 {
+    margin: 20px;
+    font-size: 22px;
+    list-style-type: none;
+}
+
+@media (max-width: 768px) {
+    .img-sub{
+        display: block;
+    }
+
+    .img_ft {
+        display: flex;
+        align-items: center;
+    }
+
+    .img_ft img {
+        width: 350px;
+        margin: 10px;
+        margin: 0 auto;
+    }
+}
