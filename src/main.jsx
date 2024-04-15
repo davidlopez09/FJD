@@ -4,8 +4,9 @@ import { Header } from "./components/header.jsx";
 import { Principal } from "./components/principal.jsx";
 import { Servicios} from "./components/servicios.jsx";
 import { Button } from "./components/button.jsx";
-import {Qsomos} from "./components/qsomos.jsx"
-import {Caracteristicas} from "./components/Caracteristicas.jsx"
+import {Qsomos} from "./components/qsomos.jsx";
+import {Caracteristicas} from "./components/Caracteristicas.jsx";
+import {Portfolio} from "./components/portfolio.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
@@ -13,6 +14,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Principal />
         <Servicios />
         <Caracteristicas />
+        <Portfolio />
         <Qsomos />
         <Button />
     </React.StrictMode>
