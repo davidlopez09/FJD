@@ -7,6 +7,7 @@ import { Button } from "./components/button.jsx";
 import {Qsomos} from "./components/qsomos.jsx";
 import {Caracteristicas} from "./components/Caracteristicas.jsx";
 import {Portfolio} from "./components/portfolio.jsx";
+import { Metodologia } from "./components/metodologia.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
@@ -15,6 +16,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Servicios />
         <Caracteristicas />
         <Portfolio />
+        <Metodologia />
         <Qsomos />
         <Button />
     </React.StrictMode>
