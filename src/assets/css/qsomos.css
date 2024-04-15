@@ -1,6 +1,5 @@
 .quienesSomos{
     width: 100%;
-    margin-top: 5%;
 
 }
 
@@ -37,12 +36,14 @@
     margin: 20px;
     padding: 10px;
     margin-right: 5%;
+    text-align: center;
 }
 
 .card-2{
     margin: 20px;
     padding: 10px;
     margin-left: 5%;
+    text-align: center;
 }
 
 
