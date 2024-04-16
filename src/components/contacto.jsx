@@ -111,7 +111,7 @@ export function Contactanos() {
                                 </option>
                             ))}
                         </select>
-                        <label>
+                        <label className="label2">
                             <input type="text" name="empresa" placeholder="Empresa: " />
                             <input
                                 type="text"

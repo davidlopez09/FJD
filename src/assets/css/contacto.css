@@ -109,3 +109,35 @@ button[type="submit"] {
 .input-contact {
     display: table-caption;
 }
+
+@media (max-width: 768px) {
+    .conten {
+        display: block;
+    }
+
+    .input-contact {
+        display: inline-grid;
+    }
+
+    .label2 {
+        display: grid;
+        width: 100%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea,
+    select {
+        width: 90%;
+    }
+
+    input[type="texto"],
+    input {
+        width: 100%;
+    }
+
+    textarea {
+        width: 90%;
+    }
+}
