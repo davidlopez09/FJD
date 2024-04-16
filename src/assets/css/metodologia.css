@@ -59,6 +59,7 @@
     grid-template-columns: repeat(auto-fill, minmax(250px, 0.7fr));
     gap: 20px;
     justify-content: center;
+
 }
 
 .card-meto {

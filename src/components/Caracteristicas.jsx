@@ -3,7 +3,7 @@ import imagen from "../assets/images/imagen7.png";
 
 export function Caracteristicas() {
     return (
-        <div>
+        <div className="nuestro-servicio">
             <h1 className="porque">¿Por qué elegir nuestro servicio de software?</h1>
             <div className="txt">
                 <p className="nuestro">
