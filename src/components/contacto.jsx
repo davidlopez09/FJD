@@ -72,7 +72,7 @@ export function Contactanos() {
     };
 
     return (
-        <div className="titi-cont">
+        <div id="contactanos" className="titi-cont">
             <h1>Contáctanos</h1>
             <div className="map">
                 <iframe
