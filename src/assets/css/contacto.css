@@ -119,6 +119,11 @@ button[type="submit"] {
         display: inline-grid;
     }
 
+    .label{
+        display: flex;
+        justify-content: center;
+    }
+
     .label2 {
         display: grid;
         width: 100%;

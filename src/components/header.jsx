@@ -9,7 +9,11 @@ export function Header() {
         setMenu(!menu);
     };
 
-    
+    const handleMenuClick = () => {
+        // Cierra el menú al hacer clic en un enlace del menú
+        setMenu(false);
+    };
+
     return (
         <div className="container">
             <header className="nav">
@@ -28,32 +32,32 @@ export function Header() {
                         <nav className="navbar">
                             <ul className="Cabecera-ul">
                                 <li className="Cabecera-li">
-                                    <a href="#home" className="nav-link">
+                                    <a href="#home" className="nav-link" onClick={handleMenuClick}>
                                         Inicio
                                     </a>
                                 </li>
                                 <li className="Cabecera-li">
-                                    <a href="#servicios" className="nav-link">
+                                    <a href="#servicios" className="nav-link" onClick={handleMenuClick}>
                                         Servicios
                                     </a>
                                 </li>
                                 <li className="Cabecera-li">
-                                    <a href="#portafolio" className="nav-link">
+                                    <a href="#portafolio" className="nav-link" onClick={handleMenuClick}>
                                         Portafolio
                                     </a>
                                 </li>
                                 <li className="Cabecera-li">
-                                    <a href="#quienesSomos" className="nav-link">
+                                    <a href="#quienesSomos" className="nav-link" onClick={handleMenuClick}>
                                         ¿Quiénes Somos?
                                     </a>
                                 </li>
                                 <li className="Cabecera-li">
-                                    <a href="#blog" className="nav-link">
+                                    <a href="#blog" className="nav-link" onClick={handleMenuClick}>
                                         Blog
                                     </a>
                                 </li>
                                 <li className="Cabecera-li">
-                                    <a href="#contactanos" className="nav-link">
+                                    <a href="#contactanos" className="nav-link" onClick={handleMenuClick}>
                                         Contáctanos
                                     </a>
                                 </li>
