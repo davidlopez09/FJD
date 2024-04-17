@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import "../assets/css/perfiles.css";
 import desarrolloproyectos from "../assets/images/desarrolloproyectos.jpg";
 import analisisrequerimiento from "../assets/images/analisisrequerimiento.jpg";
@@ -6,7 +6,7 @@ import blogs from "../assets/images/blogs.png";
 import imagen from "../assets/images/imagen.jpg";
 
 export function Perfiles() {
-    const [perfilesSecundarios, setPerfilesSecundarios] = useState([
+    const [perfilesSecundarios] = useState([
         {
             imagen: desarrolloproyectos,
             saludo: "¡Hola!",

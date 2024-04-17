@@ -70,7 +70,6 @@
     justify-content: center;
 }
 
-<<<<<<< HEAD
 .icon-perfil {
     display: flex;
     align-items: center; /* Alinea los iconos verticalmente */
@@ -80,7 +79,7 @@
     font-size: 24px;
     cursor: pointer;
     margin: 0 5px; /* Agrega un margen a los lados de los iconos */
-=======
+}
 @media (max-width: 768px) {
     .perfil-principal {
         display: grid;
@@ -102,5 +101,4 @@
         width: 80px;
         height: 80px;
     }
->>>>>>> 0e084eca97acf1e86c2a234b9b368f349d8d7c34
 }
