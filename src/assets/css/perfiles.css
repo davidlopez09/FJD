@@ -72,13 +72,11 @@
 
 .icon-perfil {
     display: flex;
-    align-items: center; /* Alinea los iconos verticalmente */
-}
-
-.icon-perfil i {
-    font-size: 24px;
+    align-items: center;
+    /* justify-content: start; */
+    font-size: 26px;
     cursor: pointer;
-    margin: 0 5px; /* Agrega un margen a los lados de los iconos */
+    padding: 10px;
 }
 @media (max-width: 768px) {
     .perfil-principal {
@@ -86,6 +84,11 @@
         justify-content: center;
         align-items: center;
         margin: 20px auto;
+    }
+
+    .perfil-secundario {
+        display: flex;
+        justify-content: center;
     }
 
     .img-perfil {
