@@ -31,12 +31,7 @@ const proyectos = [
         descripcion:
             "Analizamos y hacemos seguimiento del código de manera exhaustiva, garantizando la calidad del producto final y realizando despliegues continuos para una rápida entrega al cliente.",
     },
-    {
-        imagen: testing,
-        titulo: "Testing y Despliegue",
-        descripcion:
-            "Analizamos y hacemos seguimiento del código de manera exhaustiva, garantizando la calidad del producto final y realizando despliegues continuos para una rápida entrega al cliente.",
-    },
+
 ];
 
  export function Metodologia() {
