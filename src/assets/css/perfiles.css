@@ -69,3 +69,14 @@
     display: flex;
     justify-content: center;
 }
+
+.icon-perfil {
+    display: flex;
+    align-items: center; /* Alinea los iconos verticalmente */
+}
+
+.icon-perfil i {
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 5px; /* Agrega un margen a los lados de los iconos */
+}

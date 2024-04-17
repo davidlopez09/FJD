@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import "../assets/css/perfiles.css";
 import desarrolloproyectos from "../assets/images/desarrolloproyectos.jpg";
 import analisisrequerimiento from "../assets/images/analisisrequerimiento.jpg";
@@ -6,7 +6,7 @@ import blogs from "../assets/images/blogs.png";
 import imagen from "../assets/images/imagen.jpg";
 
 export function Perfiles() {
-    const perfilesSecundarios = [
+    const [perfilesSecundarios, setPerfilesSecundarios] = useState([
         {
             imagen: desarrolloproyectos,
             saludo: "¡Hola!",
@@ -37,20 +37,29 @@ export function Perfiles() {
             nombre: "Soy Ada",
             cargo: "Diseñadora",
         },
-    ];
+    ]);
 
-    const [perfilPrincipal, setPerfilPrincipal] = useState({
-        imagen: desarrolloproyectos,
-        saludo: "¡Hola!",
-        nombre: "Soy Ana",
-        cargo: "Desarrolladora de Proyectos",
-    });
+    // Imágenes adicionales que se mostrarán al hacer clic en las flechas
+    const imagenesEscondidas = [imagen, imagen];
 
-    const [perfilSeleccionado, setPerfilSeleccionado] = useState(null);
+    const [perfilPrincipal, setPerfilPrincipal] = useState(perfilesSecundarios[0]);
+    const [perfilSeleccionado, setPerfilSeleccionado] = useState(0);
 
     const handleClickPerfilSecundario = (perfil, index) => {
         setPerfilPrincipal(perfil);
         setPerfilSeleccionado(index);
+    };
+
+    const cambiarPerfil = (direccion) => {
+        let nuevoIndex;
+        const totalPerfiles = perfilesSecundarios.length;
+        if (direccion === "izquierda") {
+            nuevoIndex = perfilSeleccionado === 0 ? totalPerfiles - 1 : perfilSeleccionado - 1;
+        } else {
+            nuevoIndex = perfilSeleccionado === totalPerfiles - 1 ? 0 : perfilSeleccionado + 1;
+        }
+        setPerfilPrincipal(perfilesSecundarios[nuevoIndex]);
+        setPerfilSeleccionado(nuevoIndex);
     };
 
     return (
@@ -67,6 +76,10 @@ export function Perfiles() {
                         <p className="cargo">{perfilPrincipal.cargo}</p>
                     </div>
                 </div>
+                <div className="icon-perfil">
+                    <i className='bx bxs-chevron-left-circle' onClick={() => cambiarPerfil("izquierda")}></i> 
+                    <i className='bx bxs-chevron-right-circle' onClick={() => cambiarPerfil("derecha")}></i>
+                </div>
                 <div className="perfil-secundario">
                     {perfilesSecundarios.map((perfil, index) => (
                         <div
@@ -74,6 +87,12 @@ export function Perfiles() {
                             className={`sec-perfil ${perfilSeleccionado === index ? "selected" : ""}`}
                             onClick={() => handleClickPerfilSecundario(perfil, index)}>
                             <img className="img-sec" src={perfil.imagen} alt="" />
+                        </div>
+                    ))}
+                    {/* Agrega las imágenes escondidas */}
+                    {imagenesEscondidas.map((imagen, index) => (
+                        <div key={index} className="sec-perfil">
+                            <img className="img-sec" src={imagen} alt="" />
                         </div>
                     ))}
                 </div>
