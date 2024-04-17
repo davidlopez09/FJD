@@ -31,12 +31,7 @@ const proyectos = [
         descripcion:
             "Analizamos y hacemos seguimiento del código de manera exhaustiva, garantizando la calidad del producto final y realizando despliegues continuos para una rápida entrega al cliente.",
     },
-    {
-        imagen: testing,
-        titulo: "Testing y Despliegue",
-        descripcion:
-            "Analizamos y hacemos seguimiento del código de manera exhaustiva, garantizando la calidad del producto final y realizando despliegues continuos para una rápida entrega al cliente.",
-    },
+
 ];
 
  export function Metodologia() {
@@ -48,7 +43,7 @@ const proyectos = [
 
     return (
         <div className="metodologia">
-            <h1 className="titumeto">Utilizamos una metodología jvnjcjeficyuaz para nuestros proyectos</h1>
+            <h1 className="titumeto">Utilizamos una metodología para nuestros proyectos</h1>
             <div className="subtitu">
                 <p className="sub-somos">Somos un equipo enfocado a resultados y usamos la tegnologia como herramienta de creciemiento</p>
             </div>
