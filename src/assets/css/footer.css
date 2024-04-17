@@ -1,0 +1,122 @@
+.contefoot {
+    background-color: hsl(180, 2%, 18%);
+    min-height: 300px;
+}
+
+.container-foo {
+    padding: 20px;
+}
+
+.footitu {
+    color: #ccc;
+    padding: 20px;
+}
+
+.img-social {
+    display: grid;
+    justify-content: center;
+    align-items: end;
+    align-content: center;
+    justify-items: end;
+}
+
+.contenelogo {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imag {
+    margin: 20px;
+    padding: 15px;
+}
+
+.contenelogo .image {
+    display: flex;
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+}
+
+.contenelogo .image:hover {
+    transition: transform 0.3s ease ease-in-out;
+    transform: scale(1.07);
+    opacity: 0.9;
+}
+
+.icon-content {
+    color: #ccc;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-content:hover {
+    transition: transform 0.3s ease ease-in-out;
+    transform: scale(1.07);
+    opacity: 0.9;
+}
+
+.iconos-content {
+    color: #ccc;
+    font-size: 100%;
+}
+
+.iconos-content p {
+    font-size: 1rem;
+}
+
+hr {
+    width: 100%;
+    color: #ccc;
+}
+
+.copy {
+    color: #e6e6e6;
+    margin-top: 17px;
+}
+
+.parrafo-copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 17px;
+}
+
+.direcc {
+    display: flex;
+    align-items: center;
+}
+
+.dir {
+    display: grid;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.dire {
+    font-size: 1.5em;
+}
+
+.span5 {
+    font-size: 17px;
+}
+
+@media (max-width: 768px) {
+    .contenelogo {
+        display: block;
+    }
+    .img-social {
+        display: block;
+    }
+    .footitu {
+        text-align: center;
+    }
+
+    .contac {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+}
