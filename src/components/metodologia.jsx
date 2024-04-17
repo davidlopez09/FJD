@@ -48,7 +48,7 @@ const proyectos = [
 
     return (
         <div className="metodologia">
-            <h1 className="titumeto">Utilizamos una metodología jvnjcjeficyuaz para nuestros proyectos</h1>
+            <h1 className="titumeto">Utilizamos una metodología para nuestros proyectos</h1>
             <div className="subtitu">
                 <p className="sub-somos">Somos un equipo enfocado a resultados y usamos la tegnologia como herramienta de creciemiento</p>
             </div>
