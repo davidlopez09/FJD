@@ -49,6 +49,12 @@ export function Perfiles() {
             nombre: "Soy Juan",
             cargo: "Contador",
         },
+        {
+            imagen: blogs,
+            saludo: "¡Hola!",
+            nombre: "Soy Luis",
+            cargo: "Programador Junior",
+        },
     ];
 
     const [perfilPrincipalIndex, setPerfilPrincipalIndex] = useState(0);
@@ -93,7 +99,7 @@ export function Perfiles() {
                         <h1 className="nombre">{perfilesSecundarios[perfilPrincipalIndex].nombre}</h1>
                         <p className="cargo">{perfilesSecundarios[perfilPrincipalIndex].cargo}</p>
                     </div>
-                </div>
+                </div> 
 
                 <div className="perfil-secundario">
                     <i

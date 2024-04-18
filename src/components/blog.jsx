@@ -4,18 +4,21 @@ import blogs from "../assets/images/blogs.png";
 import analisis from "../assets/images/noti1.jpg";
 import analisisdedos from "../assets/images/noti2.jpg";
 import analisisdetres from "../assets/images/noti3.jpg";
+import analisisdecuatro from "../assets/images/noti4.jpg";
 
 export function Blogs() {
     return (
-        <div id="blog" className="blogs">
-            <div className="blogs-title">
-                <div className="blog-noticias">
-                    <h1 className="titublogs">Blogs y noticias sobre el desarrollo de software</h1>
-                    <p className="subtiblogs">Entérate de las ultimas noticias sobre el desarrollo de software</p>
-                </div>
-                <div className="img-blogs">
-                    <img className="img-blogs" src={blogs} alt="#" />
-                </div>
+        <div id="blog" class="blogs">
+        <div class="blogs-title">
+            <div class="blog-noticias">
+                <h1 class="titublogs">Blogs y noticias sobre el desarrollo de software</h1>
+                <p class="subtiblogs">Entérate de las últimas noticias sobre el desarrollo de software</p>
+            </div>
+            <div class="img-blogs">
+                <img class="img-blogs" src={blogs} alt="#" />
+           
+       
+    </div>
             </div>
             <div className="card-blogs">
                 <div className="card-cont">
@@ -41,7 +44,7 @@ export function Blogs() {
                 </div>
                 <div className="card-cont">
                     <div className="card-meto">
-                        <img src={analisis} alt="Imagen" className="card-image" />
+                        <img src={analisisdecuatro} alt="Imagen" className="card-image" />
                         <h2 className="card-title">8 beneficios de contar con un desarrollo de software a la medida</h2>
                         <a className="btn-blog">Saber mas</a>
                     </div>

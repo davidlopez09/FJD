@@ -6,8 +6,8 @@ export function Qsomos() {
             <h1 className="quienes">¿Quiénes somos?</h1>
             <div className="cont-mv">
                 <p className="parrafo-mv">
-                    FJD GROUP S.A.S es una empresa que se encarga de realizar y desarrollar software a la medida que se
-                    adapte a la necesidad de nuestro cliente, optimizando y mejorando sus
+                    FJD GROUP SAS es una empresa que se encarga de realizar y desarrollar software a la medida que se
+                    adapte a la necesidad de nuestro cliente.
                 </p>
                 <div className="mision-vision">
                     <ul className="lista-mv">
@@ -18,8 +18,8 @@ export function Qsomos() {
                                 </div>
                                 <div className="title">Misión</div>
                                 <div className="content">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium mi eros, non
-                                    egestas urna suscipit sed.
+                                    Forjar soluciones innovadoras de calidad, funcionalidad y brindando confianza para ser elegidos por clientes, proveedores y demás grupos de interés. <br /> <br />
+                                    Creando con el talento, profesionalismo y conocimientos integral de Ingeniería de sitemas
                                 </div>
                             </li>
                         </div>
@@ -30,16 +30,13 @@ export function Qsomos() {
                                 </div>
                                 <div className="title">Visión</div>
                                 <div className="content">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium mi eros, non
-                                    egestas urna suscipit sed.
+                                    Consolidarnos como empresa líder de mercados donde operamos, logrando crecimientos en los diferentes ámbitos y realizando el trabajo con calidad, seguridad y cuidando del medio ambiente.
                                 </div>
                             </li>
                         </div>
                     </ul>
                     <p className="parrafo-mv">
-                        Lorem Ipsumis simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industrys standard dummy text ever since the 1500s Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit.
+                    Brindando el desarrollo a medida que tu empresa necesita para alcanzar nuevas metas corporativas. 
                     </p>
                 </div>
             </div>
