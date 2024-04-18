@@ -22,7 +22,7 @@ export function Perfiles() {
         {
             imagen: blogs,
             saludo: "¡Hola!",
-            nombre: "Soy Juan",
+            nombre: "Soy Juan",      
             cargo: "Contador",
         },
         {
