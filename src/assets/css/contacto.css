@@ -108,7 +108,10 @@ button[type="submit"] {
     display: table-caption;
 }
 
-
+@media (max-width: 768px) {
+    .conten {
+        display: block;
+    }
 
     .input-contact {
         display: inline-grid;
@@ -144,8 +147,15 @@ button[type="submit"] {
     .proyectocotizar {
         width: 90% !important;
     }
+}
 
 
 
+/* Estilos responsivos */
+@media screen and (min-width: 768px) {
+    .input-contact {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 
-
+}
