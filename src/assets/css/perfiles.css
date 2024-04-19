@@ -39,6 +39,9 @@
 .perfiles {
     width: 90%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
 }
 
 .img-perfil {
@@ -53,6 +56,7 @@
     justify-content: center;
     align-items: center;
     margin-right: 11%;
+    margin-bottom: 20px; 
 }
 
 .img-forma {
@@ -81,6 +85,8 @@
 .perfil-secundario {
     display: flex;
     justify-content: center;
+    width: 100%; 
+    overflow-x: auto; 
 }
 
 .icon-perfil {
@@ -119,27 +125,4 @@
     }
 }
 
-.perfiles {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-}
 
-.perfil-principal {
-    margin-bottom: 20px; 
-}
-
-.perfil-secundario {
-    width: 100%; 
-    overflow-x: auto; 
-    white-space: nowrap; 
-    -webkit-overflow-scrolling: touch; 
-}
-
-.icon-perfil {
-    display: none; 
-}
-
-.img-sec {
-    margin-right: px;
-}
