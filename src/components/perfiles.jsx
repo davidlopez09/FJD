@@ -102,8 +102,7 @@ export function Perfiles() {
                 </div> 
 
                 <div className="perfil-secundario">
-                    <i
-                        className="bx bxs-chevron-left-circle icon-perfil"
+                   <i className="bx bxs-chevron-left-circle icon-perfil"
                         onClick={() => cambiarPerfil("izquierda")}></i>
                     {visiblePerfiles.map((perfil, index) => (
                         <div
