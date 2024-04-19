@@ -29,7 +29,26 @@
 
 .titublogs{
     margin: 15px;
+   
 }
+
+
+
+
+.subtiblogs {
+    font-size: 16px; 
+    line-height: 1.5; 
+    text-align: center; 
+    padding: 10px; 
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .subtiblogs {
+        font-size: 12px; /* Reducir tamaño de fuente para dispositivos móviles */
+    }
+}
+
 
 .btn-blog {
     margin: 20px auto;

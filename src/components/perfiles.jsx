@@ -1,9 +1,10 @@
 import { useState } from "react";
 import "../assets/css/perfiles.css";
-import desarrolloproyectos from "../assets/images/desarrolloproyectos.jpg";
-import analisisrequerimiento from "../assets/images/analisisrequerimiento.jpg";
-import blogs from "../assets/images/blogs.png";
-import imagen from "../assets/images/imagen.jpg";
+import desarrolloproyectos from "../assets/images/perfil1.jpg";
+import analisisrequerimiento from "../assets/images/perfil2.jpg";
+import blogs from "../assets/images/perfil3.jpg";
+import imagen from "../assets/images/perfil4.jpg";
+
 
 export function Perfiles() {
     const perfilesSecundarios = [
