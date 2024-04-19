@@ -118,3 +118,32 @@
         height: 80px;
     }
 }
+
+
+
+
+
+.perfiles {
+    display: flex;
+    flex-direction: column; /* Cambiar a dirección de columna en dispositivos móviles */
+    align-items: center; /* Centrar los perfiles en dispositivos móviles */
+}
+
+.perfil-principal {
+    margin-bottom: 20px; /* Añadir espacio entre el perfil principal y los perfiles secundarios en dispositivos móviles */
+}
+
+.perfil-secundario {
+    width: 100%; /* Ajustar el ancho para que ocupe toda la pantalla en dispositivos móviles */
+    overflow-x: auto; /* Permitir el desplazamiento horizontal en dispositivos móviles */
+    white-space: nowrap; /* Evitar que los perfiles secundarios se envuelvan a la siguiente línea */
+    -webkit-overflow-scrolling: touch; /* Habilitar el desplazamiento fluido en dispositivos iOS */
+}
+
+.icon-perfil {
+    display: none; /* Ocultar las flechas de desplazamiento en dispositivos móviles */
+}
+
+.img-sec {
+    margin-right: 10px; /* Añadir espacio entre los perfiles secundarios en dispositivos móviles */
+}

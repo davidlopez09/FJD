@@ -150,19 +150,5 @@ button[type="submit"] {
 }
 
 
-.perfil-secundario {
-    width: 100%; /* Ajustar el ancho para que ocupe toda la pantalla en dispositivos móviles */
-    overflow-x: auto; /* Permitir el desplazamiento horizontal en dispositivos móviles */
-    white-space: nowrap; /* Evitar que los perfiles secundarios se envuelvan a la siguiente línea */
-    -webkit-overflow-scrolling: touch; /* Habilitar el desplazamiento fluido en dispositivos iOS */
-    display: flex; /* Ajustar la disposición a flex */
-    align-items: center; /* Centrar las flechas verticalmente */
-}
-
-.icon-perfil {
-    font-size: 26px; /* Ajustar el tamaño de las flechas */
-    cursor: pointer; /* Cambiar el cursor a pointer para indicar que son clicables */
-    margin: 10px; /* Agregar margen para separar las flechas del contenido */
-}
 
 
