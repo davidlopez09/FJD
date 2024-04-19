@@ -119,31 +119,27 @@
     }
 }
 
-
-
-
-
 .perfiles {
     display: flex;
-    flex-direction: column; /* Cambiar a dirección de columna en dispositivos móviles */
-    align-items: center; /* Centrar los perfiles en dispositivos móviles */
+    flex-direction: column; 
+    align-items: center;
 }
 
 .perfil-principal {
-    margin-bottom: 20px; /* Añadir espacio entre el perfil principal y los perfiles secundarios en dispositivos móviles */
+    margin-bottom: 20px; 
 }
 
 .perfil-secundario {
-    width: 100%; /* Ajustar el ancho para que ocupe toda la pantalla en dispositivos móviles */
-    overflow-x: auto; /* Permitir el desplazamiento horizontal en dispositivos móviles */
-    white-space: nowrap; /* Evitar que los perfiles secundarios se envuelvan a la siguiente línea */
-    -webkit-overflow-scrolling: touch; /* Habilitar el desplazamiento fluido en dispositivos iOS */
+    width: 100%; 
+    overflow-x: auto; 
+    white-space: nowrap; 
+    -webkit-overflow-scrolling: touch; 
 }
 
 .icon-perfil {
-    display: none; /* Ocultar las flechas de desplazamiento en dispositivos móviles */
+    display: none; 
 }
 
 .img-sec {
-    margin-right: 10px; /* Añadir espacio entre los perfiles secundarios en dispositivos móviles */
+    margin-right: px;
 }
