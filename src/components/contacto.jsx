@@ -73,14 +73,17 @@ export function Contactanos() {
 
     return (
         <div id="contactanos" className="titi-cont">
-            <h1>Contáctanos</h1>
+        <h1>Contáctanos</h1>
             <div className="map">
                 <iframe
                     className="mapa"
                     width="90%"
                     height="250"
                     src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3943.185471982326!2d-75.890436!3d8.768614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwNDYnMDcuMCJOIDc1wrA1MycyNS42Ilc!5e0!3m2!1ses!2sco!4v1713296345732!5m2!1ses!2sco"></iframe>
-            </div>
+            
+             
+             <p className="parrafo-contacto">Cuentanos en que podemos ayudarte hoy</p>
+             </div>
             <div className="conten">
                 <label className="label">
                     <div className="input-contact">
@@ -123,6 +126,7 @@ export function Contactanos() {
                             <div className="btn-cont">
                                 <button type="button">Enviar</button>
                             </div>
+                            
                         </label>
                     </div>
                 </label>
