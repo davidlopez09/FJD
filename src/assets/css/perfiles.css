@@ -28,12 +28,12 @@
     align-items: center;
     margin-right: 18%;
     border-radius: 50%;
-    border: 3px solid #ccc; /* Borde gris para el perfil principal */
+    border: 3px solid #ccc;
 }
 
 .sec-perfil.selected {
     border-radius: 50%;
-    border: 3px solid #ccc; /* Borde azul para el perfil secundario seleccionado */
+    border: 3px solid #ccc;
 }
 
 .perfiles {
@@ -87,6 +87,8 @@
     justify-content: center;
     width: 100%; 
     overflow: hidden ; 
+
+    overflow-x: clip; 
 }
 
 .icon-perfil {

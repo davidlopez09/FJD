@@ -103,6 +103,8 @@ hr {
 
 .span5 {
     font-size: 17px;
+    text-decoration: none;
+    color: #ccc;
 }
 
 @media (max-width: 768px) {
