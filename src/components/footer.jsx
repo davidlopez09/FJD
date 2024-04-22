@@ -24,8 +24,12 @@ export function Footer() {
                             <div className="direcc">
                                 <i className="bx bxs-map dire"></i>
                                 <div className="dir">
-                                    <span>Cr 7 W 36-30 Barrio Juan XXIII </span>
-                                    <span> Montería- Colombia</span>
+                                    <a className="span5" href="https://maps.app.goo.gl/YLv9vYrXy8tVF2Y67" target="_blank">
+                                        <span>Cr 7 W 36-30 Barrio Juan XXIII </span>
+                                    </a>
+                                    <a className=" span5" href="https://maps.app.goo.gl/YLv9vYrXy8tVF2Y67" target="_blank">
+                                        <span> Montería- Colombia</span>
+                                    </a>
                                 </div>
                             </div>
                             <div className="direcc">
