@@ -1,9 +1,3 @@
-/*estilos Caracteristicas*/
-
-/* .nuestro-servicio{
-    padding: 15px;
-} */
-
 .porque {
     text-align: center;
     width: 100%;
@@ -36,28 +30,22 @@
 
 .subti {
     padding: 15px;
-    
 }
 
 .subti .carcter {
     padding: 10px;
     text-align: center;
-    
 }
 
 .carac .li2 {
     margin: 10px;
     font-size: 20px;
-    
-   
+    display: flex;
+    justify-content: center;
 }
 
-
-
-@media (min-width: 768px) {
-
-    .img-sub{
-
+@media (max-width: 768px) {
+    .img-sub {
         display: block;
     }
 
@@ -71,12 +59,16 @@
         margin: 10px;
         margin: 0 auto;
     }
-}
 
+    .carac .li2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
 
 @media (max-width: 834px) {
-    .img-sub{
-
+    .img-sub {
         display: block;
     }
 
@@ -90,6 +82,9 @@
         margin: 10px;
         margin: 0 auto;
     }
+    .carac .li2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
-
-
