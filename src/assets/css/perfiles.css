@@ -15,12 +15,12 @@
     align-items: center;
     margin-right: 18%;
     border-radius: 50%;
-    border: 3px solid #ccc; /* Borde gris para el perfil principal */
+    border: 3px solid #ccc;
 }
 
 .sec-perfil.selected {
     border-radius: 50%;
-    border: 3px solid #ccc; /* Borde azul para el perfil secundario seleccionado */
+    border: 3px solid #ccc;
 }
 
 .perfiles {
@@ -73,7 +73,6 @@
 .icon-perfil {
     display: flex;
     align-items: center;
-    /* justify-content: start; */
     font-size: 26px;
     cursor: pointer;
     padding: 10px;
