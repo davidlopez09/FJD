@@ -3,7 +3,7 @@
     text-align: center;
 }
 
-.parrafo-contacto{
+.parrafo-contacto {
     text-align: center;
     font-size: 1.4rem;
     padding: 2%;
@@ -119,8 +119,47 @@ button[type="submit"] {
         display: block;
     }
 
+    .label {
+        display: flex;
+        justify-content: center;
+    }
+
+    .label2 {
+        display: grid;
+        width: 100%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea,
+    select {
+        width: 93%;
+    }
+
+    input[type="texto"],
+    input {
+        width: 100%;
+    }
+
+    textarea {
+        width: 93%;
+    }
+
+    .proyectocotizar {
+        width: 93% !important;
+    }
+
     .input-contact {
-        display: inline-grid;
+        display: ruby;
+        width: 90%;
+    }
+}
+
+/* Estilos responsivos */
+@media screen and (min-width: 884px) {
+    .conten {
+        display: block;
     }
 
     .label {
@@ -138,7 +177,7 @@ button[type="submit"] {
     input[type="tel"],
     textarea,
     select {
-        width: 90%;
+        width: 94%;
     }
 
     input[type="texto"],
@@ -147,21 +186,15 @@ button[type="submit"] {
     }
 
     textarea {
-        width: 90%;
+        width: 94%;
     }
 
     .proyectocotizar {
-        width: 90% !important;
+        width: 94% !important;
     }
-}
 
-
-
-/* Estilos responsivos */
-@media screen and (min-width: 768px) {
     .input-contact {
-        flex-direction: row;
-        flex-wrap: wrap;
+        display: ruby;
+        width: 90%;
     }
-
 }

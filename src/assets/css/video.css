@@ -62,6 +62,32 @@ video {
     }
 
     .descrip {
-       margin: 5px;
+        margin: 5px;
+    }
+}
+
+@media screen and (min-width: 820px) and (max-width: 884px) {
+    .bgContainer {
+        width: 100%;
+    }
+
+    .overPlay {
+        width: 100%;
+    }
+
+    video {
+        width: 100%;
+    }
+
+    .descripcion {
+        width: 80%;
+    }
+
+    .emp {
+        margin: 20px;
+    }
+
+    .descrip {
+        margin: 5px;
     }
 }
