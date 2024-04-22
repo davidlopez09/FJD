@@ -1,5 +1,5 @@
 .contefoot {
-    background-color: hsl(180, 2%, 18%);
+    background-color: hsl(0, 0%, 24%);
     min-height: 300px;
 }
 
@@ -23,6 +23,7 @@
 .contenelogo {
     display: flex;
     justify-content: space-evenly;
+    
 }
 
 .imag {
@@ -35,6 +36,8 @@
     height: 100px;
     width: 100px;
     margin: 0 auto;
+    border-radius: 50%;
+    border: 3px solid #fff;
 }
 
 .contenelogo .image:hover {
