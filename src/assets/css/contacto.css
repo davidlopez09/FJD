@@ -157,7 +157,7 @@ button[type="submit"] {
 }
 
 /* Estilos responsivos */
-@media screen and (min-width: 884px) {
+@media screen and (max-width: 884px) {
     .conten {
         display: block;
     }

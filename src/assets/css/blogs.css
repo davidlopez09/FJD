@@ -85,7 +85,7 @@
     }
 }
 
-@media screen and (min-width: 884px) {
+@media screen and (max-width: 884px) {
     .subtiblogs {
         font-size: 12px; /* Reducir tamaño de fuente para dispositivos móviles */
     }
