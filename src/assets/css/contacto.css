@@ -156,3 +156,45 @@ button[type="submit"] {
     }
 }
 
+/* Estilos responsivos */
+@media screen and (max-width: 884px) {
+    .conten {
+        display: block;
+    }
+
+    .label {
+        display: flex;
+        justify-content: center;
+    }
+
+    .label2 {
+        display: grid;
+        width: 100%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea,
+    select {
+        width: 94%;
+    }
+
+    input[type="texto"],
+    input {
+        width: 100%;
+    }
+
+    textarea {
+        width: 94%;
+    }
+
+    .proyectocotizar {
+        width: 94% !important;
+    }
+
+    .input-contact {
+        display: ruby;
+        width: 90%;
+    }
+}
