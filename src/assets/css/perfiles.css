@@ -86,13 +86,12 @@
     display: flex;
     justify-content: center;
     width: 100%; 
-    overflow-x: auto; 
+    overflow: hidden ; 
 }
 
 .icon-perfil {
     display: flex;
     align-items: center;
-    /* justify-content: start; */
     font-size: 26px;
     cursor: pointer;
     padding: 10px;

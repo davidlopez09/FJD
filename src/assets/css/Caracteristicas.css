@@ -37,20 +37,23 @@
 
 
 .subti {
-    padding: 20px;
-    text-align: center;
+    padding: 15px;
+    
 }
 
 .subti .carcter {
     padding: 10px;
     text-align: center;
+    
 }
 
 .carac .li2 {
-    margin: 20px;
-    font-size: 22px;
-    list-style-type: none;
+    margin: 10px;
+    font-size: 20px;
+    
+   
 }
+
 
 @media (max-width: 768px) {
     .img-sub{

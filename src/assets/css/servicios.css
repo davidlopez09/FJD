@@ -20,13 +20,12 @@
     flex-wrap: wrap;
     justify-content: center;
     row-gap: 2rem;
-
 }
 
 .card {
     position: relative;
-    width: 300px;
-    height: 350px;
+    width: 290px;
+    height: 330px;
     margin: 20px;
 }
 
@@ -37,7 +36,7 @@
     backface-visibility: hidden;
     border-radius: 10px;
     overflow: hidden;
-    transition: .5s;
+    transition: .9s;
 }
 
 .card .front {
