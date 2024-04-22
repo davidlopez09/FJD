@@ -86,7 +86,7 @@
     display: flex;
     justify-content: center;
     width: 100%; 
-    overflow-x: auto; 
+    overflow-x: hidden; 
 }
 
 .icon-perfil {
