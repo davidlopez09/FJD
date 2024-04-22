@@ -32,7 +32,9 @@ export function Footer() {
                                 <i className="bx bxs-envelope dire"> </i>
                                 <div className="direcc">
                                     <div className="dir">
-                                        <span className="span5">servicioalcliente@fjdsas.com.co</span>
+                                        <a className="span5" href="mailto:servicioalcliente@fjdsas.com.co">
+                                            servicioalcliente@fjdsas.com.co
+                                        </a>
                                     </div>
                                 </div>
                             </div>

@@ -8,7 +8,9 @@
     text-align: center;
 }
 
-
+.blog-noticias{
+    width: 40%;
+}
 
 
 /* Estilos responsivos */
@@ -36,7 +38,7 @@
 
 
 .subtiblogs {
-    font-size: 16px; 
+    font-size: 21px; 
     line-height: 1.5; 
     text-align: center; 
     padding: 10px; 
@@ -70,7 +72,7 @@
 
 .card-blogs{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, .1fr));
+    grid-template-columns: repeat(auto-fill, minmax(305px, .1fr));
     gap: 20px;
     justify-content: center;
     align-items: center;
