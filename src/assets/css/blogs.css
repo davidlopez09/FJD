@@ -84,38 +84,3 @@
         margin: 0 auto;
     }
 }
-
-@media screen and (min-width: 884px) {
-    .subtiblogs {
-        font-size: 12px; /* Reducir tamaño de fuente para dispositivos móviles */
-    }
-    .blogs-title {
-        flex-direction: column; /* Cambia la dirección de la flexbox en pantallas pequeñas */
-    }
-
-    .img-blogs,
-    .blog-noticias {
-        width: 100%; /* Ajusta el ancho para que ocupen toda la pantalla */
-    }
-
-    .img-blogs {
-        order: 2; /* Cambia el orden de la imagen */
-    }
-    .blogs-title {
-        display: block;
-    }
-
-    .img-blogs {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .blog-noticias .subtiblogs {
-        text-align: center;
-        font-size: 22px;
-    }
-    .img-blogs img {
-        width: 450px;
-        margin: 0 auto;
-    }
-}
