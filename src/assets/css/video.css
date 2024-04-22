@@ -27,15 +27,18 @@ video {
     text-align: center;
     color: #ffffff;
     z-index: 1;
+    width: 85%;
 }
 
 .emp {
+    padding: 10px;
     font-size: 35px;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
         sans-serif;
 }
 
 .descrip {
+    padding: 10px;
     font-size: 22px;
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
@@ -65,7 +68,6 @@ video {
         margin: 5px;
     }
 }
-
 
 @media screen and (min-width: 820px) and (max-width: 884px) {
     .bgContainer {
