@@ -40,7 +40,7 @@ video {
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .bgContainer {
         width: 100%;
     }
@@ -65,6 +65,7 @@ video {
         margin: 5px;
     }
 }
+
 
 @media screen and (min-width: 820px) and (max-width: 884px) {
     .bgContainer {
