@@ -54,12 +54,11 @@
    
 }
 
-<<<<<<< HEAD
 
 @media (max-width: 768px) {
-=======
+
 @media (min-width: 768px) {
->>>>>>> 1e578330c5e0526665962a75d68632a3ea1d6729
+
     .img-sub{
         display: block;
     }
