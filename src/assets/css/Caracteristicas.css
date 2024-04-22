@@ -34,8 +34,6 @@
     width: 500px;
 }
 
-
-
 .subti {
     padding: 20px;
     text-align: center;
@@ -52,8 +50,25 @@
     list-style-type: none;
 }
 
-@media (min-width: 768px) {
-    .img-sub{
+@media (max-width: 768px) {
+    .img-sub {
+        display: block;
+    }
+
+    .img_ft {
+        display: flex;
+        align-items: center;
+    }
+
+    .img_ft img {
+        width: 350px;
+        margin: 10px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 834px) {
+    .img-sub {
         display: block;
     }
 
