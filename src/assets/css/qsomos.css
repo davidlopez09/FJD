@@ -9,7 +9,6 @@
 }
 
 
-
 .parrafo-mv {
     width: 100%;
     text-align: center;
@@ -31,20 +30,20 @@
     margin: 20px;
     padding: 10px;
     margin-right: 5%;
-    text-align: center;
+    
 }
 
 .card-2 {
     margin: 20px;
     padding: 10px;
     margin-left: 5%;
-    text-align: center;
+   
 }
 
 .card2 {
     display: flex;
     flex-direction: column;
-    max-width: 15rem;
+    max-width: 16rem;
     --iconS: 6rem;
     --iconOffsetX: calc(var(--iconS) / 4);
     --iconOffsetY: calc(var(--iconS) / 2.5);
@@ -85,6 +84,7 @@
     border-radius: 50%;
     box-shadow: var(--shadowInsetLight), var(--shadowInsetDark);
     background-image: var(--bgGradient);
+    
 }
 .card2 .title {
     font-size: 1.2rem;
@@ -97,4 +97,5 @@
     padding: 1rem;
     padding-bottom: 2rem;
     font-size: 0.9em;
+    height: 220px;
 }
