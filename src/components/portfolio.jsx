@@ -1,7 +1,7 @@
 import imagen from "../assets/images/imagen.jpg";
-import imagen1 from "../assets/images/imagen1.jpg";
-import imagen2 from "../assets/images/imagen2.jpg";
-import imagen3 from "../assets/images/imagen3.jpg";
+import imagen1 from "../assets/images/imagen1.webp";
+import imagen2 from "../assets/images/imagen2.webp";
+import imagen3 from "../assets/images/imagen3.webp";
 import imagen4 from "../assets/images/imagen4.jpg";
 import "../assets/css/portfolio.css";
 

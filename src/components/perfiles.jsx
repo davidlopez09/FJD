@@ -1,10 +1,9 @@
 import { useState } from "react";
 import "../assets/css/perfiles.css";
-import desarrolloproyectos from "../assets/images/perfil1.jpg";
-import analisisrequerimiento from "../assets/images/perfil2.jpg";
-import blogs from "../assets/images/perfil3.jpg";
-import imagen from "../assets/images/perfil4.jpg";
-
+import desarrolloproyectos from "../assets/images/perfil1.webp";
+import analisisrequerimiento from "../assets/images/perfil2.webp";
+import blogs from "../assets/images/perfil3.webp";
+import imagen from "../assets/images/perfil4.webp";
 
 export function Perfiles() {
     const perfilesSecundarios = [
@@ -23,7 +22,7 @@ export function Perfiles() {
         {
             imagen: blogs,
             saludo: "¡Hola!",
-            nombre: "Soy Juan",      
+            nombre: "Soy Juan",
             cargo: "Contador",
         },
         {
@@ -100,10 +99,11 @@ export function Perfiles() {
                         <h1 className="nombre">{perfilesSecundarios[perfilPrincipalIndex].nombre}</h1>
                         <p className="cargo">{perfilesSecundarios[perfilPrincipalIndex].cargo}</p>
                     </div>
-                </div> 
+                </div>
 
                 <div className="perfil-secundario">
-                   <i className="bx bxs-chevron-left-circle icon-perfil"
+                    <i
+                        className="bx bxs-chevron-left-circle icon-perfil"
                         onClick={() => cambiarPerfil("izquierda")}></i>
                     {visiblePerfiles.map((perfil, index) => (
                         <div

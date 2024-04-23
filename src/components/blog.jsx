@@ -2,9 +2,9 @@ import "../assets/css/blogs.css";
 import "../assets/css/metodologia.css";
 import blogs from "../assets/images/blogs.png";
 import analisis from "../assets/images/noti1.jpg";
-import analisisdedos from "../assets/images/noti2.jpg";
-import analisisdetres from "../assets/images/noti3.jpg";
-import analisisdecuatro from "../assets/images/noti4.jpg";
+import analisisdedos from "../assets/images/noti2.webp";
+import analisisdetres from "../assets/images/noti3.webp";
+import analisisdecuatro from "../assets/images/noti4.webp";
 
 export function Blogs() {
     return (

@@ -1,8 +1,8 @@
 import imagen from "../assets/images/imagen.jpg";
-import imagen1 from "../assets/images/imagen1.jpg";
-import imagen2 from "../assets/images/imagene2.jpg";
-import imagen3 from "../assets/images/imagen3.jpg";
-import imagen4 from "../assets/images/imagene4.jpg";
+import imagen1 from "../assets/images/imagen1.webp";
+import imagen2 from "../assets/images/imagene2.webp";
+import imagen3 from "../assets/images/imagen3.webp";
+import imagen4 from "../assets/images/imagene4.webp";
 import "../assets/css/servicios.css";
 
 export function Servicios() {
