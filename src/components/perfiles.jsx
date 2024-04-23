@@ -73,7 +73,7 @@ export function Perfiles() {
                                 spaceBetween: 15,
                             },
                             700: {
-                                slidesPerView: 4,
+                                slidesPerView: 3,
                                 spaceBetween: 15,
                             },
                         }}
