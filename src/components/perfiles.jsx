@@ -1,11 +1,9 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "../assets/css/perfiles.css";
 import desarrolloproyectos from "../assets/images/perfil1.webp";
 import analisisrequerimiento from "../assets/images/perfil2.webp";
 import blogs from "../assets/images/perfil3.webp";
 import imagen from "../assets/images/perfil4.webp";
-
-// SWIPER
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -27,9 +25,29 @@ export function Perfiles() {
     const [perfilPrincipalIndex, setPerfilPrincipalIndex] = useState(0);
     const [perfilSecundarioSeleccionado, setPerfilSecundarioSeleccionado] = useState(null);
 
+    // Función para manejar el cambio de perfil secundario
     const cambiarPerfil = (index) => {
         setPerfilPrincipalIndex(index);
+        setPerfilSecundarioSeleccionado(index);
+        localStorage.setItem("perfilSecundarioSeleccionado", index.toString());
     };
+
+    // Cargar el perfil secundario seleccionado del localStorage al cargar el componente
+    useEffect(() => {
+        const storedIndex = localStorage.getItem("perfilSecundarioSeleccionado");
+        if (storedIndex !== null) {
+            const index = parseInt(storedIndex);
+            setPerfilPrincipalIndex(index);
+            setPerfilSecundarioSeleccionado(index);
+        }
+    }, []); // Se ejecuta solo al montar el componente
+
+    // Mostrar el perfil principal basado en el perfil secundario seleccionado
+    useEffect(() => {
+        if (perfilSecundarioSeleccionado !== null) {
+            setPerfilPrincipalIndex(perfilSecundarioSeleccionado);
+        }
+    }, [perfilSecundarioSeleccionado]); // Se ejecuta cuando cambia perfilSecundarioSeleccionado
 
     return (
         <div className="container-perfil">
@@ -68,10 +86,7 @@ export function Perfiles() {
                             <SwiperSlide className="swiper-slide" key={index}>
                                 <div
                                     className={`sec-perfil ${perfilSecundarioSeleccionado === index ? "selected" : ""}`}
-                                    onClick={() => {
-                                        cambiarPerfil(index);
-                                        setPerfilSecundarioSeleccionado(index);
-                                    }}>
+                                    onClick={() => cambiarPerfil(index)}>
                                     <img className="img-sec" src={perfil.imagen} alt="" />
                                 </div>
                             </SwiperSlide>
@@ -84,5 +99,3 @@ export function Perfiles() {
 }
 
 export default Perfiles;
-
-
