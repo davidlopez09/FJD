@@ -37,13 +37,25 @@
 .sec-perfil.selected {
     border-radius: 50%;
     border: 3px solid #ccc;
-    width: 120px;
-    height: 120px;
+    width: 115px;
+    height: 115px;
+}
+
+.swiper-slide {
+    flex-shrink: .1 !important;
+    width: 80% !important;
+    height: 100%;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
 }
 
 .swiper {
-    width: 80%;
+    width: 60%;
+    transform: none;
 }
+
+
 
 .perfiles {
     width: 90%;
@@ -95,7 +107,6 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    overflow-x: auto;
 }
 
 .icon-perfil {
@@ -130,5 +141,12 @@
     .img-sec {
         width: 80px;
         height: 80px;
+    }
+
+    .sec-perfil.selected {
+        border-radius: 50%;
+        border: 3px solid #ccc;
+        width: 90px;
+        height: 90px;
     }
 }

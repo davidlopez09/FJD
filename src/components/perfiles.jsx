@@ -46,8 +46,8 @@ export function Perfiles() {
 
                 <div className="perfil-secundario">
                     <Swiper
+                        className="wrapper"
                         breakpoints={{
-                            
                             340: {
                                 slidesPerView: 2,
                                 spaceBetween: 15,
@@ -63,7 +63,7 @@ export function Perfiles() {
                         }}
                         modules={[FreeMode, Pagination]}>
                         {perfilesSecundarios.map((perfil, index) => (
-                            <SwiperSlide className="swiper" key={index}>
+                            <SwiperSlide className="swiper-slide" key={index}>
                                 <div
                                     className={`sec-perfil ${perfilSecundarioSeleccionado === index ? "selected" : ""}`}
                                     onClick={() => {
