@@ -4,6 +4,8 @@ import desarrolloproyectos from "../assets/images/perfil1.webp";
 import analisisrequerimiento from "../assets/images/perfil2.webp";
 import blogs from "../assets/images/perfil3.webp";
 import imagen from "../assets/images/perfil4.webp";
+
+// SWIPER
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -49,11 +51,11 @@ export function Perfiles() {
                         className="wrapper"
                         breakpoints={{
                             340: {
-                                slidesPerView: 2,
+                                slidesPerView: 3,
                                 spaceBetween: 15,
                             },
                             700: {
-                                slidesPerView: 3,
+                                slidesPerView: 4,
                                 spaceBetween: 15,
                             },
                         }}
@@ -82,3 +84,5 @@ export function Perfiles() {
 }
 
 export default Perfiles;
+
+

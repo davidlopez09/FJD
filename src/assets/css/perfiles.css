@@ -11,7 +11,8 @@
 }
 
 .selected .img-sec {
-    transform: scale(1.1); /* Escala aplicada a la imagen seleccionada */
+    transform: scale(1.1); 
+    filter: grayscale(0);
 }
 
 .container-perfil {
@@ -142,8 +143,6 @@
     }
 
     .sec-perfil.selected {
-        border-radius: 50%;
-        border: 3px solid #ccc;
         width: 90px;
         height: 90px;
     }
