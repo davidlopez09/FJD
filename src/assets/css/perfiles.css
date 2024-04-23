@@ -4,6 +4,10 @@
 
 .sec-perfil {
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
 }
 
 .selected .img-sec {
@@ -33,6 +37,12 @@
 .sec-perfil.selected {
     border-radius: 50%;
     border: 3px solid #ccc;
+    width: 120px;
+    height: 120px;
+}
+
+.swiper {
+    width: 80%;
 }
 
 .perfiles {
