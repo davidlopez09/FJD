@@ -42,7 +42,7 @@
 }
 
 .swiper-slide {
-    flex-shrink: .1 !important;
+    flex-shrink: 0.1 !important;
     width: 80% !important;
     height: 100%;
     display: flex !important;
@@ -54,8 +54,6 @@
     width: 60%;
     transform: none;
 }
-
-
 
 .perfiles {
     width: 90%;
@@ -148,5 +146,9 @@
         border: 3px solid #ccc;
         width: 90px;
         height: 90px;
+    }
+
+    .swiper {
+        width: 100%;
     }
 }
