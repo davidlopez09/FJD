@@ -43,7 +43,7 @@
 }
 
 .swiper-slide {
-    flex-shrink: 0.1 !important;
+    flex-shrink: 0.2 !important;
     width: 80% !important;
     height: 100%;
     display: flex !important;
