@@ -12,6 +12,7 @@
 
 .titublogs {
     margin: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .subtiblogs {
@@ -19,6 +20,7 @@
     line-height: 1.5;
     text-align: center;
     padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .btn-blog {

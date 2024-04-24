@@ -20,10 +20,12 @@
     padding: 20px;
 }
 
-.perfil-equipo {
+.perfil-equipo {                
     text-align: center;
     font-size: 35px;
     padding: 20px;
+    font-size: 200%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .img-perfil {
@@ -150,4 +152,5 @@
     .swiper {
         width: 100%;
     }
+
 }

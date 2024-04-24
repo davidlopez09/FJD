@@ -3,14 +3,14 @@
     width: 100%;
     margin: 20px auto;
     padding: 10px;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .txt .nuestro {
     width: 90%;
     text-align: center;
     margin: 0 auto;
     font-size: 22px;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .img-sub {
@@ -29,12 +29,10 @@
 }
 
 .subti {
-<<<<<<< HEAD
     padding: 20px;
     text-align: center;
-=======
     padding: 15px;
->>>>>>> f51262bc5fb88b877a2096e088505789a880c9b1
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .subti .carcter {
@@ -43,25 +41,23 @@
 }
 
 .carac .li2 {
-<<<<<<< HEAD
     margin: 20px;
     font-size: 22px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
 }
 
 @media (max-width: 768px) {
     .img-sub{
-=======
     margin: 10px;
     font-size: 20px;
     display: flex;
     justify-content: center;
     text-align: center;
 }
-
+}
 @media (max-width: 768px) {
     .img-sub {
->>>>>>> f51262bc5fb88b877a2096e088505789a880c9b1
         display: block;
     }
 

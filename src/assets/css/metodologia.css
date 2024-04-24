@@ -19,18 +19,21 @@
     width: 100%;
     font-size: 25px;
     margin: 20px auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .card-title {
     font-size: 1.2rem;
     margin-top: 15px;
     text-align: center;
+    
 }
 
 .card-des {
     font-size: 0.9rem;
     text-align: center;
     margin-bottom: 15px;
+    
 }
 
 .btn-vm {
@@ -121,4 +124,5 @@
     width: 100%;
     padding: 15px;
     font-size: 22px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
