@@ -14,7 +14,10 @@ export function Footer() {
                             <a className="icons-a" href="#" target="_blank">
                                 <i className="bx bxl-whatsapp"></i>
                             </a>
-                            <a className="icons-a" href="#" target="_blank">
+                            <a
+                                className="icons-a"
+                                href="https://www.facebook.com/profile.php?id=100067433211800"
+                                target="_blank">
                                 <i className="bx bxl-facebook-square"></i>
                             </a>
                             <a
