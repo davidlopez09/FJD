@@ -73,6 +73,18 @@ export function Perfiles() {
                                 slidesPerView: 5,
                                 spaceBetween: 15,
                             },
+                            800: {
+                                slidesPerView: 3,
+                                spaceBetween: 15,
+                            },
+                            820: {
+                                slidesPerView: 3,
+                                spaceBetween: 15,
+                            },
+                            1280: {
+                                slidesPerView: 5,
+                                spaceBetween: 15,
+                            },
                         }}
                         freeMode={true}
                         pagination={{
