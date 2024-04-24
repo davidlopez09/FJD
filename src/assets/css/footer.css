@@ -1,5 +1,5 @@
 .contefoot {
-    background-color: hsl(0, 0%, 24%);
+    background-color: #e6e6e6;
     min-height: 300px;
 }
 
@@ -8,7 +8,7 @@
 }
 
 .footitu {
-    color: #ccc;
+    color: #1976d2;
     padding: 20px;
 }
 
@@ -37,7 +37,7 @@
     width: 100px;
     margin: 0 auto;
     border-radius: 50%;
-    border: 3px solid #fff;
+    border: 3px solid #1976d2;
 }
 
 .contenelogo .image:hover {
@@ -47,22 +47,26 @@
 }
 
 .icon-content {
-    color: #ccc;
+    color: #1976d2;
     font-size: 2em;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.icon-content:hover {
+.iconos-content {
+    color: #1976d2;
+    font-size: 100%;
+}
+
+.icons-a{
+    color: #1976d2;
+}
+
+.icons-a:hover {
     transition: transform 0.3s ease ease-in-out;
     transform: scale(1.07);
     opacity: 0.9;
-}
-
-.iconos-content {
-    color: #ccc;
-    font-size: 100%;
 }
 
 .iconos-content p {
@@ -71,11 +75,11 @@
 
 hr {
     width: 100%;
-    color: #ccc;
+    color: #1976d2;
 }
 
 .copy {
-    color: #e6e6e6;
+    color: #1976d2;
     margin-top: 17px;
 }
 
@@ -104,7 +108,7 @@ hr {
 .span5 {
     font-size: 17px;
     text-decoration: none;
-    color: #ccc;
+    color: #1976d2;
 }
 
 @media (max-width: 768px) {

@@ -119,7 +119,7 @@ export function Contactanos() {
                                 type="text"
                                 className="proyectocotizar"
                                 name="proyectocotizar"
-                                placeholder="Proyecto a Cotizar: "
+                                placeholder="Tipo de solicitud: "
                             />
                             <textarea name="textarea" rows="4.5" cols="20" placeholder="Mensaje: " />
                             <div className="btn-cont">
