@@ -1,23 +1,23 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@300&display=swap"); */
 
-.card-container{
+.card-container {
     margin: 20px;
     padding: 15px;
 }
 
-.title-card{
+.title-card {
     margin: 20px;
     display: flex;
     justify-content: center;
 }
 
-.title{
+.title {
     padding: 10px;
     font-size: 30px;
     text-align: center;
 }
 
-.cards-container{
+.cards-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -61,7 +61,7 @@
     height: 45px;
     line-height: 45px;
     color: #fff;
-    background: rgba(0,0,0,.4);
+    background: rgba(0, 0, 0, 0.4);
     text-align: center;
 }
 
@@ -96,24 +96,34 @@
 
 .card .back p {
     letter-spacing: 1px;
-} 
-
-.card.flipped .face.back {
-    transform: rotateY(0deg); /* Gira la cara de atrás hacia delante */
 }
 
-.card.flipped .face.front {
-    transform: rotateY(180deg); /* Gira la cara de delante hacia atrás */
-}
-
-
-/* .card:active  .front {
+.card:hover .front {
     transform: perspective(600px) rotateY(180deg);
 }
 
-
-.card:active  .back {
+.card:hover .back {
     transform: perspective(600px) rotateY(360deg);
-} */
+}
 
+@media (max-width: 768px) {
+    .card.flipped .face.back {
+        transform: rotateY(0deg); /* Gira la cara de atrás hacia delante */
+    }
 
+    .card.flipped .face.front {
+        transform: rotateY(180deg); /* Gira la cara de delante hacia atrás */
+    }
+
+   
+}
+
+@media screen and (max-width: 884px) {
+    .card.flipped .face.back {
+        transform: rotateY(0deg); /* Gira la cara de atrás hacia delante */
+    }
+
+    .card.flipped .face.front {
+        transform: rotateY(180deg); /* Gira la cara de delante hacia atrás */
+    }
+}
