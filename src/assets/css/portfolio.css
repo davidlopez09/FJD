@@ -88,9 +88,15 @@
     z-index: 2;
 }
 
-.card-port:hover .details {
+/* .card-port:hover .details {
     bottom: 0;
+} */
+
+.card-port.flipped .details {
+    bottom: 0; /* Gira la cara de atrás hacia delante */
 }
+
+
 
 .details h1 {
     font-weight: 700;

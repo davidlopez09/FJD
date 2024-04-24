@@ -1,23 +1,23 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@300&display=swap"); */
 
-.card-container{
+.card-container {
     margin: 20px;
     padding: 15px;
 }
 
-.title-card{
+.title-card {
     margin: 20px;
     display: flex;
     justify-content: center;
 }
 
-.title{
+.title {
     padding: 10px;
     font-size: 30px;
     text-align: center;
 }
 
-.cards-container{
+.cards-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -29,6 +29,7 @@
     width: 290px;
     height: 330px;
     margin: 20px;
+    perspective: 1000px;
 }
 
 .card .face {
@@ -38,7 +39,7 @@
     backface-visibility: hidden;
     border-radius: 10px;
     overflow: hidden;
-    transition: .9s;
+    transition: transform 0.9s;
 }
 
 .card .front {
@@ -60,7 +61,7 @@
     height: 45px;
     line-height: 45px;
     color: #fff;
-    background: rgba(0,0,0,.4);
+    background: rgba(0, 0, 0, 0.4);
     text-align: center;
 }
 
@@ -95,14 +96,21 @@
 
 .card .back p {
     letter-spacing: 1px;
-} 
+}
 
-.card:hover .front {
+.card.flipped .face.back {
+        transform: rotateY(0deg); /* Gira la cara de atrás hacia delante */
+    }
+
+    .card.flipped .face.front {
+        transform: rotateY(180deg); /* Gira la cara de delante hacia atrás */
+    }
+
+/* .card:hover .front {
     transform: perspective(600px) rotateY(180deg);
 }
 
 .card:hover .back {
     transform: perspective(600px) rotateY(360deg);
-}
-
+} */
 

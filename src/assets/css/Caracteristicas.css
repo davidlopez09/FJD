@@ -1,9 +1,3 @@
-/*estilos Caracteristicas*/
-
-/* .nuestro-servicio{
-    padding: 15px;
-} */
-
 .porque {
     text-align: center;
     width: 100%;
@@ -34,11 +28,13 @@
     width: 500px;
 }
 
-
-
 .subti {
+<<<<<<< HEAD
     padding: 20px;
     text-align: center;
+=======
+    padding: 15px;
+>>>>>>> f51262bc5fb88b877a2096e088505789a880c9b1
 }
 
 .subti .carcter {
@@ -47,6 +43,7 @@
 }
 
 .carac .li2 {
+<<<<<<< HEAD
     margin: 20px;
     font-size: 22px;
     
@@ -54,6 +51,17 @@
 
 @media (max-width: 768px) {
     .img-sub{
+=======
+    margin: 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .img-sub {
+>>>>>>> f51262bc5fb88b877a2096e088505789a880c9b1
         display: block;
     }
 
@@ -66,5 +74,33 @@
         width: 350px;
         margin: 10px;
         margin: 0 auto;
+    }
+
+    .carac .li2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 834px) {
+    .img-sub {
+        display: block;
+    }
+
+    .img_ft {
+        display: flex;
+        align-items: center;
+    }
+
+    .img_ft img {
+        width: 350px;
+        margin: 10px;
+        margin: 0 auto;
+    }
+    .carac .li2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

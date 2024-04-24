@@ -4,12 +4,16 @@
 
 .sec-perfil {
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
 }
 
 .selected .img-sec {
-    transform: scale(1.1); /* Escala aplicada a la imagen seleccionada */
+    transform: scale(1.1); 
+    filter: grayscale(0);
 }
-
 
 .container-perfil {
     margin: 20px;
@@ -34,13 +38,29 @@
 .sec-perfil.selected {
     border-radius: 50%;
     border: 3px solid #ccc;
+    width: 115px;
+    height: 115px;
+}
+
+.swiper-slide {
+    flex-shrink: 0.2 !important;
+    width: 80% !important;
+    height: 100%;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.swiper {
+    width: 60%;
+    transform: none;
 }
 
 .perfiles {
     width: 90%;
     margin: 0 auto;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
 }
 
@@ -56,7 +76,7 @@
     justify-content: center;
     align-items: center;
     margin-right: 11%;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
 .img-forma {
@@ -85,10 +105,7 @@
 .perfil-secundario {
     display: flex;
     justify-content: center;
-    width: 100%; 
-    overflow: hidden ; 
-
-    overflow-x: clip; 
+    width: 100%;
 }
 
 .icon-perfil {
@@ -124,6 +141,13 @@
         width: 80px;
         height: 80px;
     }
+
+    .sec-perfil.selected {
+        width: 90px;
+        height: 90px;
+    }
+
+    .swiper {
+        width: 100%;
+    }
 }
-
-

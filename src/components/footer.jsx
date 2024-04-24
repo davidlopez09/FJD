@@ -11,11 +11,27 @@ export function Footer() {
                             <img className="image" src={logo} alt="logo" />
                         </div>
                         <div className="icon-content">
-                            <i className="bx bxl-whatsapp"></i>
-                            <i className="bx bxl-facebook-square"></i>
-                            <i className="bx bxl-instagram"></i>
-                            <i className="bx bxl-linkedin-square"></i>
-                            <i className="bx bxl-twitter"></i>
+                            <a className="icons-a" href="#" target="_blank">
+                                <i className="bx bxl-whatsapp"></i>
+                            </a>
+                            <a
+                                className="icons-a"
+                                href="https://www.facebook.com/profile.php?id=100067433211800"
+                                target="_blank">
+                                <i className="bx bxl-facebook-square"></i>
+                            </a>
+                            <a
+                                className="icons-a"
+                                href="https://www.instagram.com/fjddesarrollodesoftware/"
+                                target="_blank">
+                                <i className="bx bxl-instagram"></i>
+                            </a>
+                            <a className="icons-a" href="#" target="_blank">
+                                <i className="bx bxl-linkedin-square"></i>
+                            </a>
+                            <a className="icons-a" href="#" target="_blank">
+                                <i className="bx bxl-twitter"></i>
+                            </a>
                         </div>
                     </div>
                     <div className="iconos-content">
@@ -24,8 +40,18 @@ export function Footer() {
                             <div className="direcc">
                                 <i className="bx bxs-map dire"></i>
                                 <div className="dir">
-                                    <span>Cr 7 W 36-30 Barrio Juan XXIII </span>
-                                    <span> Montería- Colombia</span>
+                                    <a
+                                        className="span5"
+                                        href="https://maps.app.goo.gl/YLv9vYrXy8tVF2Y67"
+                                        target="_blank">
+                                        <span>Cr 7 W 36-30 Barrio Juan XXIII </span>
+                                    </a>
+                                    <a
+                                        className=" span5"
+                                        href="https://maps.app.goo.gl/YLv9vYrXy8tVF2Y67"
+                                        target="_blank">
+                                        <span> Montería- Colombia</span>
+                                    </a>
                                 </div>
                             </div>
                             <div className="direcc">

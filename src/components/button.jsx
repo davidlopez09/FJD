@@ -6,7 +6,7 @@ export function Button() {
         <div>
             <a id="contactos" href="#contactanos" className="btn-wsp">
                 <i className="bx bxs-contact"></i>
-                <span className="span">Cotiza ahora!</span>
+                <span className="span">Contáctanos</span>
             </a>
         </div>
     );
