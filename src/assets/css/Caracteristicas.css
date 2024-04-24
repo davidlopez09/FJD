@@ -37,28 +37,22 @@
 
 
 .subti {
-    padding: 15px;
-    
+    padding: 20px;
+    text-align: center;
 }
 
 .subti .carcter {
     padding: 10px;
     text-align: center;
-    
 }
 
 .carac .li2 {
-    margin: 10px;
-    font-size: 20px;
+    margin: 20px;
+    font-size: 22px;
     
-   
 }
 
-
 @media (max-width: 768px) {
-
-@media (min-width: 768px) {
-
     .img-sub{
         display: block;
     }
@@ -73,5 +67,4 @@
         margin: 10px;
         margin: 0 auto;
     }
-}
 }
