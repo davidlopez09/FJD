@@ -54,7 +54,7 @@ export function Perfiles() {
                     )}
                     {perfilesSecundarios[perfilPrincipalIndex] && (
                         <div className="desc-perfil">
-                            <h1 className="saludo">¡Hola!</h1>
+                            <h1 className="saludo">Hola, soy</h1>
                             <h1 className="nombre">{perfilesSecundarios[perfilPrincipalIndex].nombre}</h1>
                             <p className="cargo">{perfilesSecundarios[perfilPrincipalIndex].cargo}</p>
                         </div>
