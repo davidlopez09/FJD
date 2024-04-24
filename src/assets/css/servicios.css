@@ -29,6 +29,7 @@
     width: 290px;
     height: 330px;
     margin: 20px;
+    perspective: 1000px;
 }
 
 .card .face {
@@ -38,7 +39,7 @@
     backface-visibility: hidden;
     border-radius: 10px;
     overflow: hidden;
-    transition: .9s;
+    transition: transform 0.9s;
 }
 
 .card .front {
@@ -97,12 +98,22 @@
     letter-spacing: 1px;
 } 
 
-.card:hover .front {
+.card.flipped .face.back {
+    transform: rotateY(0deg); /* Gira la cara de atrás hacia delante */
+}
+
+.card.flipped .face.front {
+    transform: rotateY(180deg); /* Gira la cara de delante hacia atrás */
+}
+
+
+/* .card:active  .front {
     transform: perspective(600px) rotateY(180deg);
 }
 
-.card:hover .back {
+
+.card:active  .back {
     transform: perspective(600px) rotateY(360deg);
-}
+} */
 
 

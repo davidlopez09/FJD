@@ -1,3 +1,4 @@
+import { useState } from "react";
 import imagen from "../assets/images/imagen.jpg";
 import imagen1 from "../assets/images/imagen1.webp";
 import imagen2 from "../assets/images/imagen2.webp";
@@ -6,11 +7,18 @@ import imagen4 from "../assets/images/imagen4.jpg";
 import "../assets/css/portfolio.css";
 
 export function Portfolio() {
+    const [flippedCards, setFlippedCards] = useState(Array(5).fill(false));
+
+    const handleCardClick = (index) => {
+        const newFlippedCards = [...flippedCards];
+        newFlippedCards[index] = !newFlippedCards[index];
+        setFlippedCards(newFlippedCards);
+    };
     return (
         <div id="portafolio" className="portfolio">
             <h1 className="title-port">Portafolio</h1>
             <div className="wrapper">
-                <div className="card-port">
+                <div className={`card-port ${flippedCards[0] ? "flipped" : ""}`} onClick={() => handleCardClick(0)}>
                     <div className="poster">
                         <img src={imagen} />
                     </div>
@@ -22,7 +30,7 @@ export function Portfolio() {
                         </p>
                     </div>
                 </div>
-                <div className="card-port">
+                <div className={`card-port ${flippedCards[1] ? "flipped" : ""}`} onClick={() => handleCardClick(1)}>
                     <div className="poster">
                         <img src={imagen1} />
                     </div>
@@ -33,7 +41,7 @@ export function Portfolio() {
                         </p>
                     </div>
                 </div>
-                <div className="card-port">
+                <div className={`card-port ${flippedCards[2] ? "flipped" : ""}`} onClick={() => handleCardClick(2)}>
                     <div className="poster">
                         <img src={imagen2} />
                     </div>
@@ -45,7 +53,7 @@ export function Portfolio() {
                         </p>
                     </div>
                 </div>
-                <div className="card-port">
+                <div className={`card-port ${flippedCards[3] ? "flipped" : ""}`} onClick={() => handleCardClick(3)}>
                     <div className="poster">
                         <img src={imagen3} />
                     </div>
@@ -57,7 +65,7 @@ export function Portfolio() {
                         </p>
                     </div>
                 </div>
-                <div className="card-port">
+                <div className={`card-port ${flippedCards[4] ? "flipped" : ""}`} onClick={() => handleCardClick(4)}>
                     <div className="poster">
                         <img src={imagen4} />
                     </div>
