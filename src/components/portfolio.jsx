@@ -17,6 +17,7 @@ export function Portfolio() {
     return (
         <div id="portafolio" className="portfolio">
             <h1 className="title-port">Portafolio</h1>
+            <center><p className="subti-porta">Nuestros ultimos proyectos.</p></center>
             <div className="wrapper">
                 <div className={`card-port ${flippedCards[0] ? "flipped" : ""}`} onClick={() => handleCardClick(0)}>
                     <div className="poster">

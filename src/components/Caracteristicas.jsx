@@ -16,7 +16,7 @@ export function Caracteristicas() {
                     <img src={imagen} alt="#" />
                 </div>
                 <div className="subti">
-                    <h2 className="carcter">Caracteristicas especiales!</h2>
+                    <h2 className="carcter">Caracteristicas especiales</h2>
                     <ul className="carac">
                         <li className="li2">Desarrollo de aplicaciones según tus requisitos</li>
                         <li className="li2">Soporte continuo y actualizaciones para garantizar</li>

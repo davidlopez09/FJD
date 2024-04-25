@@ -89,7 +89,7 @@
     
 }
 .card2 .title {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: var(--accent-color);
     text-align: center;
@@ -99,5 +99,5 @@
     padding: 1rem;
     padding-bottom: 2rem;
     font-size: 0.9em;
-    height: 220px;
+    height: 210px;
 }

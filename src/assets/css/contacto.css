@@ -7,7 +7,7 @@
 .parrafo-contacto {
     text-align: center;
     font-size: 1.4rem;
-    padding: 2%;
+    padding: 4%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -41,7 +41,7 @@ select {
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
-    margin: 20px;
+    margin: 15px;
 }
 
 input[type="texto"],
@@ -193,11 +193,11 @@ button[type="submit"] {
     }
 
     .proyectocotizar {
-        width: 94% !important;
+        width: 94% !important; 
     }
 
     .input-contact {
         display: ruby;
-        width: 90%;
+        width: 90%; 
     }
 }

@@ -123,7 +123,7 @@ export function Contactanos() {
                             />
                             <textarea name="textarea" rows="4.5" cols="20" placeholder="Mensaje: " />
                             <div className="btn-cont">
-                                <button type="button">Enviar</button>
+                                <button type="submit">Enviar</button>
                             </div>
                         </label>
                     </div>

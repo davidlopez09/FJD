@@ -23,30 +23,28 @@ export function Blogs() {
                     <div className="card-meto">
                         <img src={analisis} alt="Imagen" className="card-image" />
                         <h2 className="card-title">¿Cómo se desarrollan las aplicaciones en Colombia?</h2>
-                        <a href="https://www.comunicare.es/desarrollo-de-apps-colombia/" className="btn-blog">
-                            Saber mas
-                        </a>
+                        <a href="https://www.comunicare.es/desarrollo-de-apps-colombia/" className="btn-blog">Saber más</a>
                     </div>
                 </div>
                 <div className="card-cont">
                     <div className="card-meto">
                         <img src={analisisdedos} alt="Imagen" className="card-image" />
                         <h2 className="card-title">¿Qué necesito para desarrollar aplicaciones móviles en Colombia?</h2>
-                        <a className="btn-blog">Saber mas</a>
+                        <a href="https://es.goodbarber.com/blog/como-crear-app-android-ios-tutorial/" className="btn-blog">Saber más</a>
                     </div>
                 </div>
                 <div className="card-cont">
                     <div className="card-meto">
                         <img src={analisisdetres} alt="Imagen" className="card-image" />
                         <h2 className="card-title">¿Qué es el desarrollo de aplicaciones móviles?</h2>
-                        <a className="btn-blog">Saber mas</a>
+                        <a href="https://www.ibm.com/mx-es/topics/mobile-application-development" className="btn-blog">Saber más</a>
                     </div>
                 </div>
                 <div className="card-cont">
                     <div className="card-meto">
                         <img src={analisisdecuatro} alt="Imagen" className="card-image" />
-                        <h2 className="card-title">8 beneficios de contar con un desarrollo de software a la medida</h2>
-                        <a className="btn-blog">Saber mas</a>
+                        <h2 className="card-title">9 consejos vitales para externalizar eficazmente el desarrollo de software a medida</h2>
+                        <a href="https://distillery.com/es/blog/desarrollo-de-software-a-medida-beneficios-9-consejos-para-el-exito/" className="btn-blog">Saber más</a>
                     </div>
                 </div>
             </div>

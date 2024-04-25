@@ -33,7 +33,7 @@ export function Servicios() {
                             necesidades específicas de nuestros clientes.
                         </p>
                         <div className="link">
-                            <a href="#">Ver más</a>
+                            <a href="https://www.ibm.com/es-es/topics/software-development">Ver más</a>
                         </div>
                     </div>
                 </div>
@@ -50,7 +50,7 @@ export function Servicios() {
                             receptivas.
                         </p>
                         <div className="link">
-                            <a href="#">Ver más</a>
+                            <a href="https://appmaster.io/es/blog/desarrollo-de-aplicaciones-web">Ver más</a>
                         </div>
                     </div>
                 </div>
@@ -67,7 +67,7 @@ export function Servicios() {
                             negocio y mejorar la experiencia de tus usuarios.
                         </p>
                         <div className="link">
-                            <a href="#">Ver más</a>
+                            <a href="https://www.ibm.com/mx-es/topics/mobile-application-development">Ver más</a>
                         </div>
                     </div>
                 </div>
@@ -98,7 +98,7 @@ export function Servicios() {
                         <h3>Desarrollo de código seguro</h3>
                         <p>Nuestra especialidad es el desarrollo de código web seguro y confiable.</p>
                         <div className="link">
-                            <a href="#">Ver más</a>
+                            <a href="https://www.omatech.com/blog/2022/11/30/buenas-practicas-para-un-desarrollo-seguro/#:~:text=El%20desarrollo%20seguro%20es%20la,con%20distintos%20niveles%20de%20complejidad.">Ver más</a>
                         </div>
                     </div>
                 </div>

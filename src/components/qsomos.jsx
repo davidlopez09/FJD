@@ -19,7 +19,7 @@ export function Qsomos() {
                                 <div className="title">Misión</div>
                                 <div className="content">
                                     Forjar soluciones innovadoras de calidad, funcionalidad y brindando confianza para ser elegidos por clientes, proveedores y demás grupos de interés. <br /> <br />
-                                    Creando con el talento, profesionalismo y conocimientos integral de Ingeniería de sitemas
+                                    Creando con el talento, profesionalismo y conocimientos integral de Ingeniería de sitemas.
                                 </div>
                             </li>
                         </div>
