@@ -36,14 +36,14 @@ export function Blogs() {
                 <div className="card-cont">
                     <div className="card-meto">
                         <img src={analisisdetres} alt="Imagen" className="card-image" />
-                        <h2 className="card-title">¿Qué es el desarrollo de aplicaciones móviles?</h2>
+                        <h2 className="card-title">¿Qué es y como funciona el desarrollo de aplicaciones móviles?</h2>
                         <a href="https://www.ibm.com/mx-es/topics/mobile-application-development" className="btn-blog">Saber más</a>
                     </div>
                 </div>
                 <div className="card-cont">
                     <div className="card-meto">
                         <img src={analisisdecuatro} alt="Imagen" className="card-image" />
-                        <h2 className="card-title">9 consejos vitales para externalizar eficazmente el desarrollo de software a medida</h2>
+                        <h2 className="card-title">9 consejos vitales para el desarrollo de software a medida</h2>
                         <a href="https://distillery.com/es/blog/desarrollo-de-software-a-medida-beneficios-9-consejos-para-el-exito/" className="btn-blog">Saber más</a>
                     </div>
                 </div>
