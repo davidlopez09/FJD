@@ -71,6 +71,22 @@ export function Contactanos() {
             .catch((error) => console.error("Error al obtener ciudades:", error));
     };
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        // Aquí puedes escribir la lógica para enviar el formulario por correo electrónico
+        const formData = new FormData(e.target);
+        fetch('http://localhost:3000', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            // Aquí puedes manejar la respuesta del servidor después de enviar el formulario
+            console.log(data);
+        })
+        .catch(error => console.error('Error:', error));
+    };
+
     return (
         <div id="contactanos" className="titi-cont">
             <h1>Contáctanos</h1>
@@ -85,48 +101,50 @@ export function Contactanos() {
             </div>
             <div className="conten">
                 <label className="label">
-                    <div className="input-contact">
-                        <input type="text" name="name" placeholder="Nombre: " />
-                        <input type="email" name="email" placeholder="Email: " />
-                        <input type="tel" name="tel" placeholder="Telefono: " />
-                        <select onChange={handleCountryChange}>
-                            <option value="">País</option>
-                            {countries.map((country) => (
-                                <option key={country.country_name} value={country.country_name}>
-                                    {country.country_name}
-                                </option>
-                            ))}
-                        </select>
-                        <select onChange={handleStateChange}>
-                            <option value="">Departamento</option>
-                            {states.map((state) => (
-                                <option key={state.state_name} value={state.state_name}>
-                                    {state.state_name}
-                                </option>
-                            ))}
-                        </select>
-                        <select>
-                            <option value="">Ciudad</option>
-                            {cities.map((city) => (
-                                <option key={city.city_name} value={city.city_name}>
-                                    {city.city_name}
-                                </option>
-                            ))}
-                        </select>
-                        <label className="label2">
-                            <input type="text" name="empresa" placeholder="Empresa: " />
-                            <input
-                                type="text"
-                                className="proyectocotizar"
-                                name="proyectocotizar"
-                                placeholder="Tipo de solicitud: "
-                            />
-                            <textarea name="textarea" rows="4.5" cols="20" placeholder="Mensaje: " />
-                            <div className="btn-cont">
-                                <button type="submit">Enviar</button>
-                            </div>
-                        </label>
-                    </div>
+                    <form onSubmit={handleSubmit}>
+                        <div className="input-contact">
+                            <input type="text" name="name" placeholder="Nombre: " />
+                            <input type="email" name="email" placeholder="Email: " />
+                            <input type="tel" name="tel" placeholder="Telefono: " />
+                            <select onChange={handleCountryChange}>
+                                <option value="">País:</option>
+                                {countries.map((country) => (
+                                    <option key={country.country_name} value={country.country_name}>
+                                        {country.country_name}
+                                    </option>
+                                ))}
+                            </select>
+                            <select onChange={handleStateChange}>
+                                <option value="">Departamento:</option>
+                                {states.map((state) => (
+                                    <option key={state.state_name} value={state.state_name}>
+                                        {state.state_name}
+                                    </option>
+                                ))}
+                            </select>
+                            <select>
+                                <option value="">Ciudad:</option>
+                                {cities.map((city) => (
+                                    <option key={city.city_name} value={city.city_name}>
+                                        {city.city_name}
+                                    </option>
+                                ))}
+                            </select>
+                            <label className="label2">
+                                <input type="text" name="empresa" placeholder="Empresa: " />
+                                <input
+                                    type="text"
+                                    className="proyectocotizar"
+                                    name="proyectocotizar"
+                                    placeholder="Tipo de solicitud: "
+                                />
+                                <textarea name="textarea" rows="4.5" cols="20" placeholder="Mensaje: " />
+                                <div className="btn-cont">
+                                    <button type="submit">Enviar</button>
+                                </div>
+                            </label>
+                        </div>
+                    </form>
                 </label>
             </div>
         </div>

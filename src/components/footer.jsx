@@ -76,7 +76,7 @@ export function Footer() {
                 </div>
                 <div className="copy">
                     <hr />
-                    <p className="parrafo-copy">&copy; 2024 Todos los derechos reservados</p>
+                    <p className="parrafo-copy">&copy; 2024 Todos los derchos reservados.</p>
                 </div>
             </div>
         </footer>

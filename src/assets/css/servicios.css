@@ -23,6 +23,7 @@
     flex-wrap: wrap;
     justify-content: center;
     row-gap: 2rem;
+    
 }
 
 .card {
@@ -85,7 +86,7 @@
 }
 
 .card .back .link a {
-    color: #f3f3f3;
+    color: #ffffff;
     text-decoration: none;
 }
 

@@ -36,12 +36,12 @@ input[type="tel"],
 textarea,
 select {
     width: 350px;
-    padding: 10px;
-    font-size: 16px;
+    padding: 15px;
+    font-size: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
-    margin: 15px;
+    margin: 20px;
 }
 
 input[type="texto"],
