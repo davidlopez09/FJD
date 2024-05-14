@@ -94,7 +94,8 @@ header {
     padding: 0.3rem 1rem;
     color: #1976d2;
     text-decoration: none;
-    font-size: 1.05rem;
+    font-size: 1.09rem;
+    font-weight: 500;
     letter-spacing: 0.7px;
     transition: 0.3s;
 }
