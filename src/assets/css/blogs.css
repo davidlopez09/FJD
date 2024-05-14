@@ -6,13 +6,23 @@
     text-align: center;
 }
 
+.img-blogs {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .blog-noticias {
     width: 40%;
+    display: flex;
+    flex-direction: column;
 }
 
 .titublogs {
     margin: 15px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+        sans-serif;
 }
 
 .subtiblogs {
@@ -20,7 +30,8 @@
     line-height: 1.5;
     text-align: center;
     padding: 10px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+        sans-serif;
 }
 
 .btn-blog {
@@ -35,7 +46,7 @@
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 .btn-blog:hover {

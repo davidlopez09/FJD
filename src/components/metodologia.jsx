@@ -1,9 +1,9 @@
 import { useState } from "react";
 import "../assets/css/metodologia.css";
-import analisisrequerimiento from "../assets/images/analisisrequerimiento.jpg";
-import planificacionproyectos from "../assets/images/planificacionproyectos.webp";
-import desarrolloproyectos from "../assets/images/desarrolloproyectos.webp";
-import testing from "../assets/images/testing.webp";
+import analisisrequerimiento from "../assets/images/analisisrequerimiento.png";
+import planificacionproyectos from "../assets/images/planificacionproyectos.png";
+import desarrolloproyectos from "../assets/images/desarrolloproyectos.png";
+import testing from "../assets/images/testing.png";
 
 // Array de objetos con la información de cada proyecto
 const proyectos = [
