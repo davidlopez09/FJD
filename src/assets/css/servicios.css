@@ -9,7 +9,8 @@
     margin: 20px;
     display: flex;
     justify-content: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+        sans-serif;
 }
 
 .title {
@@ -23,7 +24,6 @@
     flex-wrap: wrap;
     justify-content: center;
     row-gap: 2rem;
-    
 }
 
 .card {
@@ -42,6 +42,12 @@
     border-radius: 10px;
     overflow: hidden;
     transition: transform 0.9s;
+}
+
+.face .texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card .front {
@@ -101,12 +107,12 @@
 }
 
 .card.flipped .face.back {
-        transform: rotateY(0deg); /* Gira la cara de atrás hacia delante */
-    }
+    transform: rotateY(0deg); /* Gira la cara de atrás hacia delante */
+}
 
-    .card.flipped .face.front {
-        transform: rotateY(180deg); /* Gira la cara de delante hacia atrás */
-    }
+.card.flipped .face.front {
+    transform: rotateY(180deg); /* Gira la cara de delante hacia atrás */
+}
 
 /* .card:hover .front {
     transform: perspective(600px) rotateY(180deg);
@@ -115,4 +121,5 @@
 .card:hover .back {
     transform: perspective(600px) rotateY(360deg);
 } */
+
 
