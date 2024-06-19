@@ -30,6 +30,7 @@ export function Header() {
                     </div>
                     <div className={`Cabecera-nav ${menu ? "isActive" : ""}`}>
                         <nav className="navbar">
+                            
                             <ul className="Cabecera-ul">
                                 <li className="Cabecera-li">
                                     <a href="#home" className="nav-link" onClick={handleMenuClick}>

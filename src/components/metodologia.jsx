@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "../assets/css/metodologia.css";
-import analisisrequerimiento from "../assets/images/analisisrequerimiento.png";
+import analisisrequerimiento from "../assets/images/analisisrequerimiento.webp";
 import planificacionproyectos from "../assets/images/planificacionproyectos.png";
 import desarrolloproyectos from "../assets/images/desarrolloproyectos.png";
 import testing from "../assets/images/testing.png";

@@ -122,4 +122,20 @@
     transform: perspective(600px) rotateY(360deg);
 } */
 
+/* Estilos para pantallas mayores a 768px (web) */
+@media (min-width: 768px) {
+    .card:hover .front {
+        transform: perspective(600px) rotateY(180deg);
+    }
 
+    .card:hover .back {
+        transform: perspective(600px) rotateY(360deg);
+    }
+}
+
+/* Estilos para pantallas menores a 768px (móvil) */
+@media (max-width: 768px) {
+    .card {
+        transform: rotateY(0deg);
+    }
+}
