@@ -1,5 +1,5 @@
 import { useState } from "react";
-import imagen from "../assets/images/imagen.jpg";
+import imagen from "../assets/images/alumbradoPublico.jpeg";
 import imagen1 from "../assets/images/imagen1.webp";
 import imagen2 from "../assets/images/imagen2.webp";
 import imagen3 from "../assets/images/imagen3.webp";
@@ -17,18 +17,20 @@ export function Portfolio() {
     return (
         <div id="portafolio" className="portfolio">
             <h1 className="title-port">Portafolio</h1>
-            <center><p className="subti-porta">Nuestros ultimos proyectos.</p></center>
+            <center>
+                <p className="subti-porta">Nuestros ultimos proyectos.</p>
+            </center>
             <div className="wrapper">
                 <div className={`card-port ${flippedCards[0] ? "flipped" : ""}`} onClick={() => handleCardClick(0)}>
                     <div className="poster">
                         <img src={imagen} />
                     </div>
                     <div className="details">
-                        <h1>Location Unknown</h1>
-                        <p className="desc">
+                        <h1>Alumbrado Público</h1>
+                        {/* <p className="desc">
                             Marco, a disillusioned backpacker in his late 20s, embarks on a solitary journey in search
                             for meaning.
-                        </p>
+                        </p> */}
                     </div>
                 </div>
                 <div className={`card-port ${flippedCards[1] ? "flipped" : ""}`} onClick={() => handleCardClick(1)}>

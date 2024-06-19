@@ -99,6 +99,8 @@
     margin-bottom: 5px;
 }
 
+
+
 /* Estilos para pantallas mayores a 768px (web) */
 @media (min-width: 768px) {
     .card-port:hover .poster img {
