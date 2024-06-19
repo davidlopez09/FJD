@@ -99,3 +99,26 @@
     margin-bottom: 5px;
 }
 
+/* Estilos para pantallas mayores a 768px (web) */
+@media (min-width: 768px) {
+    .card-port:hover .poster img {
+        transform: scale(1.1);
+    }
+    
+    .card-port:hover .details {
+        bottom: 0;
+    }
+}
+
+/* Estilos para pantallas menores a 768px (móvil) */
+@media (max-width: 768px) {
+    .card-port {
+        transform: rotateY(0deg);
+    }
+
+    
+
+    .card-port.flipped .details {
+        transform: rotateY(0deg);
+    }
+}
