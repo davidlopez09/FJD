@@ -8,7 +8,7 @@
 }
 
 .footitu {
-    color: #1976d2;
+    color: #417BBD;
     padding: 20px;
 }
 
@@ -44,7 +44,7 @@
 
 .icon-content {
     width: 82%;
-    color: #1976d2;
+    color: #417BBD;
     font-size: 2.5em;
     display: flex;
     align-items: center;
@@ -53,12 +53,12 @@
 }
 
 .iconos-content {
-    color: #1976d2;
+    color: #417BBD;
     font-size: 100%;
 }
 
 .icons-a {
-    color: #1976d2;
+    color: #417BBD;
 }
 
 .icons-a:hover {
@@ -73,11 +73,11 @@
 
 hr {
     width: 100%;
-    color: #1976d2;
+    color: #417BBD;
 }
 
 .copy {
-    color: #1976d2;
+    color: #417BBD;
     margin-top: 17px;
 }
 
@@ -106,7 +106,7 @@ hr {
 .span5 {
     font-size: 17px;
     text-decoration: none;
-    color: #1976d2;
+    color: #417BBD;
 }
 
 @media (max-width: 768px) {

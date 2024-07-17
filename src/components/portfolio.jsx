@@ -1,6 +1,6 @@
 import { useState } from "react";
 import imagen from "../assets/images/alumbrado.jpeg";
-import imagen1 from "../assets/images/espiral2.jpeg";
+import imagen1 from "../assets/images/Espiral3.png";
 import imagen2 from "../assets/images/censoarboreo.jpeg";
 import imagen3 from "../assets/images/perdidas.png";
 import "../assets/css/portfolio.css";

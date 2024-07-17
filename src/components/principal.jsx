@@ -1,5 +1,5 @@
 // import inicio from "../assets/videos/home.mp4"; 
-import Monteria from "../assets/images/monteria.png";
+import Monteria from "../assets/images/monteria.webp";
 import "../assets/css/video.css";
 
 

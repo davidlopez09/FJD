@@ -1,12 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400&display=swap");
 
-:root {
-    /* --primary-color: #f9532d; */
-    /* --dark: #fff;  */
-    --primary-color: #52489c;
-    --primary-dark: #1f252e;
-}
+
 
 * {
     margin: 0;
@@ -91,7 +86,7 @@ header {
 .Cabecera-li a {
     display: inline-block;
     padding: 0.3rem 1rem;
-    color: #1976d2;
+    color: #417BBD;
     text-decoration: none;
     font-size: 1.09rem;
     font-weight: 500;
