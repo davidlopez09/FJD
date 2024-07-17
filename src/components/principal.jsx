@@ -1,6 +1,6 @@
-// import inicio from "../assets/videos/home.mp4"; 
+
 import Monteria from "../assets/images/monteria.webp";
-import "../assets/css/video.css";
+import "../assets/css/Principal.css";
 
 
 export function Principal() {
@@ -8,7 +8,6 @@ export function Principal() {
         <div id="home" className="bgContainer">
             <div className="overPlay">
                 <img className="img" src={Monteria} alt="" />
-                {/* <video src={inicio} autoPlay loop muted /> */}
                 <div className="descripcion">
                     <h2 className="emp">EMPRESA DE DESARROLLO DE SOFTWARE</h2>
                     <h1 className="descrip">
