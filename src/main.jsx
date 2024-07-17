@@ -8,7 +8,7 @@ import {Qsomos } from "./components/qsomos.jsx";
 import {Caracteristicas } from "./components/Caracteristicas.jsx";
 import {Portfolio } from "./components/portfolio.jsx";
 import { Metodologia } from "./components/metodologia.jsx";
-import { Perfiles } from "./components/perfiles.jsx";
+// import { Perfiles } from "./components/perfiles.jsx";
 import { Blogs } from "./components/blog.jsx";
 import { Contactanos } from "./components/contacto.jsx";
 import { Footer } from "./components/footer.jsx";
@@ -22,7 +22,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Portfolio />
         <Metodologia />
         <Qsomos />
-        <Perfiles />
+        {/* <Perfiles /> */}
         <Blogs />
         <Contactanos />
         <Button />

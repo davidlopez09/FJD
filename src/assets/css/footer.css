@@ -32,11 +32,8 @@
 
 .contenelogo .image {
     display: flex;
-    height: 100px;
-    width: 100px;
+    height: 120px;
     margin: 0 auto;
-    border-radius: 50%;
-    border: 3px solid #1976d2;
 }
 
 .contenelogo .image:hover {

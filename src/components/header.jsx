@@ -1,5 +1,6 @@
 import { useState } from "react";
-import logofjd from "../assets/images/logofjd.png";
+// import logofjd from "../assets/images/logofjd.png";
+import Logo from "../assets/images/logo.png";
 import "../assets/css/header.css";
 
 export function Header() {
@@ -20,7 +21,7 @@ export function Header() {
                 <div className="page-header">
                     <div className="logo">
                         <a href="index.html">
-                            <img src={logofjd} alt="Logo FJD" />
+                            <img src={Logo} alt="Logo FJD" />
                         </a>
                     </div>
                     <div className={`icon nav-icon-5 ${menu ? "open" : ""}`} onClick={toggleMenu}>
@@ -30,7 +31,6 @@ export function Header() {
                     </div>
                     <div className={`Cabecera-nav ${menu ? "isActive" : ""}`}>
                         <nav className="navbar">
-                            
                             <ul className="Cabecera-ul">
                                 <li className="Cabecera-li">
                                     <a href="#home" className="nav-link" onClick={handleMenuClick}>

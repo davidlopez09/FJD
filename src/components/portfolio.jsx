@@ -1,9 +1,8 @@
 import { useState } from "react";
-import imagen from "../assets/images/alumbradoPublico.jpeg";
-import imagen1 from "../assets/images/imagen1.webp";
-import imagen2 from "../assets/images/imagen2.webp";
-import imagen3 from "../assets/images/imagen3.webp";
-import imagen4 from "../assets/images/imagen4.jpg";
+import imagen from "../assets/images/alumbrado.jpeg";
+import imagen1 from "../assets/images/espiral2.jpeg";
+import imagen2 from "../assets/images/censoarboreo.jpeg";
+import imagen3 from "../assets/images/perdidas.png";
 import "../assets/css/portfolio.css";
 
 export function Portfolio() {
@@ -23,14 +22,13 @@ export function Portfolio() {
             <div className="wrapper">
                 <div className={`card-port ${flippedCards[0] ? "flipped" : ""}`} onClick={() => handleCardClick(0)}>
                     <div className="poster">
-                        <img src={imagen} />
+                        <img className="alumbrado" src={imagen} />
                     </div>
                     <div className="details">
                         <h1>Alumbrado Público</h1>
-                        {/* <p className="desc">
-                            Marco, a disillusioned backpacker in his late 20s, embarks on a solitary journey in search
-                            for meaning.
-                        </p> */}
+                        <p className="desc">
+                            Marco, a disillusioned backpacker in his late 20s
+                        </p>
                     </div>
                 </div>
                 <div className={`card-port ${flippedCards[1] ? "flipped" : ""}`} onClick={() => handleCardClick(1)}>
@@ -38,7 +36,7 @@ export function Portfolio() {
                         <img src={imagen1} />
                     </div>
                     <div className="details">
-                        <h1>Air</h1>
+                        <h1>Espiral</h1>
                         <p className="desc">
                             Lily, the travel writer, and Nathan, the book editor, goes on a plane together to the alps.
                         </p>
@@ -49,10 +47,9 @@ export function Portfolio() {
                         <img src={imagen2} />
                     </div>
                     <div className="details">
-                        <h1>End Credits</h1>
+                        <h1>Censo arboreo</h1>
                         <p className="desc">
-                            Alex and his best friend goes on a road trip whilst experiencing friendship, self-discovery,
-                            and the bittersweet transition to adulthood.
+                            Alex and his best friend goes on a road trip whilst experiencing friendship.
                         </p>
                     </div>
                 </div>
@@ -61,22 +58,9 @@ export function Portfolio() {
                         <img src={imagen3} />
                     </div>
                     <div className="details">
-                        <h1>End Credits</h1>
+                        <h1>Perdidas</h1>
                         <p className="desc">
-                            Alex and his best friend goes on a road trip whilst experiencing friendship, self-discovery,
-                            and the bittersweet transition to adulthood.
-                        </p>
-                    </div>
-                </div>
-                <div className={`card-port ${flippedCards[4] ? "flipped" : ""}`} onClick={() => handleCardClick(4)}>
-                    <div className="poster">
-                        <img src={imagen4} />
-                    </div>
-                    <div className="details">
-                        <h1>End Credits</h1>
-                        <p className="desc">
-                            Alex and his best friend goes on a road trip whilst experiencing friendship, self-discovery,
-                            and the bittersweet transition to adulthood.
+                            Alex and his best friend goes on a road trip whilst experiencing friendship.
                         </p>
                     </div>
                 </div>

@@ -1,4 +1,5 @@
-import inicio from "../assets/videos/home.mp4"; 
+// import inicio from "../assets/videos/home.mp4"; 
+import Monteria from "../assets/images/monteria.png";
 import "../assets/css/video.css";
 
 
@@ -6,7 +7,8 @@ export function Principal() {
     return (
         <div id="home" className="bgContainer">
             <div className="overPlay">
-                <video src={inicio} autoPlay loop muted />
+                <img className="img" src={Monteria} alt="" />
+                {/* <video src={inicio} autoPlay loop muted /> */}
                 <div className="descripcion">
                     <h2 className="emp">EMPRESA DE DESARROLLO DE SOFTWARE</h2>
                     <h1 className="descrip">

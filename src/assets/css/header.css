@@ -71,10 +71,9 @@ header {
 }
 
 .logo a img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 3px solid #1976d2;
+    position: absolute;
+    width: 60px;
+    margin-top: -30px;
 }
 
 .logo a:hover {
@@ -450,7 +449,7 @@ header {
         transition: all 0.5s ease;
         position: absolute;
         display: block;
-        top: 80%;
+        top: 95%;
         right: 0;
         background-color: #e6e6e6;
     }
