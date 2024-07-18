@@ -104,6 +104,10 @@
     margin-bottom: 5px;
 }
 
+.desc{
+    font-size: 0.9em;
+}
+
 
 
 /* Estilos para pantallas mayores a 768px (web) */

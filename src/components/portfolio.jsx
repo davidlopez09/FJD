@@ -27,7 +27,7 @@ export function Portfolio() {
                     <div className="details">
                         <h1>Alumbrado Público</h1>
                         <p className="desc">
-                            Marco, a disillusioned backpacker in his late 20s
+                            Sistema de Información para Administración y control Operativo de Alumbrados Públicos.
                         </p>
                     </div>
                 </div>
@@ -38,7 +38,7 @@ export function Portfolio() {
                     <div className="details">
                         <h1>Espiral</h1>
                         <p className="desc">
-                            Lily, the travel writer, and Nathan, the book editor, goes on a plane together to the alps.
+                            Aplicativo para Distribuidoras de ventas a través de dispositivos móviles.
                         </p>
                     </div>
                 </div>
@@ -47,9 +47,9 @@ export function Portfolio() {
                         <img src={imagen2} />
                     </div>
                     <div className="details">
-                        <h1>Censo arboreo</h1>
+                        <h1>Censo Arbóreo</h1>
                         <p className="desc">
-                            Alex and his best friend goes on a road trip whilst experiencing friendship.
+                            Geolocalización y seguimiento de especies de arboles con todas sus características.
                         </p>
                     </div>
                 </div>
@@ -58,10 +58,8 @@ export function Portfolio() {
                         <img src={imagen3} />
                     </div>
                     <div className="details">
-                        <h1>Perdidas</h1>
-                        <p className="desc">
-                            Alex and his best friend goes on a road trip whilst experiencing friendship.
-                        </p>
+                        <h1>Pérdidas de Energía</h1>
+                        <p className="desc">Control operativo y comercial de clientes.</p>
                     </div>
                 </div>
             </div>
