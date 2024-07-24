@@ -143,8 +143,8 @@ export function Contactanos() {
                 <label className="label">
                     <form onSubmit={handleSubmit}>
                         <div className="input-contact">
-                            <input type="text" name="from_name" placeholder="Nombre: " />
-                            <input type="email" name="reply_to" placeholder="Email: " />
+                            <input type="text" name="name" placeholder="Nombre: " />
+                            <input type="email" name="email" placeholder="Email: " />
                             <input type="tel" name="tel" placeholder="Telefono: " />
                             <select name="country" onChange={handleCountryChange}>
                                 <option value="">País:</option>
