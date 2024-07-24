@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 import "../assets/css/contacto.css";
+import Swal from "sweetalert2";
 
 export function Contactanos() {
     const [countries, setCountries] = useState([]);
@@ -78,7 +79,12 @@ export function Contactanos() {
         emailjs.sendForm("service_o2dookt", "template_h52zqce", e.target, "1QvvX7cuRjnzmult9").then(
             (result) => {
                 console.log(result.text);
-                alert("Mensaje enviado exitosamente");
+                Swal.fire({
+                    title: "Buen trabajo!",
+                    text: "Mensaje enviado exitosamente",
+                    icon: "success",
+                });
+                // alert("Mensaje enviado exitosamente");
             },
             (error) => {
                 console.log(error.text);
