@@ -178,7 +178,7 @@ export function Contactanos() {
                                     name="proyectocotizar"
                                     placeholder="Tipo de solicitud: "
                                 />
-                                <textarea name="message" rows="4.5" cols="20" placeholder="Mensaje: " />
+                                <textarea name="mensaje" rows="4.5" cols="20" placeholder="Mensaje: " />
                                 <div className="btn-cont">
                                     <button type="submit">Enviar</button>
                                 </div>
