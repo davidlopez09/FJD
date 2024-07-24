@@ -77,26 +77,26 @@ export function Contactanos() {
         e.preventDefault();
 
         const form = e.target;
-        const from_name = form.from_name.value.trim();
-        const reply_to = form.reply_to.value.trim();
+        const name = form.name.value.trim();
+        const email = form.email.value.trim();
         const tel = form.tel.value.trim();
         const country = form.country.value.trim();
         const state = form.state.value.trim();
         const city = form.city.value.trim();
         const empresa = form.empresa.value.trim();
         const proyectocotizar = form.proyectocotizar.value.trim();
-        const message = form.message.value.trim();
+        const mensaje = form.mensaje.value.trim();
 
         if (
-            !from_name ||
-            !reply_to ||
+            !name ||
+            !email ||
             !tel ||
             !country ||
             !state ||
             !city ||
             !empresa ||
             !proyectocotizar ||
-            !message
+            !mensaje
         ) {
             Swal.fire({
                 title: "Error",
