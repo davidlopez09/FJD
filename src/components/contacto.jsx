@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
-import "../assets/css/contacto.css";
 import Swal from "sweetalert2";
+import "../assets/css/contacto.css";
 
 export function Contactanos() {
     const [countries, setCountries] = useState([]);
@@ -76,15 +76,45 @@ export function Contactanos() {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm("service_o2dookt", "template_h52zqce", e.target, "1QvvX7cuRjnzmult9").then(
+        const form = e.target;
+        const from_name = form.from_name.value.trim();
+        const reply_to = form.reply_to.value.trim();
+        const tel = form.tel.value.trim();
+        const country = form.country.value.trim();
+        const state = form.state.value.trim();
+        const city = form.city.value.trim();
+        const empresa = form.empresa.value.trim();
+        const proyectocotizar = form.proyectocotizar.value.trim();
+        const message = form.message.value.trim();
+
+        if (
+            !from_name ||
+            !reply_to ||
+            !tel ||
+            !country ||
+            !state ||
+            !city ||
+            !empresa ||
+            !proyectocotizar ||
+            !message
+        ) {
+            Swal.fire({
+                title: "Error",
+                text: "Por favor, complete todos los campos antes de enviar.",
+                icon: "error",
+            });
+            return;
+        }
+
+        emailjs.sendForm("service_o2dookt", "template_h52zqce", form, "1QvvX7cuRjnzmult9").then(
             (result) => {
                 console.log(result.text);
                 Swal.fire({
-                    title: "Buen trabajo!",
+                    title: "Envio exitoso!",
                     text: "Mensaje enviado exitosamente",
                     icon: "success",
                 });
-                // alert("Mensaje enviado exitosamente");
+                form.reset(); // Resetear el formulario después de enviarlo
             },
             (error) => {
                 console.log(error.text);
@@ -93,11 +123,8 @@ export function Contactanos() {
                     text: "Hubo un error al enviar el mensaje, intenta nuevamente",
                     icon: "error",
                 });
-                // alert("Hubo un error al enviar el mensaje, intenta nuevamente");
             }
         );
-
-        e.target.reset(); // Resetear el formulario después de enviarlo
     };
 
     return (
@@ -116,8 +143,8 @@ export function Contactanos() {
                 <label className="label">
                     <form onSubmit={handleSubmit}>
                         <div className="input-contact">
-                            <input type="text" name="name" placeholder="Nombre: " />
-                            <input type="email" name="email" placeholder="Email: " />
+                            <input type="text" name="from_name" placeholder="Nombre: " />
+                            <input type="email" name="reply_to" placeholder="Email: " />
                             <input type="tel" name="tel" placeholder="Telefono: " />
                             <select name="country" onChange={handleCountryChange}>
                                 <option value="">País:</option>
@@ -151,7 +178,7 @@ export function Contactanos() {
                                     name="proyectocotizar"
                                     placeholder="Tipo de solicitud: "
                                 />
-                                <textarea name="mensaje" rows="4.5" cols="20" placeholder="Mensaje: " />
+                                <textarea name="message" rows="4.5" cols="20" placeholder="Mensaje: " />
                                 <div className="btn-cont">
                                     <button type="submit">Enviar</button>
                                 </div>
