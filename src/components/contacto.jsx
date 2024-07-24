@@ -75,7 +75,7 @@ export function Contactanos() {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm("service_iqvvjga", "template_b6d59we", e.target, "de7OSfxl-J7IdJyEV").then(
+        emailjs.sendForm("service_o2dookt", "template_h52zqce", e.target, "1QvvX7cuRjnzmult9").then(
             (result) => {
                 console.log(result.text);
                 alert("Mensaje enviado exitosamente");
