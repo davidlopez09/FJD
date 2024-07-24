@@ -21,7 +21,10 @@ export function Blogs() {
                     <div className="card-meto">
                         <img src={analisis} alt="Imagen" className="card-image" />
                         <h2 className="card-title">¿Cómo se desarrollan las aplicaciones en Colombia?</h2>
-                        <a href="https://www.comunicare.es/desarrollo-de-apps-colombia/" className="btn-blog">
+                        <a
+                            href="https://www.comunicare.es/desarrollo-de-apps-colombia/"
+                            className="btn-blog"
+                            target="_blank">
                             Saber más
                         </a>
                     </div>
@@ -32,7 +35,8 @@ export function Blogs() {
                         <h2 className="card-title">¿Qué necesito para desarrollar aplicaciones móviles en Colombia?</h2>
                         <a
                             href="https://es.goodbarber.com/blog/como-crear-app-android-ios-tutorial/"
-                            className="btn-blog">
+                            className="btn-blog"
+                            target="_blank">
                             Saber más
                         </a>
                     </div>
@@ -41,7 +45,10 @@ export function Blogs() {
                     <div className="card-meto">
                         <img src={analisisdetres} alt="Imagen" className="card-image" />
                         <h2 className="card-title">¿Qué es y como funciona el desarrollo de aplicaciones móviles?</h2>
-                        <a href="https://www.ibm.com/mx-es/topics/mobile-application-development" className="btn-blog">
+                        <a
+                            href="https://www.ibm.com/mx-es/topics/mobile-application-development"
+                            className="btn-blog"
+                            target="_blank">
                             Saber más
                         </a>
                     </div>
@@ -52,7 +59,8 @@ export function Blogs() {
                         <h2 className="card-title">9 consejos vitales para el desarrollo de software a medida</h2>
                         <a
                             href="https://distillery.com/es/blog/desarrollo-de-software-a-medida-beneficios-9-consejos-para-el-exito/"
-                            className="btn-blog">
+                            className="btn-blog"
+                            target="_blank">
                             Saber más
                         </a>
                     </div>

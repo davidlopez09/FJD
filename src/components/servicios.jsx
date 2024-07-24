@@ -1,9 +1,10 @@
 import { useState } from "react";
 import imagen from "../assets/images/imagen.png";
 import imagen1 from "../assets/images/imagen1.png";
-import imagen2 from "../assets/images/imagene2.png";
-import imagen3 from "../assets/images/imagen3.png";
-import imagen4 from "../assets/images/imagen4.png";
+import imagen2 from "../assets/images/movil.png";
+import imagen3 from "../assets/images/imagen32.png";
+import imagen4 from "../assets/images/imagen42.jpeg";
+import Soporte from "../assets/images/soporte.jpeg";
 import "../assets/css/servicios.css";
 
 export function Servicios() {
@@ -23,7 +24,7 @@ export function Servicios() {
             <div className="cards-container">
                 <div className={`card ${flippedCards[0] ? "flipped" : ""}`} onClick={() => handleCardClick(0)}>
                     <div className="face front">
-                        <img src={imagen} alt="imagen" />
+                        <img src={imagen} alt="imagen"  />
                         <h3 className="texto">Desarrollo de software</h3>
                     </div>
                     <div className="face back">
@@ -83,12 +84,25 @@ export function Servicios() {
 
                 <div className={`card ${flippedCards[4] ? "flipped" : ""}`} onClick={() => handleCardClick(4)}>
                     <div className="face front">
-                        <img src={imagen4} alt="imagen4"/>
+                        <img src={imagen4} alt="imagen4" />
                         <h3 className="texto">Desarrollo de código seguro</h3>
                     </div>
                     <div className="face back">
                         <h3>Desarrollo de código seguro</h3>
                         <p>Nuestra especialidad es el desarrollo de código web seguro y confiable.</p>
+                        <div></div>
+                    </div>
+                </div>
+
+                <div className={`card ${flippedCards[4] ? "flipped" : ""}`} onClick={() => handleCardClick(4)}>
+                    <div className="face front">
+                        <img src={Soporte} alt="imagen4" />
+                        <h3 className="texto">Soporte</h3>
+                    </div>
+                    <div className="face back">
+                        <h3>Soporte</h3>
+                        <p>Nuestra especialidad es el desarrollo de código web seguro y confiable.</p>
+                        <div></div>
                         <div></div>
                     </div>
                 </div>

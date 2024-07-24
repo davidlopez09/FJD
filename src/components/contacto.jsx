@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import emailjs from "emailjs-com";
 import "../assets/css/contacto.css";
 
 export function Contactanos() {
@@ -73,18 +74,19 @@ export function Contactanos() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Aquí puedes escribir la lógica para enviar el formulario por correo electrónico
-        const formData = new FormData(e.target);
-        fetch('http://localhost:3000', {
-            method: 'POST',
-            body: formData
-        })
-        .then(response => response.json())
-        .then(data => {
-            // Aquí puedes manejar la respuesta del servidor después de enviar el formulario
-            console.log(data);
-        })
-        .catch(error => console.error('Error:', error));
+
+        emailjs.sendForm("service_iqvvjga", "template_b6d59we", e.target, "de7OSfxl-J7IdJyEV").then(
+            (result) => {
+                console.log(result.text);
+                alert("Mensaje enviado exitosamente");
+            },
+            (error) => {
+                console.log(error.text);
+                alert("Hubo un error al enviar el mensaje, intenta nuevamente");
+            }
+        );
+
+        e.target.reset(); // Resetear el formulario después de enviarlo
     };
 
     return (
@@ -106,7 +108,7 @@ export function Contactanos() {
                             <input type="text" name="name" placeholder="Nombre: " />
                             <input type="email" name="email" placeholder="Email: " />
                             <input type="tel" name="tel" placeholder="Telefono: " />
-                            <select onChange={handleCountryChange}>
+                            <select name="country" onChange={handleCountryChange}>
                                 <option value="">País:</option>
                                 {countries.map((country) => (
                                     <option key={country.country_name} value={country.country_name}>
@@ -114,7 +116,7 @@ export function Contactanos() {
                                     </option>
                                 ))}
                             </select>
-                            <select onChange={handleStateChange}>
+                            <select name="state" onChange={handleStateChange}>
                                 <option value="">Departamento:</option>
                                 {states.map((state) => (
                                     <option key={state.state_name} value={state.state_name}>
@@ -122,7 +124,7 @@ export function Contactanos() {
                                     </option>
                                 ))}
                             </select>
-                            <select>
+                            <select name="city">
                                 <option value="">Ciudad:</option>
                                 {cities.map((city) => (
                                     <option key={city.city_name} value={city.city_name}>
@@ -138,7 +140,7 @@ export function Contactanos() {
                                     name="proyectocotizar"
                                     placeholder="Tipo de solicitud: "
                                 />
-                                <textarea name="textarea" rows="4.5" cols="20" placeholder="Mensaje: " />
+                                <textarea name="mensaje" rows="4.5" cols="20" placeholder="Mensaje: " />
                                 <div className="btn-cont">
                                     <button type="submit">Enviar</button>
                                 </div>
