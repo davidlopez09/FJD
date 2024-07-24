@@ -88,7 +88,12 @@ export function Contactanos() {
             },
             (error) => {
                 console.log(error.text);
-                alert("Hubo un error al enviar el mensaje, intenta nuevamente");
+                Swal.fire({
+                    title: "Error",
+                    text: "Hubo un error al enviar el mensaje, intenta nuevamente",
+                    icon: "error",
+                });
+                // alert("Hubo un error al enviar el mensaje, intenta nuevamente");
             }
         );
 
