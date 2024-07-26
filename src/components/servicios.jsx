@@ -1,10 +1,10 @@
 import { useState } from "react";
-import imagen from "../assets/images/imagen.png";
-import imagen1 from "../assets/images/imagen1.png";
+import imagen from "./Svg/Software.svg";
+import imagen1 from "./Svg/Web.svg";
 import imagen2 from "../assets/images/movil.png";
-import imagen3 from "../assets/images/imagen32.png";
+import imagen3 from "./Svg/Api.svg";
 import imagen4 from "../assets/images/imagen42.jpeg";
-import Soporte from "../assets/images/soporte.jpeg";
+import Soporte from "./Svg/soporte.svg";
 import "../assets/css/servicios.css";
 
 export function Servicios() {
@@ -15,7 +15,6 @@ export function Servicios() {
         newFlippedCards[index] = !newFlippedCards[index];
         setFlippedCards(newFlippedCards);
     };
-
     return (
         <div id="servicios" className="card-container">
             <div className="title-card">
