@@ -1,8 +1,8 @@
 import { useState } from "react";
-import imagen from "../assets/images/alumbrado.jpeg";
-import imagen1 from "../assets/images/Espiral3.png";
+import imagen from "./Svg/AlumbradoPublico.svg";
+import imagen1 from "./Svg/Espiral.svg";
 import imagen2 from "../assets/images/censoarboreo.jpeg";
-import imagen3 from "../assets/images/perdidas.png";
+import imagen3 from "./Svg/PerdidasEnergia.svg";
 import "../assets/css/portfolio.css";
 
 export function Portfolio() {

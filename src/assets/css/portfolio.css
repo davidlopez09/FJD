@@ -33,7 +33,7 @@
 
 .card-port {
     position: relative;
-    width: 250px;
+    width: 240px;
     height: 280px;
     background: #000;
     border-radius: 18px;
@@ -49,6 +49,7 @@
     height: 100%;
     overflow: hidden;
 }
+
 
 .poster::before {
     content: '';

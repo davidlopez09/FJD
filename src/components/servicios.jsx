@@ -1,10 +1,10 @@
 import { useState } from "react";
 import imagen from "./Svg/Software.svg";
-import imagen1 from "../assets/images/imagen1.png";
-import imagen2 from "./Svg/Web.svg";
+import imagen1 from "./Svg/Web.svg";
+import imagen2 from "./Svg/Movil.svg";
 import imagen3 from "./Svg/Api.svg";
 import imagen4 from "./Svg/CodigoSeguro.svg";
-import Soporte from "./Svg/soporte.svg";
+import Soporte from "./Svg/Soporte.svg";
 import "../assets/css/servicios.css";
 
 export function Servicios() {
