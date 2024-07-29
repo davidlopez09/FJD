@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../assets/css/metodologia.css";
-import analisisrequerimiento from "../assets/images/analisis.png";
-import planificacionproyectos from "../assets/images/planificacion.png";
+import analisisrequerimiento from "./Svg/Analisisrequerimiento.svg";
+import planificacionproyectos from "./Svg/Planificacionproyectos.svg";
 import desarrolloproyectos from "../assets/images/desarrollo.png";
 import testing from "../assets/images/tester.png";
 

@@ -3,14 +3,16 @@
     width: 100%;
     margin: 20px auto;
     padding: 10px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+        sans-serif;
 }
 .txt .nuestro {
     width: 90%;
     text-align: center;
     margin: 0 auto;
     font-size: 22px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+        sans-serif;
 }
 
 .img-sub {
@@ -22,18 +24,20 @@
 .img_ft {
     margin: 10px;
     padding: 5px;
-    margin-top: 40px;                                                                                                    
+    margin-top: 40px;
 }
 
 .img_ft img {
     width: 600px;
+    height: 336px;
 }
 
 .subti {
     padding: 20px;
     text-align: center;
     padding: 15px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+        sans-serif;
 }
 
 .subti .carcter {
@@ -44,18 +48,18 @@
 .carac .li2 {
     margin: 20px;
     font-size: 22px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+        sans-serif;
 }
 
 @media (max-width: 768px) {
-    .img-sub{
-    margin: 10px;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
+    .img-sub {
+        margin: 10px;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
 }
 @media (max-width: 768px) {
     .img-sub {
@@ -69,6 +73,7 @@
 
     .img_ft img {
         width: 350px;
+        height: 196px;
         margin: 10px;
         margin: 0 auto;
     }
