@@ -5,6 +5,7 @@ import imagen2 from "./Svg/Movil.svg";
 import imagen3 from "./Svg/Api.svg";
 import imagen4 from "./Svg/CodigoSeguro.svg";
 import imagen5 from "./Svg/Soporte.svg";
+
 import "../assets/css/servicios.css";
 
 export function Servicios() {
