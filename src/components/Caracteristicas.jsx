@@ -1,5 +1,5 @@
 import "../assets/css/Caracteristicas.css";
-import imagen from "../assets/images/imagen72.png";
+import imagen from "./Svg/Caracteristicas.svg";
 
 export function Caracteristicas() {
     return (
