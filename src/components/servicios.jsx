@@ -4,7 +4,7 @@ import imagen1 from "./Svg/Web.svg";
 import imagen2 from "./Svg/Movil.svg";
 import imagen3 from "./Svg/Api.svg";
 import imagen4 from "./Svg/CodigoSeguro.svg";
-import imagen5 from "./Svg/Soporte.svg";
+import imagen5 from "./Svg/Soporte2.svg";
 
 import "../assets/css/servicios.css";
 
