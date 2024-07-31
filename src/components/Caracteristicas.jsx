@@ -1,6 +1,6 @@
 import "../assets/css/Caracteristicas.css";
 import imagen from "./Svg/Caracteristicas.svg";
-
+// ul
 export function Caracteristicas() {
     return (
         <div className="nuestro-servicio">
