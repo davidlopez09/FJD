@@ -4,7 +4,7 @@ import imagen1 from "./Svg/Web.svg";
 import imagen2 from "./Svg/Movil.svg";
 import imagen3 from "./Svg/Api.svg";
 import imagen4 from "./Svg/CodigoSeguro.svg";
-import Soporte from "./Svg/Soporte.svg";
+import imagen5 from "./Svg/Soporte.svg";
 import "../assets/css/servicios.css";
 
 export function Servicios() {
@@ -23,7 +23,7 @@ export function Servicios() {
             <div className="cards-container">
                 <div className={`card ${flippedCards[0] ? "flipped" : ""}`} onClick={() => handleCardClick(0)}>
                     <div className="face front">
-                        <img src={imagen} alt="imagen"  />
+                        <img src={imagen} alt="imagen" />
                         <h3 className="texto">Desarrollo de software</h3>
                     </div>
                     <div className="face back">
@@ -95,7 +95,7 @@ export function Servicios() {
 
                 <div className={`card ${flippedCards[4] ? "flipped" : ""}`} onClick={() => handleCardClick(4)}>
                     <div className="face front">
-                        <img src={Soporte} alt="imagen4" />
+                        <img src={imagen5} />
                         <h3 className="texto">Soporte</h3>
                     </div>
                     <div className="face back">
