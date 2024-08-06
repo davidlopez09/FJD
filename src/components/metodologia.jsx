@@ -2,8 +2,8 @@ import { useState } from "react";
 import "../assets/css/metodologia.css";
 import analisisrequerimiento from "./Svg/Analisisrequerimiento.svg";
 import planificacionproyectos from "./Svg/Planificacionproyectos.svg";
-import desarrolloproyectos from "../assets/images/desarrollo.png";
-import testing from "../assets/images/tester.png";
+import desarrolloproyectos from "./Svg/DesarrolloDelProyecto.svg";
+import testing from "./Svg/TestingYDespliegue.svg";
 
 // Array de objetos con la información de cada proyecto
 const proyectos = [
