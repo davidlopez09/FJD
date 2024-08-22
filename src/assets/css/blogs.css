@@ -7,7 +7,7 @@
 }
 
 .img-blogs {
-    width: 50%;
+    width: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,7 +73,7 @@
         flex-direction: column; /* Cambia la dirección de la flexbox en pantallas pequeñas */
     }
 
-    .img-blogs,
+    
     .blog-noticias {
         width: 100%; /* Ajusta el ancho para que ocupen toda la pantalla */
     }
@@ -108,7 +108,7 @@
         flex-direction: column; /* Cambia la dirección de la flexbox en pantallas pequeñas */
     }
 
-    .img-blogs,
+    
     .blog-noticias {
         width: 100%; /* Ajusta el ancho para que ocupen toda la pantalla */
     }
@@ -117,10 +117,12 @@
         order: 2; /* Cambia el orden de la imagen */
     }
     .blogs-title {
-        display: block;
+        display: flex;
+        justify-content: center;
     }
 
     .img-blogs {
+        width: 90%;
         display: flex;
         align-items: center;
         justify-content: center;

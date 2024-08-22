@@ -1,6 +1,6 @@
 import "../assets/css/blogs.css";
 import "../assets/css/metodologia.css";
-import blogs from "../assets/images/blogs.png";
+import blogs from "../components/Svg/Blog.svg"
 import analisis from "../assets/images/noti1.jpg";
 import analisisdedos from "../assets/images/noti2.webp";
 import analisisdetres from "../assets/images/noti3.webp";

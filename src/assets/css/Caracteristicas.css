@@ -93,10 +93,11 @@
     .img_ft {
         display: flex;
         align-items: center;
+        justify-content: center;
     }
 
     .img_ft img {
-        width: 350px;
+        width: 100%;
         margin: 10px;
         margin: 0 auto;
     }
