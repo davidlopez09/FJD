@@ -1,10 +1,10 @@
 import "../assets/css/blogs.css";
 import "../assets/css/metodologia.css";
 import blogs from "../components/Svg/Blog.svg"
-import analisis from "../assets/images/noti1.jpg";
-import analisisdedos from "../assets/images/noti2.webp";
-import analisisdetres from "../assets/images/noti3.webp";
-import analisisdecuatro from "../assets/images/noti4.webp";
+import ComoDesarrollan from "./Svg/ComoDesarrollan.svg";
+import QueNecesito from "./Svg/QueNecesito.svg";
+import ComoFunciona from "./Svg/ComoFunciona.svg";
+import ConsejosVitales from "./Svg/ConsejosVitales.svg";
 
 export function Blogs() {
     return (
@@ -19,7 +19,7 @@ export function Blogs() {
             <div className="card-blogs">
                 <div className="card-cont">
                     <div className="card-meto">
-                        <img src={analisis} alt="Imagen" className="card-image" />
+                        <img src={ComoDesarrollan} alt="Imagen" className="card-image" />
                         <h2 className="card-title">¿Cómo se desarrollan las aplicaciones en Colombia?</h2>
                         <a
                             href="https://www.comunicare.es/desarrollo-de-apps-colombia/"
@@ -31,7 +31,7 @@ export function Blogs() {
                 </div>
                 <div className="card-cont">
                     <div className="card-meto">
-                        <img src={analisisdedos} alt="Imagen" className="card-image" />
+                        <img src={QueNecesito} alt="Imagen" className="card-image" />
                         <h2 className="card-title">¿Qué necesito para desarrollar aplicaciones móviles en Colombia?</h2>
                         <a
                             href="https://es.goodbarber.com/blog/como-crear-app-android-ios-tutorial/"
@@ -43,7 +43,7 @@ export function Blogs() {
                 </div>
                 <div className="card-cont">
                     <div className="card-meto">
-                        <img src={analisisdetres} alt="Imagen" className="card-image" />
+                        <img src={ComoFunciona} alt="Imagen" className="card-image" />
                         <h2 className="card-title">¿Qué es y como funciona el desarrollo de aplicaciones móviles?</h2>
                         <a
                             href="https://www.ibm.com/mx-es/topics/mobile-application-development"
@@ -55,7 +55,7 @@ export function Blogs() {
                 </div>
                 <div className="card-cont">
                     <div className="card-meto">
-                        <img src={analisisdecuatro} alt="Imagen" className="card-image" />
+                        <img src={ConsejosVitales} alt="Imagen" className="card-image" />
                         <h2 className="card-title">9 consejos vitales para el desarrollo de software a medida</h2>
                         <a
                             href="https://distillery.com/es/blog/desarrollo-de-software-a-medida-beneficios-9-consejos-para-el-exito/"
