@@ -32,8 +32,21 @@
 .card-des {
     font-size: 0.9rem;
     text-align: center;
-    margin-bottom: 15px;
+    padding: 7px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-height: 2rem; /* Altura máxima para la descripción colapsada */
+    transition: max-height 0.3s ease-out;
 }
+
+.card-des.expanded {
+    white-space: normal;
+    font-size: 0.8rem;
+    max-height: 100rem; /* Permitir que la descripción crezca cuando está expandida */
+}
+
+
 
 .btn-vm {
     margin: 20px auto;
@@ -103,17 +116,6 @@
     transform: translateY(-5px); /* Mover ligeramente hacia arriba al pasar el mouse sobre la imagen */
     transition: transform 0.3s ease;
     opacity: 0.9;
-}
-
-.card-des {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-.card-des.expanded {
-    white-space: normal;
-    font-size: 0.8rem;
 }
 
 .subtitu {

@@ -34,27 +34,8 @@
         sans-serif;
 }
 
-.btn-blog {
-    margin: 20px auto;
-    width: 110px;
-    display: flex;
-    justify-content: center;
-    padding: 15px;
-    background-color: #1976d2;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    text-decoration: none;
-}
-
-.btn-blog:hover {
-    background-color: #68a3fb;
-}
-
 .card-blogs {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(auto-fill, minmax(305px, 0.1fr));
     gap: 20px;
     justify-content: center;
@@ -73,7 +54,6 @@
         flex-direction: column; /* Cambia la dirección de la flexbox en pantallas pequeñas */
     }
 
-    
     .blog-noticias {
         width: 100%; /* Ajusta el ancho para que ocupen toda la pantalla */
     }
@@ -108,7 +88,6 @@
         flex-direction: column; /* Cambia la dirección de la flexbox en pantallas pequeñas */
     }
 
-    
     .blog-noticias {
         width: 100%; /* Ajusta el ancho para que ocupen toda la pantalla */
     }
