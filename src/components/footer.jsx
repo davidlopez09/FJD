@@ -2,6 +2,7 @@ import "../assets/css/footer.css";
 import logo from "../assets/images/logo.png";
 
 export function Footer() {
+    const currentYear = new Date().getFullYear();
     return (
         <footer className="contefoot">
             <div className="container-foo">
@@ -76,7 +77,7 @@ export function Footer() {
                 </div>
                 <div className="copy">
                     <hr />
-                    <p className="parrafo-copy">&copy; 2024 Todos los derchos reservados.</p>
+                    <p className="parrafo-copy">&copy; {currentYear} Todos los derchos reservados.</p>
                 </div>
             </div>
         </footer>
