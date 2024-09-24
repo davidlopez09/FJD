@@ -135,7 +135,7 @@ export function Contactanos() {
                     className="mapa"
                     width="90%"
                     height="250"
-                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3943.185471982326!2d-75.890436!3d8.768614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwNDYnMDcuMCJOIDc1wrA1MycyNS42Ilc!5e0!3m2!1ses!2sco!4v1713296345732!5m2!1ses!2sco"></iframe>
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d312.6757001276244!2d-75.87670604586755!3d8.757274038469344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e5a2fc29c55fa81%3A0x60fb0b58f964909e!2zQ2wuIDM3YSAjMTEtMjQsIE1vbnRlcsOtYSwgQ8OzcmRvYmE!5e0!3m2!1ses!2sco!4v1727209694687!5m2!1ses!2sco"></iframe>
 
                 <p className="parrafo-contacto">¡Cuéntanos en que podemos ayudarte hoy!</p>
             </div>
