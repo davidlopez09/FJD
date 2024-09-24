@@ -27,12 +27,12 @@ export function Footer() {
                                 target="_blank">
                                 <i className="bx bxl-instagram"></i>
                             </a>
-                            <a className="icons-a" href="#" target="_blank">
+                            {/* <a className="icons-a" href="#" target="_blank">
                                 <i className="bx bxl-linkedin-square"></i>
                             </a>
                             <a className="icons-a" href="#" target="_blank">
                                 <i className="bx bxl-twitter"></i>
-                            </a>
+                            </a> */}
                         </div>
                     </div>
                     <div className="iconos-content">
