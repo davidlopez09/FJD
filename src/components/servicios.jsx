@@ -94,7 +94,7 @@ export function Servicios() {
                     </div>
                 </div>
 
-                <div className={`card ${flippedCards[4] ? "flipped" : ""}`} onClick={() => handleCardClick(4)}>
+                <div className={`card ${flippedCards[5] ? "flipped" : ""}`} onClick={() => handleCardClick(5)}>
                     <div className="face front">
                         <img src={imagen5} />
                         <h3 className="texto">Soporte</h3>
