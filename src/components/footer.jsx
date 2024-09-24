@@ -42,13 +42,13 @@ export function Footer() {
                                 <div className="dir">
                                     <a
                                         className="span5"
-                                        href="https://maps.app.goo.gl/YLv9vYrXy8tVF2Y67"
+                                        href="https://maps.app.goo.gl/ATx3btnMtZRuBgSz9"
                                         target="_blank">
-                                        <span>Cr 7 W 36-30 Barrio Juan XXIII </span>
+                                        <span>Cl. 37a #11-24 Centro </span>
                                     </a>
                                     <a
                                         className=" span5"
-                                        href="https://maps.app.goo.gl/YLv9vYrXy8tVF2Y67"
+                                        href="https://maps.app.goo.gl/ATx3btnMtZRuBgSz9"
                                         target="_blank">
                                         <span> Montería- Colombia</span>
                                     </a>
