@@ -2,6 +2,7 @@ import "../assets/css/footer.css";
 import logo from "../assets/images/logo.png";
 
 export function Footer() {
+    // para actualizar el año
     const currentYear = new Date().getFullYear();
     return (
         <footer className="contefoot">
@@ -12,14 +13,8 @@ export function Footer() {
                             <img className="image" src={logo} alt="logo" />
                         </div>
                         <div className="icon-content">
-                            <a className="icons-a" href="#" target="_blank">
+                            <a className="icons-a" href="https://wa.me/573052384659" target="_blank">
                                 <i className="bx bxl-whatsapp"></i>
-                            </a>
-                            <a
-                                className="icons-a"
-                                href="https://www.facebook.com/profile.php?id=100067433211800"
-                                target="_blank">
-                                <i className="bx bxl-facebook-square"></i>
                             </a>
                             <a
                                 className="icons-a"
@@ -27,12 +22,6 @@ export function Footer() {
                                 target="_blank">
                                 <i className="bx bxl-instagram"></i>
                             </a>
-                            {/* <a className="icons-a" href="#" target="_blank">
-                                <i className="bx bxl-linkedin-square"></i>
-                            </a>
-                            <a className="icons-a" href="#" target="_blank">
-                                <i className="bx bxl-twitter"></i>
-                            </a> */}
                         </div>
                     </div>
                     <div className="iconos-content">
@@ -45,12 +34,7 @@ export function Footer() {
                                         className="span5"
                                         href="https://maps.app.goo.gl/ATx3btnMtZRuBgSz9"
                                         target="_blank">
-                                        <span>Cl. 37a #11-24 Centro </span>
-                                    </a>
-                                    <a
-                                        className=" span5"
-                                        href="https://maps.app.goo.gl/ATx3btnMtZRuBgSz9"
-                                        target="_blank">
+                                        <span>Cl. 37a #11-24</span> <br />
                                         <span> Montería- Colombia</span>
                                     </a>
                                 </div>
