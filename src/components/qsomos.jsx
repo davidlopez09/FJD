@@ -17,7 +17,7 @@ export function Qsomos() {
                                     <i className="bx bx-rocket"></i>
                                 </div>
                                 <div className="title">Misión</div>
-                                <div className="content">creamos tecnologías personalizadas para cada necesidad</div>
+                                <div className="content">Creamos tecnologías personalizadas para cada necesidad.</div>
                             </li>
                         </div>
                         <div className="card-2">
