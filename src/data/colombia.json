@@ -7,7 +7,19 @@
             {
                 "id": 0,
                 "departamento": "Amazonas",
-                "ciudades": ["Leticia", "Puerto Nariño"]
+                "ciudades": [
+                    "Leticia",
+                    "Puerto Nariño",
+                    "El Encanto",
+                    "La Chorrera",
+                    "La Pedrera",
+                    "La Victoria",
+                    "Miriti - Paraná",
+                    "Puerto Alegría",
+                    "Puerto Arica",
+                    "Puerto Santander",
+                    "Tarapacá"
+                ]
             },
             {
                 "id": 1,
@@ -500,7 +512,7 @@
                     "El Paso",
                     "Gamarra",
                     "Gonz\u00e1lez",
-                    "La Gloria (Cesar)",
+                    "La Gloria",
                     "La Jagua de Ibirico",
                     "La Paz",
                     "Manaure Balc\u00f3n del Cesar",
@@ -713,7 +725,7 @@
             {
                 "id": 14,
                 "departamento": "Guain\u00eda",
-                "ciudades": ["In\u00edrida"]
+                "ciudades": ["In\u00edrida", "Barrancominas"]
             },
             {
                 "id": 15,
@@ -792,7 +804,6 @@
                     "Aracataca",
                     "Ariguan\u00ed",
                     "Cerro de San Antonio",
-                    "Chibolo",
                     "Chibolo",
                     "Ci\u00e9naga",
                     "Concordia",
