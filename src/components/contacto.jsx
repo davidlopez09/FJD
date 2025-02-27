@@ -87,17 +87,7 @@ export function Contactanos() {
         const proyectocotizar = form.proyectocotizar.value.trim();
         const mensaje = form.mensaje.value.trim();
 
-        if (
-            !name ||
-            !email ||
-            !tel ||
-            !country ||
-            !state ||
-            !city ||
-            !empresa ||
-            !proyectocotizar ||
-            !mensaje
-        ) {
+        if (!name || !email || !tel || !country || !state || !city || !empresa || !proyectocotizar || !mensaje) {
             Swal.fire({
                 title: "Error",
                 text: "Por favor, complete todos los campos antes de enviar.",

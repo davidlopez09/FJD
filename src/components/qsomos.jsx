@@ -17,10 +17,7 @@ export function Qsomos() {
                                     <i className="bx bx-rocket"></i>
                                 </div>
                                 <div className="title">Misión</div>
-                                <div className="content">
-                                    Forjar soluciones innovadoras de calidad, funcionalidad y brindando confianza para ser elegidos por clientes, proveedores y demás grupos de interés. <br /> <br />
-                                    Creando con el talento, profesionalismo y conocimientos integral de Ingeniería de sitemas.
-                                </div>
+                                <div className="content">creamos tecnologías personalizadas para cada necesidad</div>
                             </li>
                         </div>
                         <div className="card-2">
@@ -30,13 +27,16 @@ export function Qsomos() {
                                 </div>
                                 <div className="title">Visión</div>
                                 <div className="content">
-                                    Consolidarnos como empresa líder de mercados donde operamos, logrando crecimientos en los diferentes ámbitos y realizando el trabajo con calidad, seguridad y cuidando del medio ambiente.
+                                    Consolidarnos como empresa líder de mercados donde operamos, logrando crecimientos
+                                    en los diferentes ámbitos y realizando el trabajo con calidad, seguridad y cuidando
+                                    del medio ambiente.
                                 </div>
                             </li>
                         </div>
                     </ul>
                     <p className="parrafo-mv">
-                    Brindando el desarrollo a medida que tu empresa necesita para alcanzar nuevas metas corporativas. 
+                        Brindando el desarrollo a medida que tu empresa necesita para alcanzar nuevas metas
+                        corporativas.
                     </p>
                 </div>
             </div>
