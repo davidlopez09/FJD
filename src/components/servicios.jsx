@@ -8,104 +8,103 @@ import imagen5 from "./Svg/Soporte2.svg";
 
 import "../assets/css/servicios.css";
 
+const WHATSAPP_NUMBER = "573052384659";
+
 export function Servicios() {
-    const [flippedCards, setFlippedCards] = useState(Array(5).fill(false));
+    const [flippedCards, setFlippedCards] = useState(Array(6).fill(false));
 
     const handleCardClick = (index) => {
         const newFlippedCards = [...flippedCards];
         newFlippedCards[index] = !newFlippedCards[index];
         setFlippedCards(newFlippedCards);
     };
+
+    const handleWhatsApp = (e, serviceName) => {
+        e.stopPropagation();
+        const message = `Hola, quiero más información sobre ${serviceName}. Me gustaría conocer características, precio y tiempo de desarrollo.`;
+        const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+        window.open(url, "_blank");
+    };
+
+    const services = [
+        {
+            name: "Desarrollo de software",
+            img: imagen,
+            description: "Creamos soluciones a medida: ERP, CRM, sistemas de gestión, automatización de procesos y software empresarial escalable.",
+            features: ["Java, Kotlin, Spring Boot", "C#, .NET Core, Python", "Go, Rust, Node.js", "Arquitectura limpia y hexagonal", "Bases de datos SQL/NoSQL"]
+        },
+        {
+            name: "Desarrollo de aplicaciones web",
+            img: imagen1,
+            description: "Aplicaciones web modernas, reactivas y seguras. Desde portales corporativos hasta plataformas SaaS complejas.",
+            features: ["React, Vue, Next.js, Astro", "PHP, Laravel, Node.js", "TypeScript, JavaScript, HTML5/CSS3", "Progressive Web Apps", "SEO optimizado"]
+        },
+        {
+            name: "Desarrollo de aplicaciones móviles",
+            img: imagen2,
+            description: "Apps nativas e híbridas para iOS y Android. Experiencia de usuario fluida, rendimiento nativo y publicación en stores.",
+            features: ["Flutter & Kotlin Multiplatform", "React Native, Expo", "Publicación App Store / Play Store", "Notificaciones push, modo offline"]
+        },
+        {
+            name: "Expertos en desarrollo API",
+            img: imagen3,
+            description: "Diseñamos y construimos APIs REST/GraphQL robustas, documentadas y seguras para conectar tus sistemas y terceros.",
+            features: ["Node.js, Express, Fastify", "Python, FastAPI, Django REST", "Java, Spring Boot", "Go, Gin, Fiber", "OpenAPI/Swagger, GraphQL, gRPC"]
+        },
+        {
+            name: "Desarrollo de código seguro",
+            img: imagen4,
+            description: "Aplicamos DevSecOps, revisiones de código, pruebas de penetración y cumplimiento OWASP en cada entrega.",
+            features: ["SAST/DAST (SonarQube, Checkmarx)", "SCA (Dependabot, Snyk)", "Contenedores seguros (Docker, K8s)", "OWASP Top 10, ASVS", "CI/CD seguro (GitLab, GitHub Actions)"]
+        },
+        {
+            name: "Soporte y mantenimiento",
+            img: imagen5,
+            description: "Acompañamiento continuo: monitoreo 24/7, actualizaciones de seguridad, mejoras evolutivas y SLA garantizado.",
+            features: ["Monitoreo (Datadog, Prometheus, Grafana)", "Logs centralizados (ELK, Loki)", "Respuesta < 4h criticidad alta", "Parches de seguridad mensuales", "Mejoras evolutivas y refactoring"]
+        },
+    ];
+
     return (
         <div id="servicios" className="card-container">
             <div className="title-card">
                 <h2 className="title">EXPERTOS EN DESARROLLO A LA MEDIDA</h2>
+                <p className="subtitle">Soluciones tecnológicas a la medida de tu negocio. Cada proyecto es único, nuestro enfoque también.</p>
             </div>
             <div className="cards-container">
-                <div className={`card ${flippedCards[0] ? "flipped" : ""}`} onClick={() => handleCardClick(0)}>
-                    <div className="face front">
-                        <img src={imagen} alt="imagen" />
-                        <h3 className="texto">Desarrollo de software</h3>
+                {services.map((service, index) => (
+                    <div
+                        key={index}
+                        className={`card ${flippedCards[index] ? "flipped" : ""}`}
+                        onClick={() => handleCardClick(index)}
+                    >
+                        <div className="face front">
+                            <div className="front-image">
+                                <img src={service.img} alt={service.name} loading="lazy" />
+                            </div>
+                            <h3 className="front-title">{service.name}</h3>
+                            <span className="flip-hint">Haz clic para ver más</span>
+                        </div>
+                        <div className="face back">
+                            <h3 className="back-title">{service.name}</h3>
+                            <p className="back-description">{service.description}</p>
+                            <ul className="back-features">
+                                {service.features.map((feature, i) => (
+                                    <li key={i}>
+                                        <span className="feature-dot" aria-hidden="true"></span>
+                                        {feature}
+                                    </li>
+                                ))}
+                            </ul>
+                            <button
+                                className="mas-info-btn"
+                                onClick={(e) => handleWhatsApp(e, service.name)}
+                            >
+                                Más información →
+                            </button>
+                        </div>
                     </div>
-                    <div className="face back">
-                        <h3>Desarrollo de software</h3>
-                        <p>
-                            Nos especializamos en el diseño y desarrollo de software a medida, adaptado a las
-                            necesidades específicas de nuestros clientes.
-                        </p>
-                        <div></div>
-                    </div>
-                </div>
-
-                <div className={`card ${flippedCards[1] ? "flipped" : ""}`} onClick={() => handleCardClick(1)}>
-                    <div className="face front">
-                        <img src={imagen1} alt="imagen1" />
-                        <h3 className="texto">Desarrollo de aplicaciones web</h3>
-                    </div>
-                    <div className="face back">
-                        <h3>Desarrollo de aplicaciones web</h3>
-                        <p>
-                            Como desarrolladores web experimentados, nos apasiona crear aplicaciones web modernas y
-                            receptivas.
-                        </p>
-                        <div></div>
-                    </div>
-                </div>
-
-                <div className={`card ${flippedCards[2] ? "flipped" : ""}`} onClick={() => handleCardClick(2)}>
-                    <div className="face front">
-                        <img src={imagen2} alt="imagen2" />
-                        <h3 className="texto">Desarrollo de aplicaciones móviles</h3>
-                    </div>
-                    <div className="face back">
-                        <h3>Desarrollo de aplicaciones móviles</h3>
-                        <p>
-                            Somos expertos en el desarrollo de aplicaciones móviles que están diseñadas para impulsar tu
-                            negocio y mejorar la experiencia de tus usuarios.
-                        </p>
-                        <div></div>
-                    </div>
-                </div>
-
-                <div className={`card ${flippedCards[3] ? "flipped" : ""}`} onClick={() => handleCardClick(3)}>
-                    <div className="face front">
-                        <img src={imagen3} alt="imagen3" />
-                        <h3 className="texto">Expertos en desarrollo API</h3>
-                    </div>
-                    <div className="face back">
-                        <h3>Expertos en desarrollo API</h3>
-                        <p>
-                            Como expertos en desarrollo API, diseñamos y construimos interfaces de programación de
-                            aplicaciones sólidas y eficientes.
-                        </p>
-                        <div></div>
-                    </div>
-                </div>
-
-                <div className={`card ${flippedCards[4] ? "flipped" : ""}`} onClick={() => handleCardClick(4)}>
-                    <div className="face front">
-                        <img src={imagen4} alt="imagen4" />
-                        <h3 className="texto">Desarrollo de código seguro</h3>
-                    </div>
-                    <div className="face back">
-                        <h3>Desarrollo de código seguro</h3>
-                        <p>Nuestra especialidad es el desarrollo de código web seguro y confiable.</p>
-                        <div></div>
-                    </div>
-                </div>
-
-                <div className={`card ${flippedCards[5] ? "flipped" : ""}`} onClick={() => handleCardClick(5)}>
-                    <div className="face front">
-                        <img src={imagen5} />
-                        <h3 className="texto">Soporte</h3>
-                    </div>
-                    <div className="face back">
-                        <h3>Soporte</h3>
-                        <p>Nuestra especialidad es el desarrollo de código web seguro y confiable.</p>
-                        <div></div>
-                        <div></div>
-                    </div>
-                </div>
+                ))}
             </div>
         </div>
     );

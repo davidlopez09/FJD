@@ -1,18 +1,63 @@
 import { useState } from "react";
-// import logofjd from "../assets/images/logofjd.png";
+import { Link, useLocation } from "react-router-dom";
 import Logo from "../assets/images/logo.png";
 import "../assets/css/header.css";
 
-export function Header() {
+const mainNav = [
+    { label: "Inicio", href: "/" },
+    { label: "Servicios", href: "#servicios" },
+    { label: "Portafolio", href: "#portafolio" },
+    { label: "¿Quiénes Somos?", href: "#quienesSomos" },
+    { label: "Blog", href: "#blog" },
+    { label: "Contáctanos", href: "#contactanos" },
+];
+
+const legalNav = [
+    { label: "Inicio", href: "/" },
+    { label: "Centro Legal", href: "/legal" },
+    { label: "Privacidad", href: "/politicas-privacidad" },
+    { label: "Términos", href: "/legal/terminos-y-condiciones" },
+    { label: "Eliminación de datos", href: "/legal/eliminacion-de-datos" },
+    { label: "Tratamiento de datos", href: "/legal/tratamiento-de-datos-personales" },
+    { label: "Seguridad", href: "/legal/seguridad-de-la-informacion" },
+    { label: "Cookies", href: "/legal/cookies" },
+];
+
+export function Header({ variant }) {
     const [menu, setMenu] = useState(false);
+    const location = useLocation();
+    const isMainPage = location.pathname === "/";
+    const navLinks = variant === "legal" ? legalNav : mainNav;
 
     const toggleMenu = () => {
         setMenu(!menu);
     };
 
     const handleMenuClick = () => {
-        // Cierra el menú al hacer clic en un enlace del menú
         setMenu(false);
+    };
+
+    const renderNavLink = (link) => {
+        const isHashLink = link.href.startsWith("#");
+        if (isHashLink && isMainPage) {
+            return (
+                <a href={link.href} className="nav-link" onClick={handleMenuClick}>
+                    {link.label}
+                </a>
+            );
+        }
+        if (isHashLink && !isMainPage) {
+            return (
+                <Link to={"/" + link.href} className="nav-link" onClick={handleMenuClick}>
+                    {link.label}
+                </Link>
+            );
+        }
+        return (
+            <Link to={link.href} className="nav-link" onClick={handleMenuClick}>
+                {link.label}
+            </Link>
+        );
     };
 
     return (
@@ -20,9 +65,9 @@ export function Header() {
             <header className="nav">
                 <div className="page-header">
                     <div className="logo">
-                        <a href="index.html">
+                        <Link to="/">
                             <img src={Logo} alt="Logo FJD" />
-                        </a>
+                        </Link>
                     </div>
                     <div className={`icon nav-icon-5 ${menu ? "open" : ""}`} onClick={toggleMenu}>
                         <span></span>
@@ -32,36 +77,11 @@ export function Header() {
                     <div className={`Cabecera-nav ${menu ? "isActive" : ""}`}>
                         <nav className="navbar">
                             <ul className="Cabecera-ul">
-                                <li className="Cabecera-li">
-                                    <a href="#home" className="nav-link" onClick={handleMenuClick}>
-                                        Inicio
-                                    </a>
-                                </li>
-                                <li className="Cabecera-li">
-                                    <a href="#servicios" className="nav-link" onClick={handleMenuClick}>
-                                        Servicios
-                                    </a>
-                                </li>
-                                <li className="Cabecera-li">
-                                    <a href="#portafolio" className="nav-link" onClick={handleMenuClick}>
-                                        Portafolio
-                                    </a>
-                                </li>
-                                <li className="Cabecera-li">
-                                    <a href="#quienesSomos" className="nav-link" onClick={handleMenuClick}>
-                                        ¿Quiénes Somos?
-                                    </a>
-                                </li>
-                                <li className="Cabecera-li">
-                                    <a href="#blog" className="nav-link" onClick={handleMenuClick}>
-                                        Blog
-                                    </a>
-                                </li>
-                                <li className="Cabecera-li">
-                                    <a href="#contactanos" className="nav-link" onClick={handleMenuClick}>
-                                        Contáctanos
-                                    </a>
-                                </li>
+                                {navLinks.map((link, i) => (
+                                    <li className="Cabecera-li" key={i}>
+                                        {renderNavLink(link)}
+                                    </li>
+                                ))}
                             </ul>
                         </nav>
                         <a href="#" className="button">

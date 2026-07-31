@@ -134,3 +134,21 @@ hr {
         font-size: 0.8em;
     }
 }
+
+#legal-strip {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px 16px;
+    background: #e6e6e6;
+    font-family: Outfit, sans-serif;
+    font-size: 0.85rem;
+}
+#legal-strip a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+}
+#legal-strip a:hover {
+    text-decoration: underline;
+}
