@@ -23,11 +23,26 @@ const legalNav = [
     { label: "Cookies", href: "/legal/cookies" },
 ];
 
+const metodologiaNav = [
+    { label: "Inicio", href: "/" },
+    { label: "Análisis de Requerimientos", href: "/metodologia/analisis" },
+    { label: "Planificación del Proyecto", href: "/metodologia/planificacion" },
+    { label: "Desarrollo del Proyecto", href: "/metodologia/desarrollo" },
+    { label: "Testing y Despliegue", href: "/metodologia/testing" },
+];
+
 export function Header({ variant }) {
     const [menu, setMenu] = useState(false);
     const location = useLocation();
     const isMainPage = location.pathname === "/";
-    const navLinks = variant === "legal" ? legalNav : mainNav;
+    let navLinks;
+    if (variant === "legal") {
+        navLinks = legalNav;
+    } else if (variant === "metodologia") {
+        navLinks = metodologiaNav;
+    } else {
+        navLinks = mainNav;
+    }
 
     const toggleMenu = () => {
         setMenu(!menu);

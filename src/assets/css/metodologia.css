@@ -1,121 +1,41 @@
-/*estilos Metodologias*/
+/* Estilos Metodología - Sección Principal */
 
 .metodologia {
-    margin: 20px;
-    padding: 15px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 80px 20px;
+    background: #fafbfc;
+    position: relative;
 }
 
-.card-image {
-    width: 550%;
-    height: 50px;
-    object-fit: cover;
+.metodologia::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #1976d2 0%, #42a5f5 50%, #1976d2 100%);
+    background-size: 200% 100%;
+    animation: gradientShift 8s ease infinite;
+}
+
+@keyframes gradientShift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+.metodologia-header {
+    max-width: 800px;
+    margin: 0 auto 50px;
+    text-align: center;
 }
 
 .titumeto {
-    width: 100%;
-    font-size: 25px;
-    margin: 20px auto;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
-        sans-serif;
-}
-
-.card-title {
-    font-size: 1.2rem;
-    margin-top: 15px;
-    text-align: center;
-}
-
-.card-des {
-    font-size: 0.9rem;
-    text-align: center;
-    padding: 7px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    max-height: 2rem; /* Altura máxima para la descripción colapsada */
-    transition: max-height 0.3s ease-out;
-}
-
-.card-des.expanded {
-    white-space: normal;
-    font-size: 0.8rem;
-    max-height: 100rem; /* Permitir que la descripción crezca cuando está expandida */
-}
-
-
-
-.btn-vm {
-    margin: 20px auto;
-    width: 100px;
-    display: flex;
-    justify-content: center;
-    padding: 15px;
-    background-color: #1976d2;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.btn-vm:hover {
-    background-color: #68a3fb;
-}
-
-.centered-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.card-cont {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 0.8fr));
-    gap: 20px;
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.card-meto {
-    background-color: #e9e9e9;
-}
-
-@media screen and (max-width: 768px) {
-    .card-meto {
-        width: 100%;
-        /* Ajustar el ancho de la tarjeta en dispositivos más pequeños */
-    }
-    .card-cont {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-.card-meto {
-    border: 1px solid #b1aeae;
-    padding: 10px;
-    border-radius: 8px;
-    width: 250px;
-}
-
-.card-image {
-    width: 100%;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 200px;
-}
-
-.card-image:hover {
-    transform: translateY(-5px); /* Mover ligeramente hacia arriba al pasar el mouse sobre la imagen */
-    transition: transform 0.3s ease;
-    opacity: 0.9;
+    font-size: clamp(28px, 5vw, 42px);
+    font-weight: 800;
+    color: #1a1a2e;
+    line-height: 1.2;
+    margin: 0 0 16px;
+    letter-spacing: -0.5px;
 }
 
 .subtitu {
@@ -125,11 +45,217 @@
     align-items: center;
 }
 
-.subtitu .sub-somos {
+.sub-somos {
+    font-size: clamp(17px, 2.5vw, 20px);
+    color: #4a5568;
+    line-height: 1.7;
+    margin: 0;
+    font-weight: 400;
+    max-width: 700px;
+}
+
+/* Grid de Metodología */
+.metodologia-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* Tarjeta de Metodología */
+.metodologia-card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+    border: 1px solid #eef2f7;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+}
+
+.metodologia-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: #1976d2;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1;
+}
+
+.metodologia-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    border-color: transparent;
+    text-decoration: none;
+    color: inherit;
+}
+
+.metodologia-card:hover::before {
+    transform: scaleX(1);
+}
+
+/* Imagen de la tarjeta */
+.card-image-wrapper {
+    position: relative;
     width: 100%;
-    padding: 15px;
-    font-size: 22px;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
-        sans-serif;
-    padding: 3%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: linear-gradient(135deg, #f0f4f8 0%, #e3f2fd 100%);
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 20px;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.metodologia-card:hover .card-image {
+    transform: scale(1.08);
+}
+
+.card-badge {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    padding: 6px 14px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #1976d2;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(10px);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.metodologia-card:hover .card-badge {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Contenido de la tarjeta */
+.card-content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 12px;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.card-description {
+    font-size: 14px;
+    color: #4a5568;
+    line-height: 1.6;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 0;
+    color: #1976d2;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    width: fit-content;
+    margin-top: auto;
+}
+
+.card-link:hover {
+    gap: 12px;
+}
+
+.link-arrow {
+    transition: transform 0.2s ease;
+}
+
+.card-link:hover .link-arrow {
+    transform: translateX(4px);
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .metodologia-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 768px) {
+    .metodologia {
+        padding: 50px 16px;
+    }
+
+    .metodologia-header {
+        margin-bottom: 35px;
+    }
+
+    .metodologia-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        max-width: 360px;
+    }
+
+    .card-content {
+        padding: 20px;
+    }
+
+    .card-title {
+        font-size: 18px;
+    }
+
+    .card-description {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .titumeto {
+        font-size: 26px;
+    }
+
+    .sub-somos {
+        font-size: 16px;
+    }
+
+    .card-image-wrapper {
+        aspect-ratio: 16 / 9;
+    }
+
+    .card-title {
+        font-size: 17px;
+    }
+
+    .card-description {
+        font-size: 12px;
+    }
 }
