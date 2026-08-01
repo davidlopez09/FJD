@@ -69,61 +69,6 @@ export function PlanificacionProyecto() {
                                 </ul>
                             </article>
 
-                            <article className="content-section">
-                                <h2>Entregables</h2>
-                                <div className="deliverables-grid">
-                                    <div className="deliverable-card">
-                                        <div>
-                                            <h4>Documento de Arquitectura (SAD)</h4>
-                                            <p>Decisiones técnicas justificadas, diagramas C4, ADRs</p>
-                                        </div>
-                                    </div>
-                                    <div className="deliverable-card">
-                                        <div>
-                                            <h4>Roadmap y Release Plan</h4>
-                                            <p>Cronograma con hitos, dependencias y buffer de riesgo</p>
-                                        </div>
-                                    </div>
-                                    <div className="deliverable-card">
-                                        <div>
-                                            <h4>Infraestructura como Código</h4>
-                                            <p>Terraform/CloudFormation, Kubernetes manifests, secrets mgmt</p>
-                                        </div>
-                                    </div>
-                                    <div className="deliverable-card">
-                                        <div>
-                                            <h4>Definición de Done y Estándares</h4>
-                                            <p>Code style, branching strategy, PR templates, quality gates</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article className="content-section">
-                                <h2>Nuestra aproximación diferenciadora</h2>
-                                <div className="approach-grid">
-                                    <div className="approach-card">
-                                        <h3>Arquitectura Evolutiva</h3>
-                                        <p>Diseñamos para el cambio: feature flags, strangler fig pattern, 
-                                        contratos versionados. La arquitectura crece con el negocio.</p>
-                                    </div>
-                                    <div className="approach-card">
-                                        <h3>Estimación Basada en Evidencia</h3>
-                                        <p>Usamos datos históricos de proyectos similares, velocity real 
-                                        del equipo y Monte Carlo para fechas probabilísticas, no deseos.</p>
-                                    </div>
-                                    <div className="approach-card">
-                                        <h3>Seguridad by Default</h3>
-                                        <p>Threat modeling (STRIDE) en planificación, OWASP ASVS como 
-                                        baseline, secrets en vault, zero-trust network desde día uno.</p>
-                                    </div>
-                                    <div className="approach-card">
-                                        <h3>Observabilidad Incluida</h3>
-                                        <p>Métricas (RED/USE), logs estructurados, tracing distribuido y 
-                                        alertas accionables definidas antes del primer deploy.</p>
-                                    </div>
-                                </div>
-                            </article>
                         </div>
 
                         <aside className="content-sidebar">

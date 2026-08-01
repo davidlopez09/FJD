@@ -66,57 +66,6 @@ export function AnalisisRequerimiento() {
                                 </ul>
                             </article>
 
-                            <article className="content-section">
-                                <h2>Entregables</h2>
-                                <div className="deliverables-grid">
-                                    <div className="deliverable-card">
-                                        <div>
-                                            <h4>Documento de Requerimientos (SRS)</h4>
-                                            <p>Especificación completa, estructurada y versionada</p>
-                                        </div>
-                                    </div>
-                                    <div className="deliverable-card">
-                                        <div>
-                                            <h4>Mapa de Procesos (AS-IS / TO-BE)</h4>
-                                            <p>Visualización del estado actual y futuro del negocio</p>
-                                        </div>
-                                    </div>
-                                    <div className="deliverable-card">
-                                        <div>
-                                            <h4>Backlog Priorizado</h4>
-                                            <p>User stories con criterios de aceptación y estimaciones</p>
-                                        </div>
-                                    </div>
-                                    <div className="deliverable-card">
-                                        <div>
-                                            <h4>Matriz de Trazabilidad</h4>
-                                            <p>Vinculación requerimiento → caso de prueba → código</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article className="content-section">
-                                <h2>Nuestra aproximación diferenciadora</h2>
-                                <div className="approach-grid">
-                                    <div className="approach-card">
-                                        <h3>Pensamiento de Diseño</h3>
-                                        <p>Aplicamos Design Thinking desde el día uno: empatizar, definir, idear, prototipar y testar. No asumimos, validamos.</p>
-                                    </div>
-                                    <div className="approach-card">
-                                        <h3>Arquitectura desde el inicio</h3>
-                                        <p>Involucramos arquitectos en la fase de análisis para detectar restricciones técnicas temprano y evitar retrabajo costoso.</p>
-                                    </div>
-                                    <div className="approach-card">
-                                        <h3>Prototipado Rápido</h3>
-                                        <p>Entregamos wireframes y mockups navegables en la primera semana para que el cliente "toque" la solución antes de invertir en desarrollo.</p>
-                                    </div>
-                                    <div className="approach-card">
-                                        <h3>Gestión de Cambios Ágil</h3>
-                                        <p>Los requerimientos evolucionan. Nuestro proceso de change control evalúa impacto, esfuerzo y valor en 48h máximo.</p>
-                                    </div>
-                                </div>
-                            </article>
                         </div>
 
                         <aside className="content-sidebar">

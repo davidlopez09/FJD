@@ -68,32 +68,6 @@ export function DesarrolloProyecto() {
                                 </ul>
                             </article>
 
-                            <article className="content-section">
-                                <h2>Nuestra aproximación diferenciadora</h2>
-                                <div className="approach-grid">
-                                    <div className="approach-card">
-                                        <h3>Clean Architecture + DDD</h3>
-                                        <p>Capas desacopladas (Domain, Application, Infrastructure), 
-                                        bounded contexts, value objects, aggregates. Código que 
-                                        habla el lenguaje del negocio.</p>
-                                    </div>
-                                    <div className="approach-card">
-                                        <h3>Type Safety End-to-End</h3>
-                                        <p>TypeScript estricto, Zod para validación runtime, 
-                                        tipos generados de OpenAPI/GraphQL. Cero any en producción.</p>
-                                    </div>
-                                    <div className="approach-card">
-                                        <h3>Developer Experience Primero</h3>
-                                        <p>Entornos locales con Docker Compose, hot reload, 
-                                        seeding de datos, debugging en IDE. Onboarding {'<'} 30 min.</p>
-                                    </div>
-                                    <div className="approach-card">
-                                        <h3>Performance desde el Inicio</h3>
-                                        <p>Query optimization, caching strategy, lazy loading, 
-                                        bundle analysis. Budgets de performance en CI.</p>
-                                    </div>
-                                </div>
-                            </article>
                         </div>
 
                         <aside className="content-sidebar">
