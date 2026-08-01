@@ -1,7 +1,13 @@
 import Monteria from "../assets/images/monteria.webp";
 import "../assets/css/Principal.css";
 
+const WHATSAPP_NUMBER = "573052384659";
+
 export function Principal() {
+    const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
+        "Hola, quiero empezar un proyecto de desarrollo de software con FJD GROUP."
+    )}`;
+
     return (
         <section id="home" className="hero-tech-container">
             {/* Capa de Fondo */}
@@ -32,10 +38,15 @@ export function Principal() {
                     </p>
                     
                     <div className="tech-actions slide-in-left delay-3">
-                        <button className="btn-glow">
+                        <a
+                            className="btn-glow"
+                            href={whatsappUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Escribirnos por WhatsApp para empezar tu proyecto">
                             Empecemos tu Proyecto
                             <svg className="btn-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
