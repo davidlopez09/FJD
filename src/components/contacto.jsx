@@ -74,67 +74,145 @@ export function Contactanos() {
     };
 
     return (
-        <div id="contactanos" className="titi-cont">
-            <h1>Contáctanos</h1>
-            <div className="map">
-                <iframe
-                    className="mapa"
-                    width="90%"
-                    height="250"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d312.6757001276244!2d-75.87670604586755!3d8.757274038469344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e5a2fc29c55fa81%3A0x60fb0b58f964909e!2zQ2wuIDM3YSAjMTEtMjQsIE1vbnRlcsOtYSwgQ8OzcmRvYmE!5e0!3m2!1ses!2sco!4v1727209694687!5m2!1ses!2sco"></iframe>
-
+        <section id="contactanos" className="contacto" aria-labelledby="contacto-titulo">
+            <div className="contacto-header">
+                <h1 id="contacto-titulo" className="contacto-titulo">Contáctanos</h1>
                 <p className="parrafo-contacto">¡Cuéntanos en que podemos ayudarte hoy!</p>
             </div>
-            <div className="conten">
-                <form onSubmit={handleSubmit}>
-                    <div className="input-contact">
-                        <input type="text" name="name" placeholder="Nombre: " />
-                        <input type="email" name="email" placeholder="Email: " />
-                        <input type="tel" name="tel" placeholder="Teléfono: " />
 
-                        <select name="country" onChange={handleCountryChange}>
-                            <option value="">País:</option>
-                            {countries.map((country, index) => (
-                                <option key={index} value={country}>
-                                    {country}
-                                </option>
-                            ))}
-                        </select>
+            <div className="contacto-grid">
+                {/* Columna izquierda: mapa y datos de contacto */}
+                <aside className="contacto-info">
+                    <ul className="contacto-datos">
+                        <li className="dato">
+                            <span className="dato-icono" aria-hidden="true">
+                                <i className="bx bxs-map"></i>
+                            </span>
+                            <div className="dato-texto">
+                                <span className="dato-label">Dirección</span>
+                                <a
+                                    href="https://maps.app.goo.gl/ATx3btnMtZRuBgSz9"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+                                    Cl. 37a #11-24, Montería - Colombia
+                                </a>
+                            </div>
+                        </li>
+                        <li className="dato">
+                            <span className="dato-icono" aria-hidden="true">
+                                <i className="bx bxs-envelope"></i>
+                            </span>
+                            <div className="dato-texto">
+                                <span className="dato-label">Correo</span>
+                                <a href="mailto:servicioalcliente@fjdsas.com.co">servicioalcliente@fjdsas.com.co</a>
+                            </div>
+                        </li>
+                        <li className="dato">
+                            <span className="dato-icono" aria-hidden="true">
+                                <i className="bx bx-phone-call"></i>
+                            </span>
+                            <div className="dato-texto">
+                                <span className="dato-label">Teléfonos</span>
+                                <a href="tel:+573017788631">+(57) 301 778 86 31</a>
+                                <a href="tel:+573203754909">+(57) 320 375 49 09</a>
+                            </div>
+                        </li>
+                    </ul>
 
-                        <select name="state" onChange={handleStateChange}>
-                            <option value="">Departamento:</option>
-                            {states.map((state) => (
-                                <option key={state.id} value={state.departamento}>
-                                    {state.departamento}
-                                </option>
-                            ))}
-                        </select>
+                    <div className="contacto-mapa">
+                        <iframe
+                            className="mapa"
+                            title="Ubicación de FJD GROUP SAS en Montería, Córdoba"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d312.6757001276244!2d-75.87670604586755!3d8.757274038469344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e5a2fc29c55fa81%3A0x60fb0b58f964909e!2zQ2wuIDM3YSAjMTEtMjQsIE1vbnRlcsOtYSwgQ8OzcmRvYmE!5e0!3m2!1ses!2sco!4v1727209694687!5m2!1ses!2sco"
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
+                            allowFullScreen></iframe>
+                    </div>
+                </aside>
 
-                        <select name="city">
-                            <option value="">Ciudad:</option>
-                            {cities.map((city, index) => (
-                                <option key={index} value={city}>
-                                    {city}
-                                </option>
-                            ))}
-                        </select>
+                {/* Columna derecha: formulario */}
+                <div className="contacto-form-card">
+                    <form className="contacto-form" onSubmit={handleSubmit} noValidate>
+                        <div className="form-grid">
+                            <div className="campo">
+                                <label htmlFor="contacto-name">Nombre</label>
+                                <input id="contacto-name" type="text" name="name" autoComplete="name" />
+                            </div>
 
-                        <input type="text" name="empresa" placeholder="Empresa: " />
-                        <input
-                            type="text"
-                            className="proyectocotizar"
-                            name="proyectocotizar"
-                            placeholder="Tipo de solicitud: "
-                        />
-                        <textarea name="mensaje" rows="4.5" cols="20" placeholder="Mensaje: " />
+                            <div className="campo">
+                                <label htmlFor="contacto-email">Email</label>
+                                <input id="contacto-email" type="email" name="email" autoComplete="email" />
+                            </div>
+
+                            <div className="campo">
+                                <label htmlFor="contacto-tel">Teléfono</label>
+                                <input id="contacto-tel" type="tel" name="tel" autoComplete="tel" />
+                            </div>
+
+                            <div className="campo">
+                                <label htmlFor="contacto-empresa">Empresa</label>
+                                <input id="contacto-empresa" type="text" name="empresa" autoComplete="organization" />
+                            </div>
+
+                            <div className="campo">
+                                <label htmlFor="contacto-country">País</label>
+                                <select id="contacto-country" name="country" onChange={handleCountryChange}>
+                                    <option value="">País:</option>
+                                    {countries.map((country, index) => (
+                                        <option key={index} value={country}>
+                                            {country}
+                                        </option>
+                                    ))}
+                                </select>
+                            </div>
+
+                            <div className="campo">
+                                <label htmlFor="contacto-state">Departamento</label>
+                                <select id="contacto-state" name="state" onChange={handleStateChange}>
+                                    <option value="">Departamento:</option>
+                                    {states.map((state) => (
+                                        <option key={state.id} value={state.departamento}>
+                                            {state.departamento}
+                                        </option>
+                                    ))}
+                                </select>
+                            </div>
+
+                            <div className="campo">
+                                <label htmlFor="contacto-city">Ciudad</label>
+                                <select id="contacto-city" name="city">
+                                    <option value="">Ciudad:</option>
+                                    {cities.map((city, index) => (
+                                        <option key={index} value={city}>
+                                            {city}
+                                        </option>
+                                    ))}
+                                </select>
+                            </div>
+
+                            <div className="campo">
+                                <label htmlFor="contacto-solicitud">Tipo de solicitud</label>
+                                <input
+                                    id="contacto-solicitud"
+                                    type="text"
+                                    className="proyectocotizar"
+                                    name="proyectocotizar"
+                                />
+                            </div>
+
+                            <div className="campo campo-full">
+                                <label htmlFor="contacto-mensaje">Mensaje</label>
+                                <textarea id="contacto-mensaje" name="mensaje" rows="5" />
+                            </div>
+                        </div>
 
                         <div className="btn-cont">
                             <button type="submit">Enviar</button>
                         </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
-        </div>
+        </section>
     );
 }
 
