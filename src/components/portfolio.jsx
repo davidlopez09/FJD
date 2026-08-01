@@ -127,19 +127,17 @@ export function Portfolio() {
                     <article key={project.id} className="project-card">
                         <div className="project-image">
                             <img src={project.image} alt={project.name} loading="lazy" />
-                            <div className="image-overlay"></div>
-                            <span className="project-category">{project.category}</span>
-                            <div className="project-hover-content">
-                                <h3 className="project-name">{project.name}</h3>
-                                <p className="project-description">{project.description}</p>
-                                <button
-                                    className="project-link"
-                                    onClick={() => openModal(project)}
-                                    aria-label="Ver caso de estudio de {project.name}"
-                                >
-                                    Ver caso de estudio →
-                                </button>
-                            </div>
+                        </div>
+                        <div className="project-body">
+                            <h3 className="project-name">{project.name}</h3>
+                            <p className="project-description">{project.description}</p>
+                            <button
+                                className="project-link"
+                                onClick={() => openModal(project)}
+                                aria-label={`Ver caso de estudio de ${project.name}`}
+                            >
+                                Ver caso de estudio →
+                            </button>
                         </div>
                     </article>
                 ))}
