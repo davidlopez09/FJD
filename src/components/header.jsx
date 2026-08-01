@@ -3,6 +3,11 @@ import { Link, useLocation } from "react-router-dom";
 import Logo from "../assets/images/logo.png";
 import "../assets/css/header.css";
 
+const WHATSAPP_NUMBER = "573052384659";
+const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
+    "Hola, quiero solicitar una asesoría para mi proyecto de software."
+)}`;
+
 const mainNav = [
     { label: "Inicio", href: "/" },
     { label: "Servicios", href: "#servicios" },
@@ -99,7 +104,13 @@ export function Header({ variant }) {
                                 ))}
                             </ul>
                         </nav>
-                        <a href="#" className="button">
+                        <a
+                            href={WHATSAPP_URL}
+                            className="button"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={handleMenuClick}
+                            aria-label="Solicitar asesoría por WhatsApp">
                             <i className="bx bx-help-circle"></i>
                             <span>Ayuda</span>
                         </a>
