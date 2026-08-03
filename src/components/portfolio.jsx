@@ -3,19 +3,7 @@ import imagen from "./Svg/AlumbradoPublico.svg";
 import imagen1 from "./Svg/Espiral.svg";
 import imagen2 from "../assets/images/censoarboreo.jpeg";
 import imagen3 from "./Svg/PerdidasEnergia.svg";
-import { MapaLuminarias } from "./ProjectVisuals/MapaLuminarias.jsx";
-import { RutaReparto } from "./ProjectVisuals/RutaReparto.jsx";
 import "../assets/css/portfolio.css";
-
-const VISUALS = {
-    alumbrado: MapaLuminarias,
-    espiral: RutaReparto,
-};
-
-function ProjectVisual({ type, compact = false }) {
-    const Visual = VISUALS[type];
-    return <Visual compact={compact} />;
-}
 
 export function Portfolio() {
     const [selectedProject, setSelectedProject] = useState(null);
@@ -27,7 +15,6 @@ export function Portfolio() {
             category: "Gobierno / Smart City",
             description: "Sistema de Información para Administración y control Operativo de Alumbrados Públicos.",
             image: imagen,
-            visualType: "alumbrado",
             fullDescription: "Plataforma integral para la gestión, monitoreo y control operativo de redes de alumbrado público municipal. Permite la georreferenciación de cada punto de luz, programación de encendido/apagado por sectores, detección automática de fallas, gestión de mantenimiento preventivo y correctivo, y generación de reportes de consumo energético y ahorro.",
             highlights: [
                 "Gestión de 50k+ luminarias en tiempo real",
@@ -53,7 +40,6 @@ export function Portfolio() {
             category: "Comercial / Movilidad",
             description: "Aplicativo para Distribuidoras de ventas a través de dispositivos móviles.",
             image: imagen1,
-            visualType: "espiral",
             fullDescription: "Aplicación móvil offline-first diseñada para fuerzas de venta en campo de distribuidoras mayoristas. Permite gestión de catálogo de productos, toma de pedidos sin conexión, sincronización automática al recuperar conectividad, rutas de visita optimizadas, control de inventario en vehículo y generación de comprobantes electrónicos.",
             highlights: [
                 "Modo offline-first con sincronización inteligente",
@@ -140,11 +126,7 @@ export function Portfolio() {
                 {projects.map((project) => (
                     <article key={project.id} className="project-card">
                         <div className="project-image">
-                            {project.visualType ? (
-                                <ProjectVisual type={project.visualType} compact />
-                            ) : (
-                                <img src={project.image} alt={project.name} loading="lazy" />
-                            )}
+                            <img src={project.image} alt={project.name} loading="lazy" />
                         </div>
                         <div className="project-body">
                             <h3 className="project-name">{project.name}</h3>
@@ -189,13 +171,6 @@ export function Portfolio() {
                                     </div>
                                 ))}
                             </div>
-
-                            {selectedProject.visualType && (
-                                <div className="modal-section">
-                                    <h3>Visualización</h3>
-                                    <ProjectVisual type={selectedProject.visualType} />
-                                </div>
-                            )}
 
                             <div className="modal-section">
                                 <h3>Aspectos destacados</h3>
