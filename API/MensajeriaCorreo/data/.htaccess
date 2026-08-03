@@ -1,0 +1,14 @@
+# Bloquea cualquier acceso HTTP directo a esta carpeta.
+# Contiene datos personales (roster de cumpleanos) que nunca deben
+# poder pedirse por URL, aunque alguien adivine el nombre del archivo.
+
+# Apache 2.4+
+<IfModule mod_authz_core.c>
+    Require all denied
+</IfModule>
+
+# Apache 2.2 (compatibilidad con hostings antiguos)
+<IfModule !mod_authz_core.c>
+    Order allow,deny
+    Deny from all
+</IfModule>

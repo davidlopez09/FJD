@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Modulo de mensajeria de correo — datos confidenciales, nunca en git
+API/MensajeriaCorreo/data/cumpleanos.csv
+API/MensajeriaCorreo/data/cumpleanos_enviados.json
+API/MensajeriaCorreo/.env
+API/MensajeriaCorreo/vendor/
