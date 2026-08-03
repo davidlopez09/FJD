@@ -4,10 +4,12 @@ import imagen1 from "./Svg/Espiral.svg";
 import imagen2 from "../assets/images/censoarboreo.jpeg";
 import imagen3 from "./Svg/PerdidasEnergia.svg";
 import { MapaLuminarias } from "./ProjectVisuals/MapaLuminarias.jsx";
+import { RutaReparto } from "./ProjectVisuals/RutaReparto.jsx";
 import "../assets/css/portfolio.css";
 
 const VISUALS = {
     alumbrado: MapaLuminarias,
+    espiral: RutaReparto,
 };
 
 function ProjectVisual({ type, compact = false }) {
@@ -51,6 +53,7 @@ export function Portfolio() {
             category: "Comercial / Movilidad",
             description: "Aplicativo para Distribuidoras de ventas a través de dispositivos móviles.",
             image: imagen1,
+            visualType: "espiral",
             fullDescription: "Aplicación móvil offline-first diseñada para fuerzas de venta en campo de distribuidoras mayoristas. Permite gestión de catálogo de productos, toma de pedidos sin conexión, sincronización automática al recuperar conectividad, rutas de visita optimizadas, control de inventario en vehículo y generación de comprobantes electrónicos.",
             highlights: [
                 "Modo offline-first con sincronización inteligente",
