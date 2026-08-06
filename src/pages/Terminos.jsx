@@ -118,7 +118,7 @@ export function Terminos() {
 <hr />
 <h2 id="confidencialidad">10. Confidencialidad</h2>
 <p>Ambas partes se obligan a mantener la reserva sobre la información técnica, comercial, financiera y operativa a la que accedan con ocasión de la relación, y a no divulgarla ni usarla para fines distintos de la ejecución del contrato.</p>
-<p>Esta obligación subsiste durante <strong>cinco (5) años</strong> contados desde la terminación de la relación contractual, y de forma indefinida respecto de los datos personales y del código fuente y demás activos de propiedad intelectual.</p>
+<p>El deber de reserva subsiste durante <strong>cinco (5) años</strong> posteriores a la terminación del contrato para la información general, y de manera indefinida respecto de la obligación de no divulgar datos personales y código fuente a terceros no autorizados. Esta obligación de confidencialidad es independiente de los plazos de conservación y supresión de los datos personales, que se rigen por la Política de Privacidad y la Política de Eliminación de Cuenta y Datos.</p>
 <p>Todo nuestro personal se encuentra vinculado por cláusulas de confidencialidad. <strong>No empleamos subcontratistas ni personal externo con acceso a la información de nuestros clientes.</strong></p>
 <hr />
 <h2 id="proteccion-de-datos-personales">11. Protección de datos personales</h2>
