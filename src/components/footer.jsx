@@ -26,12 +26,15 @@ export function Footer() {
                         </div>
                     </div>
                     <div className="iconos-content">
-                        <h2 className="footitu">Legal</h2>
+                        <h2 className="footitu">Políticas</h2>
                         <div className="contac legal-links">
-                            <Link className="span5" to="/politicas-privacidad">Política de Privacidad</Link>
-                            <Link className="span5" to="/legal/terminos-y-condiciones">Términos y Condiciones</Link>
-                            <Link className="span5" to="/legal/eliminacion-de-datos">Eliminación de Cuenta y Datos</Link>
                             <Link className="span5" to="/legal">Centro Legal</Link>
+                            <Link className="span5" to="/politicas-privacidad">Política de Privacidad</Link>
+                            <Link className="span5" to="/legal/terminos-y-condiciones">Términos y Condiciones de Servicio</Link>
+                            <Link className="span5" to="/legal/eliminacion-de-datos">Eliminación de Cuenta y Datos</Link>
+                            <Link className="span5" to="/legal/tratamiento-de-datos-personales">Tratamiento de Datos Personales</Link>
+                            <Link className="span5" to="/legal/seguridad-de-la-informacion">Seguridad de la Información</Link>
+                            <Link className="span5" to="/legal/cookies">Política de Cookies</Link>
                         </div>
                     </div>
                     <div className="iconos-content">

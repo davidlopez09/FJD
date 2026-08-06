@@ -111,7 +111,7 @@ export function Privacidad() {
                     <li><strong>Nosotros no usamos esa información para fines propios.</strong> No la comercializamos, no la cedemos, no la analizamos con fines comerciales ni la empleamos para construir perfiles.</li>
                     <li><strong>Aplicamos únicamente las instrucciones del cliente</strong>, salvo obligación legal en contrario.</li>
                 </ul>
-                <p>Esta relación se formaliza mediante el correspondiente contrato de prestación de servicios y su anexo de transmisión de datos personales, conforme al artículo 25 del Decreto 1377 de 2013, compilado en el Decreto 1074 de 2015.</p>
+                <p>Esta relación se formaliza mediante el correspondiente contrato de prestación de servicios y su anexo de transmisión de datos personales, el cual aplica tanto a la modalidad SaaS como a la modalidad On Premise en la que prestemos servicios de administración técnica con acceso a datos personales del Cliente, conforme al artículo 25 del Decreto 1377 de 2013, compilado en el Decreto 1074 de 2015.</p>
                 <p>Si usted es titular de datos alojados en una plataforma operada por nosotros para un cliente, la solicitud debe dirigirse <strong>al cliente titular de la plataforma</strong>. Aun así, si nos escribe directamente, la trasladaremos a quien corresponda y le informaremos que lo hemos hecho.</p>
                 <hr />
                 <h2 id="que-informacion-tratamos">3. Qué información tratamos</h2>
