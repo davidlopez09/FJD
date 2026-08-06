@@ -39,7 +39,6 @@ function HomePage() {
             <Contactanos />
             <Button />
             <Footer />
-            <div id="legal-strip"><a href="/legal">Política de Privacidad</a></div>
         </>
     );
 }

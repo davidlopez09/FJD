@@ -108,6 +108,17 @@ hr {
     color: #417BBD;
 }
 
+.legal-links {
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+}
+
+.legal-links .span5:hover {
+    transition: transform 0.3s ease ease-in-out;
+    text-decoration: underline;
+}
+
 @media (max-width: 768px) {
     .contenelogo {
         display: block;
@@ -133,22 +144,4 @@ hr {
     .icon-content a i{
         font-size: 0.8em;
     }
-}
-
-#legal-strip {
-    width: 100%;
-    box-sizing: border-box;
-    text-align: center;
-    padding: 10px 16px;
-    background: #e6e6e6;
-    font-family: Outfit, sans-serif;
-    font-size: 0.85rem;
-}
-#legal-strip a {
-    color: #2563eb;
-    text-decoration: none;
-    font-weight: 500;
-}
-#legal-strip a:hover {
-    text-decoration: underline;
 }

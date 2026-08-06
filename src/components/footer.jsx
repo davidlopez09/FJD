@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../assets/css/footer.css";
 import logo from "../assets/images/logo.png";
 
@@ -22,6 +23,15 @@ export function Footer() {
                                 target="_blank">
                                 <i className="bx bxl-instagram"></i>
                             </a>
+                        </div>
+                    </div>
+                    <div className="iconos-content">
+                        <h2 className="footitu">Legal</h2>
+                        <div className="contac legal-links">
+                            <Link className="span5" to="/politicas-privacidad">Política de Privacidad</Link>
+                            <Link className="span5" to="/legal/terminos-y-condiciones">Términos y Condiciones</Link>
+                            <Link className="span5" to="/legal/eliminacion-de-datos">Eliminación de Cuenta y Datos</Link>
+                            <Link className="span5" to="/legal">Centro Legal</Link>
                         </div>
                     </div>
                     <div className="iconos-content">
