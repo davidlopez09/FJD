@@ -19,7 +19,7 @@ export function Footer() {
                             </a>
                             <a
                                 className="icons-a"
-                                href="https://www.instagram.com/fjddesarrollodesoftware/"
+                                href="https://www.instagram.com/fjdgroupsas/"
                                 target="_blank">
                                 <i className="bx bxl-instagram"></i>
                             </a>
