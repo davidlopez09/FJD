@@ -183,6 +183,7 @@ export function TratamientoDatos() {
 <hr />
 <h2 id="tratamiento-de-datos-sensibles">6. Tratamiento de datos sensibles</h2>
 <p>Nuestras plataformas pueden tratar <strong>fotografías de personas y firmas manuscritas</strong>, que pueden constituir datos sensibles conforme al artículo 5 de la Ley 1581 de 2012.</p>
+<p>Las fotografías y firmas manuscritas capturadas en las plataformas pueden constituir <strong>datos sensibles</strong> en los términos del artículo 5 de la Ley 1581 de 2012. En los casos en que actuamos como <strong>Encargados del Tratamiento</strong>, no nos corresponde recabar la autorización del titular; es el <strong>Cliente</strong>, en su calidad de <strong>Responsable del Tratamiento</strong>, quien debe obtener previamente la autorización explícita e informada exigida por el artículo 6 de la Ley 1581 de 2012, salvo que aplique alguna de las excepciones legales taxativas previstas en dicha norma.</p>
 <p>Reglas aplicables:</p>
 <ol type="1">
 <li>Ningún titular está obligado a autorizar el tratamiento de datos sensibles.</li>
@@ -278,7 +279,7 @@ export function TratamientoDatos() {
 <blockquote>
 <p>Texto sugerido para la casilla de aceptación.</p>
 </blockquote>
-<p><em>Autorizo de manera previa, expresa e informada a FJD GROUP S.A.S., NIT 901437071-8, para tratar mis datos personales conforme a las finalidades descritas en su Política de Tratamiento de Datos Personales, disponible en https://fjdsas.com.co/legal/tratamiento-de-datos-personales.html, la cual declaro haber leído y comprendido. Declaro conocer que puedo ejercer mis derechos de acceso, actualización, rectificación, supresión y revocatoria escribiendo a analistaadministrativo@fjdsas.com.co, y que no estoy obligado a autorizar el tratamiento de datos sensibles.</em></p>
+<p><em>Autorizo de manera previa, expresa e informada a FJD GROUP S.A.S., NIT 901437071-8, para tratar mis datos personales conforme a las finalidades descritas en su Política de Tratamiento de Datos Personales, disponible en https://fjdsas.com.co/legal/tratamiento-de-datos-personales, incluyendo su transferencia y/o transmisión a terceros ubicados en el territorio nacional o en el exterior (incluyendo, entre otros, Estados Unidos), para las finalidades descritas, en los términos del artículo 26 de la Ley 1581 de 2012, la cual declaro haber leído y comprendido. Declaro conocer que puedo ejercer mis derechos de acceso, actualización, rectificación, supresión y revocatoria escribiendo a protecciondedatos@fjdsas.com.co, y que no estoy obligado a autorizar el tratamiento de datos sensibles.</em></p>
 <hr />
 <p><em>Documento aprobado por FJD GROUP S.A.S. — Versión 1.0, vigente desde el 27 de julio de 2026.</em></p>
             </main>
