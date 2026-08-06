@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../assets/css/legal.css";
 import { LegalLayout } from "./LegalLayout";
 
@@ -28,17 +29,17 @@ export function LegalHub() {
                 <p>En esta sección publicamos, de forma completa y accesible, los documentos que rigen nuestra actividad. Todos se rigen por la legislación de la República de Colombia.</p>
                 <hr />
                 <h2 id="documentos-vigentes">Documentos vigentes</h2>
-                <h3 id="política-de-privacidad"><a href="../politicas-privacidad.html">Política de Privacidad</a></h3>
+                <h3 id="política-de-privacidad"><Link to="/politicas-privacidad">Política de Privacidad</Link></h3>
                 <p>Qué información tratamos, con qué finalidad, con quién la compartimos, cuánto tiempo la conservamos y qué derechos le asisten como titular. Aplica a nuestro sitio web, aplicaciones móviles, aplicaciones web y plataformas SaaS. <em>Versión 1.0 · Vigente desde el 27 de julio de 2026</em></p>
-                <h3 id="términos-y-condiciones-de-servicio"><a href="terminos-y-condiciones.html">Términos y Condiciones de Servicio</a></h3>
+                <h3 id="términos-y-condiciones-de-servicio"><Link to="/legal/terminos-y-condiciones">Términos y Condiciones de Servicio</Link></h3>
                 <p>El marco contractual de nuestros servicios: modalidades de prestación, propiedad intelectual, licencia de uso, obligaciones de las partes, soporte, responsabilidad y terminación. Dirigidos a las empresas y entidades que nos contratan. <em>Versión 1.0 · Vigente desde el 27 de julio de 2026</em></p>
-                <h3 id="política-de-eliminación-de-cuenta-y-datos"><a href="eliminacion-de-datos.html">Política de Eliminación de Cuenta y Datos</a></h3>
+                <h3 id="política-de-eliminación-de-cuenta-y-datos"><Link to="/legal/eliminacion-de-datos">Política de Eliminación de Cuenta y Datos</Link></h3>
                 <p>Cómo solicitar la eliminación de una cuenta y de los datos asociados, qué se elimina, qué debe conservarse por mandato legal y en qué plazos respondemos. Acceso público, sin necesidad de instalar ninguna aplicación. <em>Versión 1.0 · Vigente desde el 27 de julio de 2026</em></p>
-                <h3 id="política-de-tratamiento-de-datos-personales"><a href="tratamiento-de-datos-personales.html">Política de Tratamiento de Datos Personales</a></h3>
+                <h3 id="política-de-tratamiento-de-datos-personales"><Link to="/legal/tratamiento-de-datos-personales">Política de Tratamiento de Datos Personales</Link></h3>
                 <p>Nuestro manual interno de políticas y procedimientos conforme a la Ley 1581 de 2012: principios, bases de datos, autorización, derechos de los titulares y procedimiento de consultas y reclamos. Incluye el Aviso de Privacidad. <em>Versión 1.0 · Vigente desde el 27 de julio de 2026</em></p>
-                <h3 id="política-de-seguridad-de-la-información"><a href="seguridad-de-la-informacion.html">Política de Seguridad de la Información</a></h3>
+                <h3 id="política-de-seguridad-de-la-información"><Link to="/legal/seguridad-de-la-informacion">Política de Seguridad de la Información</Link></h3>
                 <p>Los controles técnicos, humanos y administrativos con que protegemos la información: control de acceso, criptografía, desarrollo seguro, copias de seguridad, auditoría y gestión de incidentes. <em>Versión 1.0 · Vigente desde el 27 de julio de 2026</em></p>
-                <h3 id="política-de-cookies-y-tecnologías-de-almacenamiento"><a href="cookies.html">Política de Cookies y Tecnologías de Almacenamiento</a></h3>
+                <h3 id="política-de-cookies-y-tecnologías-de-almacenamiento"><Link to="/legal/cookies">Política de Cookies y Tecnologías de Almacenamiento</Link></h3>
                 <p>Qué cookies y mecanismos de almacenamiento utilizamos y por qué no empleamos publicidad, analítica de terceros ni perfilamiento. <em>Versión 1.0 · Vigente desde el 27 de julio de 2026</em></p>
                 <hr />
                 <h2 id="lo-esencial-en-cuatro-puntos">Lo esencial, en cuatro puntos</h2>
