@@ -65,8 +65,7 @@ terceros</strong> con fines comerciales.</li>
 <li><strong>No utilizamos cookies de redes sociales</strong> ni botones
 de seguimiento incrustados.</li>
 </ul>
-<p>Únicamente empleamos cookies y mecanismos de almacenamiento
-<strong>estrictamente necesarios</strong> para que el sitio y las
+<p>Únicamente empleamos cookies y mecanismos de almacenamiento <strong>estrictamente necesarios</strong> para que el sitio y las
 plataformas funcionen.</p>
 <hr />
 <h2 id="cookies-del-sitio-web-corporativo">3. Cookies del sitio web
@@ -201,8 +200,7 @@ guardados desde las opciones de borrado de datos de navegación de su
 navegador.</p>
 <hr />
 <h2 id="base-para-su-uso">8. Base para su uso</h2>
-<p>Las cookies y tecnologías descritas en esta Política son
-<strong>estrictamente necesarias</strong> para prestar el servicio
+<p>Las cookies y tecnologías descritas en esta Política son <strong>estrictamente necesarias</strong> para prestar el servicio
 solicitado por el usuario: navegar por el sitio, enviar una solicitud de
 contacto o mantener una sesión autenticada.</p>
 <p>Al no emplearse cookies publicitarias, de analítica de terceros ni de

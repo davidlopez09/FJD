@@ -56,9 +56,7 @@ voluntaria y orientadora: <strong>no declaramos contar con certificación
 en ninguna de estas normas.</strong></p>
 <hr />
 <h2 id="objetivo-y-alcance">2. Objetivo y alcance</h2>
-<p><strong>Objetivo.</strong> Preservar la
-<strong>confidencialidad</strong>, la <strong>integridad</strong> y la
-<strong>disponibilidad</strong> de la información propia y de la
+<p><strong>Objetivo.</strong> Preservar la <strong>confidencialidad</strong>, la <strong>integridad</strong> y la <strong>disponibilidad</strong> de la información propia y de la
 información que nos confían nuestros clientes, y garantizar el
 cumplimiento del régimen colombiano de protección de datos
 personales.</p>
@@ -148,8 +146,7 @@ protección de credenciales</h2>
 <tbody>
 <tr className="odd">
 <td>Comunicaciones</td>
-<td>Todo el tráfico entre aplicaciones y servidores se transmite sobre
-<strong>HTTPS con TLS</strong>. No se admiten conexiones en texto
+<td>Todo el tráfico entre aplicaciones y servidores se transmite sobre <strong>HTTPS con TLS</strong>. No se admiten conexiones en texto
 plano</td>
 </tr>
 <tr className="even">
@@ -160,8 +157,7 @@ ningún miembro del equipo</td>
 </tr>
 <tr className="odd">
 <td>Credenciales en dispositivos móviles</td>
-<td>Los tokens de sesión y las credenciales se almacenan en el
-<strong>espacio protegido de la aplicación, mediante mecanismos de
+<td>Los tokens de sesión y las credenciales se almacenan en el <strong>espacio protegido de la aplicación, mediante mecanismos de
 almacenamiento cifrado</strong> provistos por la plataforma</td>
 </tr>
 <tr className="even">
@@ -266,8 +262,7 @@ seguridad</h2>
 integridad o disponibilidad de la información se gestiona conforme al
 siguiente procedimiento:</p>
 <p><strong>1. Reporte.</strong> Cualquier miembro del equipo, cliente o
-tercero puede reportar un incidente a
-<strong>servicioalcliente@fjdsas.com.co</strong>. El reporte es obligatorio para
+tercero puede reportar un incidente a <strong>servicioalcliente@fjdsas.com.co</strong>. El reporte es obligatorio para
 todo nuestro personal y no admite demora.</p>
 <p><strong>2. Registro y clasificación.</strong> El Área de Soporte
 registra el incidente y lo clasifica según su criticidad y según si
@@ -302,15 +297,13 @@ vulnerabilidades</h2>
 <li>Realizamos <strong>diagnósticos técnicos periódicos</strong> sobre
 nuestras aplicaciones y su configuración, orientados a identificar
 debilidades de seguridad.</li>
-<li>Los hallazgos se priorizan según severidad e impacto, y su
-<strong>mitigación se incorpora al plan de desarrollo</strong> como
+<li>Los hallazgos se priorizan según severidad e impacto, y su <strong>mitigación se incorpora al plan de desarrollo</strong> como
 trabajo formalmente planificado.</li>
 <li>Las vulnerabilidades críticas se atienden con prioridad sobre
 cualquier otro desarrollo en curso.</li>
 <li>Mantenemos actualizadas las dependencias de terceros y retiramos las
 que han alcanzado su fin de vida.</li>
-<li>Recibimos reportes de vulnerabilidades de terceros en
-<strong>servicioalcliente@fjdsas.com.co</strong>, y agradecemos su divulgación
+<li>Recibimos reportes de vulnerabilidades de terceros en <strong>servicioalcliente@fjdsas.com.co</strong>, y agradecemos su divulgación
 responsable.</li>
 </ul>
 <hr />
