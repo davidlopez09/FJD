@@ -14,13 +14,14 @@
 
 require_once __DIR__ . '/../bootstrap.php';
 
-use App\Correo\Config\EnvConfigProvider;
 use App\Correo\Cumpleanos\BuscadorCumpleanos;
 use App\Correo\Cumpleanos\RegistroEnviados;
 use App\Correo\Cumpleanos\RepositorioCumpleanos;
 use App\Correo\Cumpleanos\RevisorCumpleanos;
+use App\Correo\Mailer\ApiEmailMailer;
 use App\Correo\Mailer\CorreoException;
 use App\Correo\Mailer\CorreoMailer;
+use App\Correo\Mailer\EmailApiClient;
 
 if (PHP_SAPI !== 'cli') {
     http_response_code(403);
@@ -47,6 +48,7 @@ echo 'Simulando fecha: ' . $hoySimulado->format('d-m') . "\n";
 echo 'Modo: ' . ($enviarDeVerdad ? 'ENVIO REAL' : 'SIMULACION (sin enviar)') . "\n\n";
 
 $correoGerencia = getenv('GERENCIA_EMAIL') ?: ($_ENV['GERENCIA_EMAIL'] ?? '');
+$emailApiUrl = getenv('EMAIL_API_URL') ?: ($_ENV['EMAIL_API_URL'] ?? '');
 
 $logger = function (string $nivel, string $mensaje): void {
     echo "[{$nivel}] {$mensaje}\n";
@@ -55,7 +57,7 @@ $logger = function (string $nivel, string $mensaje): void {
 $repositorio = new RepositorioCumpleanos(__DIR__ . '/../data/cumpleanos.csv', $logger);
 $buscador = new BuscadorCumpleanos();
 $registro = new RegistroEnviados(__DIR__ . '/../data/cumpleanos_enviados.json');
-$mailer = new CorreoMailer(new EnvConfigProvider(), $logger);
+$mailer = new ApiEmailMailer(new EmailApiClient($emailApiUrl), $logger);
 
 $revisor = new RevisorCumpleanos($repositorio, $buscador, $registro, $mailer, $correoGerencia, $logger);
 
