@@ -39,9 +39,12 @@ class EmailApiClient
      * Envia un correo a un unico destinatario via POST /email_api/email.
      * No se piden tabla (procedure vacio) ni adjuntos: no los usa el modulo de cumpleanos.
      *
+     * @param string|null $image Data URI base64 completa (ej. 'data:image/png;base64,...').
+     *                           Si es null o '', no se incluye la clave 'image' en el payload.
+     *
      * @throws EmailApiException
      */
-    public function enviarEmail(string $asunto, string $toEmail, string $emailBody): string
+    public function enviarEmail(string $asunto, string $toEmail, string $emailBody, ?string $image = null): string
     {
         $payload = [
             'asunto' => $asunto,
@@ -51,6 +54,10 @@ class EmailApiClient
             'fields' => (object) [],
             'adjuntos' => [],
         ];
+
+        if ($image !== null && $image !== '') {
+            $payload['image'] = $image;
+        }
 
         return $this->post('/email', $payload);
     }

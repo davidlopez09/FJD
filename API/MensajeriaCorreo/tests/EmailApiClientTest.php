@@ -114,4 +114,33 @@ assertIgual('<p>hola Ana</p>', $payloadCapturado['email_body'], 'El payload envi
 assertIgual('', $payloadCapturado['procedure'], 'El payload no pide tabla (procedure vacio)');
 assertVerdadero(isset($payloadCapturado['adjuntos']) && $payloadCapturado['adjuntos'] === [], 'El payload no incluye adjuntos');
 
+// --- Caso 8: cuando se pasa una imagen, el payload incluye la clave 'image' ---
+$payloadConImagen = null;
+$transporteCapturadorImagen = function (string $url, string $jsonBody, int $timeout) use (&$payloadConImagen) {
+    $payloadConImagen = json_decode($jsonBody, true);
+    return [
+        'body' => '{"status":"OK","result":"Email enviado Correctamente","error":{"code":"","message":""}}',
+        'httpCode' => 200,
+        'curlErr' => '',
+    ];
+};
+$cliente8 = new EmailApiClient('https://conelec.co:2020/email_api', 60, $transporteCapturadorImagen);
+$cliente8->enviarEmail('Asunto', 'ana@example.com', '<p>hola</p>', 'data:image/png;base64,AAAA');
+assertVerdadero(isset($payloadConImagen['image']), 'El payload incluye la clave image cuando se pasa una imagen');
+assertIgual('data:image/png;base64,AAAA', $payloadConImagen['image'], 'El payload envia la imagen exacta que se paso');
+
+// --- Caso 9: sin imagen, el payload no incluye la clave 'image' ---
+$payloadSinImagen = ['image' => 'no debe sobrevivir'];
+$transporteCapturadorSinImagen = function (string $url, string $jsonBody, int $timeout) use (&$payloadSinImagen) {
+    $payloadSinImagen = json_decode($jsonBody, true);
+    return [
+        'body' => '{"status":"OK","result":"Email enviado Correctamente","error":{"code":"","message":""}}',
+        'httpCode' => 200,
+        'curlErr' => '',
+    ];
+};
+$cliente9 = new EmailApiClient('https://conelec.co:2020/email_api', 60, $transporteCapturadorSinImagen);
+$cliente9->enviarEmail('Asunto', 'ana@example.com', '<p>hola</p>');
+assertVerdadero(!isset($payloadSinImagen['image']), 'El payload no incluye la clave image cuando no se pasa imagen');
+
 resumenPruebas();
