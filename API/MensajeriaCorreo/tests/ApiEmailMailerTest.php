@@ -68,4 +68,34 @@ $mailer4 = new ApiEmailMailer($cliente4);
 $resultado4 = $mailer4->enviar('ana@example.com', 'Asunto', '<p>html</p>', 'texto plano ignorado');
 assertVerdadero($resultado4, 'Pasar cuerpoTexto no rompe el envio aunque la API lo ignore');
 
+// --- Caso 6: la imagen fija del constructor se reenvia en cada llamada a enviarEmail() ---
+$imagenPayload = null;
+$transporteCapturadorImagenMailer = function (string $url, string $jsonBody, int $timeout) use (&$imagenPayload) {
+    $imagenPayload = json_decode($jsonBody, true);
+    return [
+        'body' => '{"status":"OK","result":"Email enviado Correctamente","error":{"code":"","message":""}}',
+        'httpCode' => 200,
+        'curlErr' => '',
+    ];
+};
+$cliente6 = new EmailApiClient('https://conelec.co:2020/email_api', 60, $transporteCapturadorImagenMailer);
+$mailer6 = new ApiEmailMailer($cliente6, 'data:image/png;base64,BBBB');
+$mailer6->enviar('ana@example.com', 'Asunto', '<p>hola</p>');
+assertIgual('data:image/png;base64,BBBB', $imagenPayload['image'], 'La imagen fija del constructor se envia en el payload');
+
+// --- Caso 7: sin imagen en el constructor, el payload no incluye la clave image ---
+$sinImagenPayload = ['image' => 'no debe sobrevivir'];
+$transporteCapturadorSinImagenMailer = function (string $url, string $jsonBody, int $timeout) use (&$sinImagenPayload) {
+    $sinImagenPayload = json_decode($jsonBody, true);
+    return [
+        'body' => '{"status":"OK","result":"Email enviado Correctamente","error":{"code":"","message":""}}',
+        'httpCode' => 200,
+        'curlErr' => '',
+    ];
+};
+$cliente7 = new EmailApiClient('https://conelec.co:2020/email_api', 60, $transporteCapturadorSinImagenMailer);
+$mailer7 = new ApiEmailMailer($cliente7);
+$mailer7->enviar('ana@example.com', 'Asunto', '<p>hola</p>');
+assertVerdadero(!isset($sinImagenPayload['image']), 'Sin imagen en el constructor, el payload no incluye la clave image');
+
 resumenPruebas();

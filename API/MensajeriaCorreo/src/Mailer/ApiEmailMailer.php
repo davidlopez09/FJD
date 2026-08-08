@@ -15,12 +15,16 @@ class ApiEmailMailer extends CorreoMailer
     /** @var EmailApiClient */
     private $cliente;
 
+    /** @var string|null Data URI base64 de la imagen a incrustar en cada correo (misma imagen para todos los envios de esta instancia) */
+    private $imagenBase64;
+
     /** @var callable|null Logger opcional: function(string $nivel, string $mensaje) */
     private $logger;
 
-    public function __construct(EmailApiClient $cliente, ?callable $logger = null)
+    public function __construct(EmailApiClient $cliente, ?string $imagenBase64 = null, ?callable $logger = null)
     {
         $this->cliente = $cliente;
+        $this->imagenBase64 = $imagenBase64;
         $this->logger = $logger;
     }
 
@@ -31,7 +35,7 @@ class ApiEmailMailer extends CorreoMailer
         }
 
         try {
-            $this->cliente->enviarEmail($asunto, $destinatario, $cuerpoHtml);
+            $this->cliente->enviarEmail($asunto, $destinatario, $cuerpoHtml, $this->imagenBase64);
         } catch (EmailApiException $e) {
             $this->log('error', 'Fallo enviando via email_api a ' . self::enmascarar($destinatario) . ': ' . $e->getMessage());
             throw $e;
