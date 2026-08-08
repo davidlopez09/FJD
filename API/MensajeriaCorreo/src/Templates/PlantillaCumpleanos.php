@@ -37,7 +37,7 @@ class PlantillaCumpleanos
         return <<<HTML
 <div style="font-family:Arial,Helvetica,sans-serif; max-width:560px; margin:0 auto;">
     <div style="background-color:{$colorFondo}; border-radius:16px; padding:32px 28px; text-align:center;">
-        <p style="font-size:15px; letter-spacing:1px; text-transform:uppercase; color:{$colorAcento}; font-weight:bold; margin:0 0 8px;">🎉 Hoy es tu dia 🎉</p>
+        <p style="font-size:15px; letter-spacing:1px; text-transform:uppercase; color:{$colorAcento}; font-weight:bold; margin:0 0 8px;">🎉 Hoy es tu día 🎉</p>
         <h1 style="color:{$colorMarca}; font-size:28px; margin:0 0 20px;">¡Hola, {$nombreSeguro}!</h1>
         <p style="color:#333333; font-size:16px; line-height:1.6; margin:0 0 16px;">
             En <strong>FJD GROUP</strong> queremos desearte un cumpleaños increíble, lleno de alegría y momentos especiales junto a quienes más quieres. 🎂
@@ -51,6 +51,9 @@ class PlantillaCumpleanos
 HTML;
     }
 
+    /**
+     * Nota: hoy no se entrega — ApiEmailMailer no reenvia el texto plano a email_api (sin AltBody, ver API_EMAIL.md).
+     */
     public static function textoTrabajador(string $nombre): string
     {
         return "🎉 ¡Hola, {$nombre}! 🎉\n\n"
@@ -84,6 +87,9 @@ HTML;
 HTML;
     }
 
+    /**
+     * Nota: hoy no se entrega — ApiEmailMailer no reenvia el texto plano a email_api (sin AltBody, ver API_EMAIL.md).
+     */
     public static function textoGerencia(string $nombreCumpleanero): string
     {
         return "🎂 Hoy cumple años {$nombreCumpleanero}.\n\n"
