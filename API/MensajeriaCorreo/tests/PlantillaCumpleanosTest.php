@@ -8,12 +8,14 @@ use App\Correo\Templates\PlantillaCumpleanos;
 $html = PlantillaCumpleanos::htmlTrabajador('Ana <Torres>');
 assertVerdadero(strpos($html, '&lt;Torres&gt;') !== false, 'El nombre del trabajador se escapa en el HTML');
 assertVerdadero(strpos($html, 'Ana') !== false, 'El HTML incluye el nombre del trabajador');
+assertVerdadero(strpos($html, 'FJD GROUP') !== false, 'El HTML del trabajador menciona a la empresa');
 
 $texto = PlantillaCumpleanos::textoTrabajador('Ana Torres');
 assertVerdadero(strpos($texto, 'Ana Torres') !== false, 'El texto plano incluye el nombre del trabajador');
 
 $asuntoTrabajador = PlantillaCumpleanos::asuntoTrabajador();
 assertVerdadero($asuntoTrabajador !== '', 'El asunto para el trabajador no esta vacio');
+assertVerdadero(strpos($asuntoTrabajador, '🎉') !== false, 'El asunto del trabajador incluye un emoji festivo');
 
 $htmlGerencia = PlantillaCumpleanos::htmlGerencia('Luis <Rios>');
 assertVerdadero(strpos($htmlGerencia, '&lt;Rios&gt;') !== false, 'El nombre en el aviso a gerencia se escapa');
@@ -23,5 +25,6 @@ assertVerdadero(strpos($textoGerencia, 'Luis Rios') !== false, 'El texto a geren
 
 $asuntoGerencia = PlantillaCumpleanos::asuntoGerencia();
 assertVerdadero($asuntoGerencia !== '', 'El asunto para gerencia no esta vacio');
+assertVerdadero(strpos($asuntoGerencia, '🎂') !== false, 'El asunto de gerencia incluye un emoji festivo');
 
 resumenPruebas();
