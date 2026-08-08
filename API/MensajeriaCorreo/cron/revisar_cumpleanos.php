@@ -43,10 +43,18 @@ $logger = function (string $nivel, string $mensaje): void {
     echo '[' . date('Y-m-d H:i:s') . "] [{$nivel}] {$mensaje}\n";
 };
 
+$rutaImagen = __DIR__ . '/../assets/cumpleanos.png';
+$imagenBase64 = null;
+if (file_exists($rutaImagen)) {
+    $imagenBase64 = 'data:image/png;base64,' . base64_encode(file_get_contents($rutaImagen));
+} else {
+    $logger('warning', "No se encontro el asset de imagen ({$rutaImagen}); se enviara sin imagen.");
+}
+
 $repositorio = new RepositorioCumpleanos(__DIR__ . '/../data/cumpleanos.csv', $logger);
 $buscador = new BuscadorCumpleanos();
 $registro = new RegistroEnviados(__DIR__ . '/../data/cumpleanos_enviados.json');
-$mailer = new ApiEmailMailer(new EmailApiClient($emailApiUrl), $logger);
+$mailer = new ApiEmailMailer(new EmailApiClient($emailApiUrl), $imagenBase64, $logger);
 
 $revisor = new RevisorCumpleanos($repositorio, $buscador, $registro, $mailer, $correoGerencia, $logger);
 
